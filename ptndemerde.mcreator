@@ -63,8 +63,8 @@
       "registry_name": "monde_technologique",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json"
+          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json",
+          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java"
         ]
       }
     },
@@ -115,10 +115,10 @@
       "registry_name": "chicha",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/blockstates/chicha.json",
-          "src/main/resources/assets/ptndemerde/models/item/chicha.json",
+          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java",
           "src/main/resources/assets/ptndemerde/models/block/chicha.json",
-          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java"
+          "src/main/resources/assets/ptndemerde/blockstates/chicha.json",
+          "src/main/resources/assets/ptndemerde/models/item/chicha.json"
         ]
       }
     },
@@ -144,10 +144,10 @@
       "registry_name": "chicha_rouge",
       "metadata": {
         "files": [
+          "src/main/resources/assets/ptndemerde/blockstates/chicha_rouge.json",
           "src/main/java/net/mcreator/ptndemerde/block/ChichaRougeBlock.java",
-          "src/main/resources/assets/ptndemerde/models/block/chicha_rouge.json",
           "src/main/resources/assets/ptndemerde/models/item/chicha_rouge.json",
-          "src/main/resources/assets/ptndemerde/blockstates/chicha_rouge.json"
+          "src/main/resources/assets/ptndemerde/models/block/chicha_rouge.json"
         ]
       }
     },
@@ -195,10 +195,10 @@
       "registry_name": "tabac_3",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java",
           "src/main/resources/assets/ptndemerde/blockstates/tabac_3.json",
           "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_3.json"
+          "src/main/resources/assets/ptndemerde/models/block/tabac_3.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java"
         ]
       }
     },
@@ -213,8 +213,8 @@
         "files": [
           "src/main/java/net/mcreator/ptndemerde/block/TabacGrownBlock.java",
           "src/main/resources/assets/ptndemerde/blockstates/tabac_grown.json",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json",
-          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json"
+          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json"
         ]
       }
     },
@@ -242,8 +242,8 @@
         "files": [
           "src/main/resources/assets/ptndemerde/models/block/tabac_1.json",
           "src/main/java/net/mcreator/ptndemerde/block/Tabac1Block.java",
-          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json"
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json"
         ]
       }
     },
@@ -257,9 +257,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ptndemerde/models/item/tabac_2.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java",
           "src/main/resources/assets/ptndemerde/blockstates/tabac_2.json",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json",
-          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java"
+          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json"
         ]
       }
     },
@@ -298,7 +298,7 @@
       "name": "DegatDeLaDrogue",
       "type": "procedure",
       "sortid": 26,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "degat_de_la_drogue",
       "metadata": {
@@ -322,8 +322,8 @@
       "registry_name": "graines_de_tabac",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json"
+          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json",
+          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java"
         ]
       }
     },
@@ -497,8 +497,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ptndemerde/entity/ChatTeteNouilleEntity.java",
-          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
           "src/main/resources/assets/ptndemerde/models/item/chat_tete_nouille_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
           "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json"
         ]
       }
@@ -530,6 +530,7 @@
   ],
   "language_map": {
     "en_us": {
+      "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
       "painting.ptndemerde.painting_child.author": "Maknav",
       "block.ptndemerde.tabac_grown": "Tabac 1",
       "effect.ptndemerde.effect_chicha": "Narguilé",
@@ -539,13 +540,14 @@
       "item.ptndemerde.monde_technologique": "Monde Technologique",
       "block.ptndemerde.chicha": "Chicha",
       "block.ptndemerde.chicha_rouge": "Chicha rouge",
-      "item.ptndemerde.fleur_de_tabac": "Fleur de Tabac",
+      "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
-      "item.ptndemerde.graines_de_tabac": "Graines de Tabac",
+      "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
       "painting.ptndemerde.painting_child.title": "Child",
       "item.ptndemerde.falin_sword": "Épée en Falin",
       "subtitles.monde_technologique": "Ils sont pas réels...",
-      "item.ptndemerde.tabac_fume": "Tabac fumé"
+      "item.ptndemerde.tabac_fume": "Tabac Fume",
+      "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles"
     }
   },
   "foldersRoot": {

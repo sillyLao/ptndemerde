@@ -1,4 +1,5 @@
 {
+  "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
   "painting.ptndemerde.painting_child.author": "Maknav",
   "block.ptndemerde.tabac_grown": "Tabac 1",
   "effect.ptndemerde.effect_chicha": "Narguilé",
@@ -8,11 +9,12 @@
   "item.ptndemerde.monde_technologique": "Monde Technologique",
   "block.ptndemerde.chicha": "Chicha",
   "block.ptndemerde.chicha_rouge": "Chicha rouge",
-  "item.ptndemerde.fleur_de_tabac": "Fleur de Tabac",
+  "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
   "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
-  "item.ptndemerde.graines_de_tabac": "Graines de Tabac",
+  "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
   "painting.ptndemerde.painting_child.title": "Child",
   "item.ptndemerde.falin_sword": "Épée en Falin",
   "subtitles.monde_technologique": "Ils sont pas réels...",
-  "item.ptndemerde.tabac_fume": "Tabac fumé"
+  "item.ptndemerde.tabac_fume": "Tabac Fume",
+  "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles"
 }
