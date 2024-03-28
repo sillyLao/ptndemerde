@@ -24,7 +24,6 @@ public class PtndemerdeModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(PtndemerdeModBlocks.CHICHA.get().asItem());
-			tabData.accept(PtndemerdeModBlocks.CHICHA_ROUGE.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -47,6 +46,10 @@ public class PtndemerdeModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(PtndemerdeModItems.GRAINES_DE_TABAC.get());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(PtndemerdeModItems.CHAIR_PUTREFIEE_DOREE.get());
 		}
 	}
 }

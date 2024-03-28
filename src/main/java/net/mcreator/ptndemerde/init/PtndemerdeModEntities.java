@@ -28,9 +28,9 @@ public class PtndemerdeModEntities {
 
 					.sized(0.6f, 0.8f));
 	public static final RegistryObject<EntityType<ChicheurEntity>> CHICHEUR = register("chicheur",
-			EntityType.Builder.<ChicheurEntity>of(ChicheurEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChicheurEntity::new)
+			EntityType.Builder.<ChicheurEntity>of(ChicheurEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChicheurEntity::new)
 
-					.sized(0.5f, 1.5f));
+					.sized(0.5f, 1.7f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

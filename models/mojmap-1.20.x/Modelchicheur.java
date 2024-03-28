@@ -79,6 +79,8 @@ public class Modelchicheur<T extends Entity> extends EntityModel<T> {
 			float headPitch) {
 		this.head.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.head.xRot = headPitch / (180F / (float) Math.PI);
+		this.nose.yRot = netHeadYaw / (180F / (float) Math.PI);
+		this.nose.xRot = headPitch / (180F / (float) Math.PI);
 		this.left_leg.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
 		this.right_leg.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
 	}

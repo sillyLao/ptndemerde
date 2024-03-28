@@ -136,22 +136,6 @@
       }
     },
     {
-      "name": "ChichaRouge",
-      "type": "block",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chicha_rouge",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ptndemerde/block/ChichaRougeBlock.java",
-          "src/main/resources/assets/ptndemerde/models/block/chicha_rouge.json",
-          "src/main/resources/assets/ptndemerde/models/item/chicha_rouge.json",
-          "src/main/resources/assets/ptndemerde/blockstates/chicha_rouge.json"
-        ]
-      }
-    },
-    {
       "name": "BlocChichaRougeClicDroit",
       "type": "procedure",
       "sortid": 12,
@@ -190,7 +174,7 @@
       "name": "Tabac3",
       "type": "block",
       "sortid": 16,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "tabac_3",
       "metadata": {
@@ -235,7 +219,7 @@
       "name": "Tabac1",
       "type": "block",
       "sortid": 13,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "tabac_1",
       "metadata": {
@@ -251,7 +235,7 @@
       "name": "Tabac2",
       "type": "block",
       "sortid": 14,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "tabac_2",
       "metadata": {
@@ -544,6 +528,108 @@
           "src/main/resources/assets/ptndemerde/models/item/chicheur_spawn_egg.json"
         ]
       }
+    },
+    {
+      "name": "ChairPutrefieeDoreeLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chair_putrefiee_doree_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/ChairPutrefieeDoreeLeJoueurTermineDutiliserLitemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChairPutrefieeDoree",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chair_putrefiee_doree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/ChairPutrefieeDoreeItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/chair_putrefiee_doree.json"
+        ]
+      }
+    },
+    {
+      "name": "GUIChicheur",
+      "type": "gui",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_chicheur",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/client/gui/GUIChicheurScreen.java",
+          "src/main/java/net/mcreator/ptndemerde/world/inventory/GUIChicheurMenu.java",
+          "src/main/java/net/mcreator/ptndemerde/network/GUIChicheurButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "ChicheurQuandLeJoueurFaitUnClicDroitSurLentite",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicheur_quand_le_joueur_fait_un_clic_droit_sur_lentite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/ChicheurQuandLeJoueurFaitUnClicDroitSurLentiteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GUIChicheurDealer",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_chicheur_dealer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/GUIChicheurDealerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -579,19 +665,25 @@
   "language_map": {
     "en_us": {
       "painting.ptndemerde.painting_child.author": "Maknav",
+      "gui.ptndemerde.gui_chicheur.label_x50": "x50",
+      "gui.ptndemerde.gui_chicheur.label_evidemment": "évidemment.",
       "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
+      "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
       "block.ptndemerde.chicha": "Chicha",
-      "block.ptndemerde.chicha_rouge": "Chicha rouge",
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
+      "item.ptndemerde.chair_putrefiee_doree": "Chair putréfiée dorée",
+      "gui.ptndemerde.gui_chicheur.label_quoi_soulager_la_sienne_aussi_e": "quoi soulager la sienne aussi,",
       "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
+      "gui.ptndemerde.gui_chicheur.label_echanger_de_quoi_soulager_votre": "échanger de quoi soulager votre",
       "advancements.advancement_tabac.title": "Sur la route du chichage",
       "block.ptndemerde.tabac_grown": "Tabac 1",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "block.ptndemerde.tabac_3": "Tabac 1",
       "block.ptndemerde.tabac_1": "Tabac 1",
+      "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
       "block.ptndemerde.tabac_2": "Tabac 1",
       "item.ptndemerde.monde_technologique": "Monde Technologique",
       "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
@@ -599,6 +691,7 @@
       "item.ptndemerde.falin_sword": "Épée en Falin",
       "advancements.advancement_chicha.title": "Narguilator",
       "subtitles.monde_technologique": "Ils sont pas réels...",
+      "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous",
       "item.ptndemerde.tabac_fume": "Tabac Fume",
       "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",
       "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg"

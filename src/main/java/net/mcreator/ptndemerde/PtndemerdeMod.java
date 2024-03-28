@@ -33,6 +33,7 @@ import net.mcreator.ptndemerde.init.PtndemerdeModTabs;
 import net.mcreator.ptndemerde.init.PtndemerdeModSounds;
 import net.mcreator.ptndemerde.init.PtndemerdeModPaintings;
 import net.mcreator.ptndemerde.init.PtndemerdeModMobEffects;
+import net.mcreator.ptndemerde.init.PtndemerdeModMenus;
 import net.mcreator.ptndemerde.init.PtndemerdeModItems;
 import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 import net.mcreator.ptndemerde.init.PtndemerdeModBlocks;
@@ -66,6 +67,7 @@ public class PtndemerdeMod {
 
 		PtndemerdeModPaintings.REGISTRY.register(bus);
 
+		PtndemerdeModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

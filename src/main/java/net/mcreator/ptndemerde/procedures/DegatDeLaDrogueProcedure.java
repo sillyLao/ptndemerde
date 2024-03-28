@@ -1,8 +1,23 @@
 package net.mcreator.ptndemerde.procedures;
 
+import net.minecraftforge.server.ServerLifecycleHooks;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.TickEvent;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.ptndemerde.network.PtndemerdeModVariables;
 
 import javax.annotation.Nullable;
+
+import java.util.ArrayList;
 
 @Mod.EventBusSubscriber
 public class DegatDeLaDrogueProcedure {
