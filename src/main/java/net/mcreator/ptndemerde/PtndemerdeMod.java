@@ -34,6 +34,7 @@ import net.mcreator.ptndemerde.init.PtndemerdeModSounds;
 import net.mcreator.ptndemerde.init.PtndemerdeModPaintings;
 import net.mcreator.ptndemerde.init.PtndemerdeModMobEffects;
 import net.mcreator.ptndemerde.init.PtndemerdeModItems;
+import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 import net.mcreator.ptndemerde.init.PtndemerdeModBlocks;
 
 import java.util.function.Supplier;
@@ -57,6 +58,7 @@ public class PtndemerdeMod {
 		PtndemerdeModBlocks.REGISTRY.register(bus);
 
 		PtndemerdeModItems.REGISTRY.register(bus);
+		PtndemerdeModEntities.REGISTRY.register(bus);
 
 		PtndemerdeModTabs.REGISTRY.register(bus);
 

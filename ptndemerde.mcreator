@@ -185,6 +185,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "ChatTeteNouille",
+      "type": "livingentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chat_tete_nouille",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/ChatTeteNouilleEntity.java",
+          "src/main/resources/assets/ptndemerde/models/item/chat_tete_nouille_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -201,6 +217,7 @@
   "language_map": {
     "en_us": {
       "item.ptndemerde.monde_technologique": "Monde Technologique",
+      "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
       "painting.ptndemerde.painting_child.author": "Maknav",
       "block.ptndemerde.chicha": "Chicha",
       "block.ptndemerde.chicha_rouge": "Chicha rouge",
@@ -208,7 +225,8 @@
       "painting.ptndemerde.painting_child.title": "Child",
       "item.ptndemerde.falin_sword": "Épée en Falin",
       "effect.ptndemerde.effect_chicha": "Narguilé",
-      "subtitles.monde_technologique": "Ils sont pas réels..."
+      "subtitles.monde_technologique": "Ils sont pas réels...",
+      "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles"
     }
   },
   "foldersRoot": {
