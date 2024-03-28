@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "child.png",
+    "width": 128,
+    "height": 128,
+    "title": "Child",
+    "author": "Maknav"
+  }
+}

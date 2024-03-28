@@ -64,6 +64,17 @@
           "src/main/java/net/mcreator/ptndemerde/potion/EffectChichaMobEffect.java"
         ]
       }
+    },
+    {
+      "name": "PaintingChild",
+      "type": "painting",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_child",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -80,7 +91,9 @@
   "language_map": {
     "en_us": {
       "item.ptndemerde.monde_technologique": "Monde Technologique",
+      "painting.ptndemerde.painting_child.author": "Maknav",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
+      "painting.ptndemerde.painting_child.title": "Child",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "subtitles.monde_technologique": "Ils sont pas réels..."
     }

@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.ptndemerde.init.PtndemerdeModTabs;
 import net.mcreator.ptndemerde.init.PtndemerdeModSounds;
+import net.mcreator.ptndemerde.init.PtndemerdeModPaintings;
 import net.mcreator.ptndemerde.init.PtndemerdeModMobEffects;
 import net.mcreator.ptndemerde.init.PtndemerdeModItems;
 
@@ -58,6 +59,8 @@ public class PtndemerdeMod {
 		PtndemerdeModTabs.REGISTRY.register(bus);
 
 		PtndemerdeModMobEffects.REGISTRY.register(bus);
+
+		PtndemerdeModPaintings.REGISTRY.register(bus);
 
 	}
 
