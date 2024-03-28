@@ -75,6 +75,20 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "FalinSword",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "falin_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/FalinSwordItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/falin_sword.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -94,6 +108,7 @@
       "painting.ptndemerde.painting_child.author": "Maknav",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "painting.ptndemerde.painting_child.title": "Child",
+      "item.ptndemerde.falin_sword": "Épée en Falin",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "subtitles.monde_technologique": "Ils sont pas réels..."
     }

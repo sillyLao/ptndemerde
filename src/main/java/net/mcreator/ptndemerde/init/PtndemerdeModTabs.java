@@ -22,6 +22,10 @@ public class PtndemerdeModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(PtndemerdeModItems.FALIN_SWORD.get());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(PtndemerdeModItems.MONDE_TECHNOLOGIQUE.get());
 		}
