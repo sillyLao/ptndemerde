@@ -1,8 +1,19 @@
 package net.mcreator.ptndemerde.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.items.ItemHandlerHelper;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.ptndemerde.init.PtndemerdeModItems;
+import net.mcreator.ptndemerde.init.PtndemerdeModBlocks;
+
+import java.util.Map;
 
 public class TabacRecolteProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -23,7 +34,7 @@ public class TabacRecolteProcedure {
 			world.setBlock(_bp, _bs, 3);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(PtndemerdeModItems.DELETED_MOD_ELEMENT.get());
+			ItemStack _setstack = new ItemStack(PtndemerdeModItems.FLEUR_DE_TABAC.get());
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}

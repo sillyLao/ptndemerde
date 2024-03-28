@@ -34,6 +34,7 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> FLEUR_DE_TABAC = REGISTRY.register("fleur_de_tabac", () -> new FleurDeTabacItem());
 	public static final RegistryObject<Item> GRAINES_DE_TABAC = REGISTRY.register("graines_de_tabac", () -> new GrainesDeTabacItem());
 	public static final RegistryObject<Item> TABAC_FUME = REGISTRY.register("tabac_fume", () -> new TabacFumeItem());
+	public static final RegistryObject<Item> CHICHEUR_SPAWN_EGG = REGISTRY.register("chicheur_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.CHICHEUR, -10066330, -10079488, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -195,10 +195,10 @@
       "registry_name": "tabac_3",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java",
           "src/main/resources/assets/ptndemerde/blockstates/tabac_3.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_3.json",
           "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_3.json"
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java"
         ]
       }
     },
@@ -213,8 +213,8 @@
         "files": [
           "src/main/java/net/mcreator/ptndemerde/block/TabacGrownBlock.java",
           "src/main/resources/assets/ptndemerde/blockstates/tabac_grown.json",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json",
-          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json"
+          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json"
         ]
       }
     },
@@ -240,10 +240,10 @@
       "registry_name": "tabac_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json",
           "src/main/java/net/mcreator/ptndemerde/block/Tabac1Block.java",
-          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json"
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json"
         ]
       }
     },
@@ -257,9 +257,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ptndemerde/models/item/tabac_2.json",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_2.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java",
           "src/main/resources/assets/ptndemerde/models/block/tabac_2.json",
-          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java"
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_2.json"
         ]
       }
     },
@@ -322,8 +322,8 @@
       "registry_name": "graines_de_tabac",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json"
+          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json",
+          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java"
         ]
       }
     },
@@ -433,8 +433,8 @@
       "registry_name": "fleur_de_tabac",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json",
-          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json"
         ]
       }
     },
@@ -496,10 +496,52 @@
       "registry_name": "chat_tete_nouille",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/entity/ChatTeteNouilleEntity.java",
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
-          "src/main/resources/assets/ptndemerde/models/item/chat_tete_nouille_spawn_egg.json",
-          "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json"
+          "src/main/java/net/mcreator/ptndemerde/entity/ChatTeteNouilleEntity.java",
+          "src/main/resources/assets/ptndemerde/models/item/chat_tete_nouille_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "AdvancementChicha",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancement_chicha",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/advancements/advancement_chicha.json"
+        ]
+      }
+    },
+    {
+      "name": "AdvancementTabac",
+      "type": "achievement",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancement_tabac",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/advancements/advancement_tabac.json"
+        ]
+      }
+    },
+    {
+      "name": "Chicheur",
+      "type": "livingentity",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicheur",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/chicheur_biome_modifier.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/ChicheurEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChicheurRenderer.java",
+          "src/main/resources/assets/ptndemerde/models/item/chicheur_spawn_egg.json"
         ]
       }
     }
@@ -516,6 +558,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "chichage",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -531,21 +579,29 @@
   "language_map": {
     "en_us": {
       "painting.ptndemerde.painting_child.author": "Maknav",
+      "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
+      "block.ptndemerde.chicha": "Chicha",
+      "block.ptndemerde.chicha_rouge": "Chicha rouge",
+      "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
+      "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
+      "painting.ptndemerde.painting_child.title": "Child",
+      "entity.ptndemerde.chicheur": "Chicheur",
+      "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
+      "advancements.advancement_tabac.title": "Sur la route du chichage",
       "block.ptndemerde.tabac_grown": "Tabac 1",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "block.ptndemerde.tabac_3": "Tabac 1",
       "block.ptndemerde.tabac_1": "Tabac 1",
       "block.ptndemerde.tabac_2": "Tabac 1",
       "item.ptndemerde.monde_technologique": "Monde Technologique",
-      "block.ptndemerde.chicha": "Chicha",
-      "block.ptndemerde.chicha_rouge": "Chicha rouge",
-      "item.ptndemerde.fleur_de_tabac": "Fleur de Tabac",
-      "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
-      "item.ptndemerde.graines_de_tabac": "Graines de Tabac",
-      "painting.ptndemerde.painting_child.title": "Child",
+      "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
+      "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
       "item.ptndemerde.falin_sword": "Épée en Falin",
+      "advancements.advancement_chicha.title": "Narguilator",
       "subtitles.monde_technologique": "Ils sont pas réels...",
-      "item.ptndemerde.tabac_fume": "Tabac fumé"
+      "item.ptndemerde.tabac_fume": "Tabac Fume",
+      "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",
+      "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg"
     }
   },
   "foldersRoot": {

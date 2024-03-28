@@ -5,5 +5,5 @@
     "particle": "ptndemerde:block/particlechicha",
     "5": "ptndemerde:block/chicha_final"
   },
-  "render_type": "cutout"
+  "render_type": "translucent"
 }

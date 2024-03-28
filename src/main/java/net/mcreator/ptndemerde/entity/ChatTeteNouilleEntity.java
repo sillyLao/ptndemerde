@@ -1,16 +1,51 @@
 
 package net.mcreator.ptndemerde.entity;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.sounds.SoundEvent;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.SpawnEggItem;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.TemptGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
+import net.minecraft.world.entity.ai.goal.FollowParentGoal;
+import net.minecraft.world.entity.ai.goal.FollowOwnerGoal;
+import net.minecraft.world.entity.ai.goal.FollowMobGoal;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.goal.BreedGoal;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.AgeableMob;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.Difficulty;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.Packet;
+
+import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 
 public class ChatTeteNouilleEntity extends TamableAnimal {
-
 	public ChatTeteNouilleEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(PtndemerdeModEntities.CHAT_TETE_NOUILLE.get(), world);
 	}
@@ -20,7 +55,6 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-
 	}
 
 	@Override
@@ -31,7 +65,6 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new BreedGoal(this, 1));
 		this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.of(Items.COD), true));
 		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
@@ -41,7 +74,6 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 		this.goalSelector.addGoal(7, new LookAtPlayerGoal(this, Player.class, (float) 6));
 		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(9, new FloatGoal(this));
-
 	}
 
 	@Override
@@ -75,7 +107,6 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
-
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
 			retval = super.mobInteract(sourceentity, hand);
@@ -104,7 +135,6 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 				} else {
 					this.level().broadcastEntityEvent(this, (byte) 6);
 				}
-
 				this.setPersistenceRequired();
 				retval = InteractionResult.sidedSuccess(this.level().isClientSide());
 			} else {
@@ -113,7 +143,6 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 					this.setPersistenceRequired();
 			}
 		}
-
 		return retval;
 	}
 
@@ -132,7 +161,6 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 	public static void init() {
 		SpawnPlacements.register(PtndemerdeModEntities.CHAT_TETE_NOUILLE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -142,8 +170,6 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		return builder;
 	}
-
 }
