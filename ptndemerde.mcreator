@@ -504,19 +504,6 @@
       }
     },
     {
-      "name": "AdvancementChicha",
-      "type": "achievement",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "advancement_chicha",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ptndemerde/advancements/advancement_chicha.json"
-        ]
-      }
-    },
-    {
       "name": "AdvancementTabac",
       "type": "achievement",
       "sortid": 28,
@@ -526,6 +513,19 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ptndemerde/advancements/advancement_tabac.json"
+        ]
+      }
+    },
+    {
+      "name": "AdvancementChicha",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancement_chicha",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/advancements/advancement_chicha.json"
         ]
       }
     },
