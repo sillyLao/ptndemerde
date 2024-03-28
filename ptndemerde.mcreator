@@ -1,0 +1,110 @@
+{
+  "mod_elements": [
+    {
+      "name": "EffectChichaTickActifSurEffet",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_chicha_tick_actif_sur_effet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/EffectChichaTickActifSurEffetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlocChichaClicDroit",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloc_chicha_clic_droit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/BlocChichaClicDroitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MondeTechnologique",
+      "type": "musicdisc",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monde_technologique",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json"
+        ]
+      }
+    },
+    {
+      "name": "EffectChicha",
+      "type": "potioneffect",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_chicha",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/potion/EffectChichaMobEffect.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "monde_technologique",
+      "files": [
+        "luca-monde-technologique-_clip-officiel_"
+      ],
+      "category": "record",
+      "subtitle": "Ils sont pas réels..."
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.ptndemerde.monde_technologique": "Monde Technologique",
+      "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
+      "effect.ptndemerde.effect_chicha": "Narguilé",
+      "subtitles.monde_technologique": "Ils sont pas réels..."
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ptndemerde",
+    "modName": "ptndemerde",
+    "version": "1.0.0",
+    "author": "Laony, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.ptndemerde",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

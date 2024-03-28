@@ -1,0 +1,11 @@
+{
+  "monde_technologique": {
+    "subtitle": "subtitles.monde_technologique",
+    "sounds": [
+      {
+        "name": "ptndemerde:luca-monde-technologique-_clip-officiel_",
+        "stream": true
+      }
+    ]
+  }
+}
