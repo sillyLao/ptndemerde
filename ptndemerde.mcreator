@@ -190,7 +190,7 @@
       "name": "Tabac3",
       "type": "block",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "tabac_3",
       "metadata": {
@@ -235,7 +235,7 @@
       "name": "Tabac1",
       "type": "block",
       "sortid": 13,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "tabac_1",
       "metadata": {
@@ -251,7 +251,7 @@
       "name": "Tabac2",
       "type": "block",
       "sortid": 14,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "tabac_2",
       "metadata": {
