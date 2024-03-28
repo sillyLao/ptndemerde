@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ptndemerde:block/chicha_rouge"
+    },
+    "facing=east": {
+      "model": "ptndemerde:block/chicha_rouge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ptndemerde:block/chicha_rouge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ptndemerde:block/chicha_rouge",
+      "y": 270
+    }
+  }
+}

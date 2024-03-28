@@ -34,16 +34,16 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.ptndemerde.procedures.BlocChichaClicDroitProcedure;
+import net.mcreator.ptndemerde.procedures.BlocChichaRougeClicDroitProcedure;
 
 import java.util.List;
 import java.util.Collections;
 
-public class ChichaBlock extends Block implements SimpleWaterloggedBlock {
+public class ChichaRougeBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-	public ChichaBlock() {
+	public ChichaRougeBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).sound(SoundType.GLASS).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
@@ -128,7 +128,7 @@ public class ChichaBlock extends Block implements SimpleWaterloggedBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		BlocChichaClicDroitProcedure.execute(world, x, y, z, entity);
+		BlocChichaRougeClicDroitProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

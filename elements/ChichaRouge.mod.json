@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "chicha_final",
+    "texture": "chicha_rouge",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "particlechicha",
+    "particleTexture": "chicha_rouge",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Chicha",
+    "name": "Chicha rouge",
     "specialInformation": {
       "fixedValue": []
     },
@@ -120,7 +120,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "BlocChichaClicDroit"
+      "name": "BlocChichaRougeClicDroit"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

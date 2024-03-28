@@ -14,7 +14,7 @@
       "item": "minecraft:blaze_rod"
     },
     "c": {
-      "tag": "forge:stained_glass"
+      "item": "minecraft:glass"
     },
     "d": {
       "tag": "minecraft:coals"

@@ -21,6 +21,7 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> MONDE_TECHNOLOGIQUE = REGISTRY.register("monde_technologique", () -> new MondeTechnologiqueItem());
 	public static final RegistryObject<Item> FALIN_SWORD = REGISTRY.register("falin_sword", () -> new FalinSwordItem());
 	public static final RegistryObject<Item> CHICHA = block(PtndemerdeModBlocks.CHICHA);
+	public static final RegistryObject<Item> CHICHA_ROUGE = block(PtndemerdeModBlocks.CHICHA_ROUGE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

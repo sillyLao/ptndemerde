@@ -16,12 +16,12 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.ptndemerde.init.PtndemerdeModMobEffects;
 
-public class BlocChichaClicDroitProcedure {
+public class BlocChichaRougeClicDroitProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PtndemerdeModMobEffects.EFFECT_CHICHA.get(), 300, 0, false, false));
+			_entity.addEffect(new MobEffectInstance(PtndemerdeModMobEffects.EFFECT_CHICHA.get(), 300, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 300, 0, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

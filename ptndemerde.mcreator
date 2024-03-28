@@ -115,10 +115,10 @@
       "registry_name": "chicha",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
-          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java",
           "src/main/resources/assets/ptndemerde/blockstates/chicha.json",
-          "src/main/resources/assets/ptndemerde/models/item/chicha.json"
+          "src/main/resources/assets/ptndemerde/models/item/chicha.json",
+          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
+          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java"
         ]
       }
     },
@@ -132,6 +132,57 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ptndemerde/recipes/chicha_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChichaRouge",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicha_rouge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/block/ChichaRougeBlock.java",
+          "src/main/resources/assets/ptndemerde/models/block/chicha_rouge.json",
+          "src/main/resources/assets/ptndemerde/models/item/chicha_rouge.json",
+          "src/main/resources/assets/ptndemerde/blockstates/chicha_rouge.json"
+        ]
+      }
+    },
+    {
+      "name": "BlocChichaRougeClicDroit",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloc_chicha_rouge_clic_droit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/BlocChichaRougeClicDroitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -152,6 +203,7 @@
       "item.ptndemerde.monde_technologique": "Monde Technologique",
       "painting.ptndemerde.painting_child.author": "Maknav",
       "block.ptndemerde.chicha": "Chicha",
+      "block.ptndemerde.chicha_rouge": "Chicha rouge",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "painting.ptndemerde.painting_child.title": "Child",
       "item.ptndemerde.falin_sword": "Épée en Falin",

@@ -30,13 +30,13 @@
         "value": ""
       },
       {
-        "value": "Blocks.STAINED_GLASS"
+        "value": "Blocks.GLASS"
       },
       {
         "value": "Items.COAL"
       },
       {
-        "value": "Blocks.STAINED_GLASS"
+        "value": "Blocks.GLASS"
       }
     ],
     "recipeReturnStack": {
