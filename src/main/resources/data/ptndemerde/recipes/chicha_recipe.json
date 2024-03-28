@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "ba ",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:blaze_rod"
+    },
+    "c": {
+      "tag": "forge:stained_glass"
+    },
+    "d": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "result": {
+    "item": "ptndemerde:chicha",
+    "count": 1
+  }
+}

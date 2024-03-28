@@ -34,6 +34,7 @@ import net.mcreator.ptndemerde.init.PtndemerdeModSounds;
 import net.mcreator.ptndemerde.init.PtndemerdeModPaintings;
 import net.mcreator.ptndemerde.init.PtndemerdeModMobEffects;
 import net.mcreator.ptndemerde.init.PtndemerdeModItems;
+import net.mcreator.ptndemerde.init.PtndemerdeModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -53,6 +54,7 @@ public class PtndemerdeMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		PtndemerdeModSounds.REGISTRY.register(bus);
+		PtndemerdeModBlocks.REGISTRY.register(bus);
 
 		PtndemerdeModItems.REGISTRY.register(bus);
 

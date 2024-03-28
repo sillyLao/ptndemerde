@@ -34,6 +34,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -89,6 +105,35 @@
           "src/main/resources/assets/ptndemerde/models/item/falin_sword.json"
         ]
       }
+    },
+    {
+      "name": "Chicha",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicha",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
+          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java",
+          "src/main/resources/assets/ptndemerde/blockstates/chicha.json",
+          "src/main/resources/assets/ptndemerde/models/item/chicha.json"
+        ]
+      }
+    },
+    {
+      "name": "ChichaRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicha_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/chicha_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -106,6 +151,7 @@
     "en_us": {
       "item.ptndemerde.monde_technologique": "Monde Technologique",
       "painting.ptndemerde.painting_child.author": "Maknav",
+      "block.ptndemerde.chicha": "Chicha",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "painting.ptndemerde.painting_child.title": "Child",
       "item.ptndemerde.falin_sword": "Épée en Falin",

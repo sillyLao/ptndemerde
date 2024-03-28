@@ -22,6 +22,10 @@ public class PtndemerdeModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
+		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(PtndemerdeModBlocks.CHICHA.get().asItem());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(PtndemerdeModItems.FALIN_SWORD.get());
 		}

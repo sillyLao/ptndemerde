@@ -1,0 +1,9 @@
+{
+  "parent": "ptndemerde:custom/chicha",
+  "textures": {
+    "all": "ptndemerde:block/chicha_final",
+    "particle": "ptndemerde:block/particlechicha",
+    "5": "ptndemerde:block/chicha_final"
+  },
+  "render_type": "cutout"
+}
