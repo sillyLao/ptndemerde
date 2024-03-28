@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "ptndemerde:block/tabac_recoltable",
+    "particle": "ptndemerde:block/tabac_recoltable"
+  },
+  "render_type": "cutout"
+}

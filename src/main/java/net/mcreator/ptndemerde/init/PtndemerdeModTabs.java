@@ -31,8 +31,17 @@ public class PtndemerdeModTabs {
 			tabData.accept(PtndemerdeModItems.FALIN_SWORD.get());
 		}
 
+		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(PtndemerdeModItems.FLEUR_DE_TABAC.get());
+			tabData.accept(PtndemerdeModItems.TABAC_FUME.get());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(PtndemerdeModItems.MONDE_TECHNOLOGIQUE.get());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(PtndemerdeModItems.GRAINES_DE_TABAC.get());
 		}
 	}
 }

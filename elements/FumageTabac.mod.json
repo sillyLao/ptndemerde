@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:FleurDeTabac"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:TabacFume"
+    },
+    "name": "fumage_tabac",
+    "namespace": "mod"
+  }
+}

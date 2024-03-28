@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "ptndemerde:block/tabac_stade_final_non_recoltable",
+    "particle": "ptndemerde:block/tabac_stade_final_non_recoltable"
+  },
+  "render_type": "cutout"
+}

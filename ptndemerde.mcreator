@@ -185,9 +185,323 @@
           }
         ]
       }
+    },
+    {
+      "name": "Tabac1",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac1Block.java",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Tabac2",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/tabac_2.json",
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_2.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java"
+        ]
+      }
+    },
+    {
+      "name": "Tabac1Grow",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_1_grow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/Tabac1GrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tabac2Grow",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_2_grow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/Tabac2GrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tabac3",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java",
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_3.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_3.json"
+        ]
+      }
+    },
+    {
+      "name": "TabacGrown",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_grown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/block/TabacGrownBlock.java",
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_grown.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json"
+        ]
+      }
+    },
+    {
+      "name": "Tabac3Grow",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_3_grow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/Tabac3GrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FleurDeTabac",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fleur_de_tabac",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json",
+          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TabacRecolte",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_recolte",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/TabacRecolteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrainesDeTabac",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graines_de_tabac",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json"
+        ]
+      }
+    },
+    {
+      "name": "TabacPlante",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_plante",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/TabacPlanteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TabacFume",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tabac_fume",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/tabac_fume.json",
+          "src/main/java/net/mcreator/ptndemerde/item/TabacFumeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FumageTabac",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fumage_tabac",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/fumage_tabac.json"
+        ]
+      }
+    },
+    {
+      "name": "DegatDeLaDrogue",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "degat_de_la_drogue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/DegatDeLaDrogueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "lastdrogue",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "drogue",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    }
+  ],
   "sound_elements": [
     {
       "name": "monde_technologique",
@@ -200,15 +514,22 @@
   ],
   "language_map": {
     "en_us": {
-      "item.ptndemerde.monde_technologique": "Monde Technologique",
       "painting.ptndemerde.painting_child.author": "Maknav",
+      "block.ptndemerde.tabac_grown": "Tabac 1",
+      "effect.ptndemerde.effect_chicha": "Narguilé",
+      "block.ptndemerde.tabac_3": "Tabac 1",
+      "block.ptndemerde.tabac_1": "Tabac 1",
+      "block.ptndemerde.tabac_2": "Tabac 1",
+      "item.ptndemerde.monde_technologique": "Monde Technologique",
       "block.ptndemerde.chicha": "Chicha",
       "block.ptndemerde.chicha_rouge": "Chicha rouge",
+      "item.ptndemerde.fleur_de_tabac": "Fleur de Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
+      "item.ptndemerde.graines_de_tabac": "Graines de Tabac",
       "painting.ptndemerde.painting_child.title": "Child",
       "item.ptndemerde.falin_sword": "Épée en Falin",
-      "effect.ptndemerde.effect_chicha": "Narguilé",
-      "subtitles.monde_technologique": "Ils sont pas réels..."
+      "subtitles.monde_technologique": "Ils sont pas réels...",
+      "item.ptndemerde.tabac_fume": "Tabac fumé"
     }
   },
   "foldersRoot": {

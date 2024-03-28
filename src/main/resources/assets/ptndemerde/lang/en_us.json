@@ -1,11 +1,18 @@
 {
-  "item.ptndemerde.monde_technologique": "Monde Technologique",
   "painting.ptndemerde.painting_child.author": "Maknav",
+  "block.ptndemerde.tabac_grown": "Tabac 1",
+  "effect.ptndemerde.effect_chicha": "Narguilé",
+  "block.ptndemerde.tabac_3": "Tabac 1",
+  "block.ptndemerde.tabac_1": "Tabac 1",
+  "block.ptndemerde.tabac_2": "Tabac 1",
+  "item.ptndemerde.monde_technologique": "Monde Technologique",
   "block.ptndemerde.chicha": "Chicha",
   "block.ptndemerde.chicha_rouge": "Chicha rouge",
+  "item.ptndemerde.fleur_de_tabac": "Fleur de Tabac",
   "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
+  "item.ptndemerde.graines_de_tabac": "Graines de Tabac",
   "painting.ptndemerde.painting_child.title": "Child",
   "item.ptndemerde.falin_sword": "Épée en Falin",
-  "effect.ptndemerde.effect_chicha": "Narguilé",
-  "subtitles.monde_technologique": "Ils sont pas réels..."
+  "subtitles.monde_technologique": "Ils sont pas réels...",
+  "item.ptndemerde.tabac_fume": "Tabac fumé"
 }
