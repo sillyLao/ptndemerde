@@ -298,7 +298,7 @@
       "name": "DegatDeLaDrogue",
       "type": "procedure",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "degat_de_la_drogue",
       "metadata": {
