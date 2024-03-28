@@ -67,8 +67,8 @@ public class PtndemerdeModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			if (!event.isWasDeath()) {
-				clone.lastdrogue = original.lastdrogue;
 				clone.drogue = original.drogue;
+				clone.lastdrogue = original.lastdrogue;
 			}
 		}
 	}
@@ -104,8 +104,8 @@ public class PtndemerdeModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double lastdrogue = 0;
 		public double drogue = 0.0;
+		public double lastdrogue = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -114,15 +114,15 @@ public class PtndemerdeModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("lastdrogue", lastdrogue);
 			nbt.putDouble("drogue", drogue);
+			nbt.putDouble("lastdrogue", lastdrogue);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			lastdrogue = nbt.getDouble("lastdrogue");
 			drogue = nbt.getDouble("drogue");
+			lastdrogue = nbt.getDouble("lastdrogue");
 		}
 	}
 
@@ -147,8 +147,8 @@ public class PtndemerdeModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.lastdrogue = message.data.lastdrogue;
 					variables.drogue = message.data.drogue;
+					variables.lastdrogue = message.data.lastdrogue;
 				}
 			});
 			context.setPacketHandled(true);

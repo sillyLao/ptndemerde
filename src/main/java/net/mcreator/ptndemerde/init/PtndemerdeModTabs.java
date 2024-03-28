@@ -31,6 +31,10 @@ public class PtndemerdeModTabs {
 			tabData.accept(PtndemerdeModItems.FALIN_SWORD.get());
 		}
 
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(PtndemerdeModItems.CHAT_TETE_NOUILLE_SPAWN_EGG.get());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(PtndemerdeModItems.FLEUR_DE_TABAC.get());
 			tabData.accept(PtndemerdeModItems.TABAC_FUME.get());

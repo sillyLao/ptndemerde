@@ -4,7 +4,7 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "item": "ptndemerde:fleur_de_tabac"
+    "item": "ptndemerde:deleted_mod_element"
   },
-  "result": "ptndemerde:tabac_fume"
+  "result": "ptndemerde:deleted_mod_element"
 }

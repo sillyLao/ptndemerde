@@ -1,38 +1,8 @@
 
 package net.mcreator.ptndemerde.block;
 
-import net.minecraftforge.client.event.RegisterColorHandlersEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.BonemealableBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.GrassColor;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.BiomeColors;
-
-import net.mcreator.ptndemerde.procedures.Tabac1GrowProcedure;
-import net.mcreator.ptndemerde.init.PtndemerdeModBlocks;
-
-import java.util.List;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class Tabac1Block extends Block implements BonemealableBlock {
 	public Tabac1Block() {
@@ -70,7 +40,7 @@ public class Tabac1Block extends Block implements BonemealableBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		Tabac1GrowProcedure.execute(world, x, y, z);
+		Tabac1GrowProcedure.execute();
 	}
 
 	@Override
@@ -85,7 +55,7 @@ public class Tabac1Block extends Block implements BonemealableBlock {
 
 	@Override
 	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		Tabac1GrowProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		Tabac1GrowProcedure.execute();
 	}
 
 	@OnlyIn(Dist.CLIENT)
