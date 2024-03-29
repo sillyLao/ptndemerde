@@ -35,7 +35,7 @@
     "moodSoundDelay": 6000,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "SMOKE_LARGE"
+      "value": "WHITE_ASH"
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.7999999999999999,

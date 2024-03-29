@@ -1,8 +1,12 @@
 package net.mcreator.ptndemerde.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.BlockPos;
 
-import javax.annotation.Nullable;
+import net.mcreator.ptndemerde.init.PtndemerdeModBlocks;
 
 public class DaturaStramoniumOnBoneMealSuccessProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -16,13 +20,13 @@ public class DaturaStramoniumOnBoneMealSuccessProcedure {
 					if (Math.random() <= 0.08) {
 						world.setBlock(BlockPos.containing(x - tempx, y, z - tempz), PtndemerdeModBlocks.DATURA_STRAMONIUM.get().defaultBlockState(), 3);
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.ENCHANTED_HIT, (x - tempx), y, (z - tempz), 10, 0.5, 0.5, 0.5, 0.01);
-						world.setBlock(BlockPos.containing(x - tempx, y + 2, z - tempz), Blocks.DIORITE_STAIRS.defaultBlockState(), 3);
+							_level.sendParticles(ParticleTypes.GLOW, (x - tempx + 0.5), y, (z - tempz + 0.5), 10, 0, 0, 0, 0.001);
 					}
 				}
 				tempx = tempx + 1;
 			}
 			tempz = tempz + 1;
+			tempx = -2;
 		}
 	}
 }

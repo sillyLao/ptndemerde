@@ -796,9 +796,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ptndemerde/client/renderer/MuRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java",
           "src/main/resources/assets/ptndemerde/models/item/mu_spawn_egg.json",
-          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java",
-          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java"
+          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java"
         ]
       }
     }
@@ -838,6 +838,7 @@
       "painting.ptndemerde.painting_child.author": "Maknav",
       "entity.ptndemerde.porc": "Porc",
       "biome.ptndemerde.datura_fields": "Datura Fields",
+      "entity.ptndemerde.mu": "Mu",
       "gui.ptndemerde.gui_chicheur.label_x50": "x50",
       "gui.ptndemerde.gui_chicheur.label_evidemment": "évidemment.",
       "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
@@ -851,6 +852,7 @@
       "item.ptndemerde.chair_putrefiee_doree": "Chair putréfiée dorée",
       "gui.ptndemerde.gui_chicheur.label_quoi_soulager_la_sienne_aussi_e": "quoi soulager la sienne aussi,",
       "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
+      "item.ptndemerde.mu_spawn_egg": "Mu Spawn Egg",
       "gui.ptndemerde.gui_chicheur.label_echanger_de_quoi_soulager_votre": "échanger de quoi soulager votre",
       "advancements.advancement_tabac.title": "Sur la route du chichage",
       "block.ptndemerde.tabac_grown": "Tabac 1",
@@ -889,8 +891,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.ptndemerde",
     "lockBaseModFiles": false
   },

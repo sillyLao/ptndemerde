@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.ptndemerde.entity.PorcEntity;
+import net.mcreator.ptndemerde.entity.MuEntity;
 import net.mcreator.ptndemerde.entity.ChicheurEntity;
 import net.mcreator.ptndemerde.entity.ChatTeteNouilleEntity;
 import net.mcreator.ptndemerde.PtndemerdeMod;
@@ -28,6 +29,10 @@ public class PtndemerdeModEntities {
 			EntityType.Builder.<ChatTeteNouilleEntity>of(ChatTeteNouilleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChatTeteNouilleEntity::new)
 
 					.sized(0.6f, 0.8f));
+	public static final RegistryObject<EntityType<MuEntity>> MU = register("mu",
+			EntityType.Builder.<MuEntity>of(MuEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MuEntity::new)
+
+					.sized(25f, 176f));
 	public static final RegistryObject<EntityType<ChicheurEntity>> CHICHEUR = register("chicheur",
 			EntityType.Builder.<ChicheurEntity>of(ChicheurEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChicheurEntity::new)
 
@@ -45,6 +50,7 @@ public class PtndemerdeModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			ChatTeteNouilleEntity.init();
+			MuEntity.init();
 			ChicheurEntity.init();
 			PorcEntity.init();
 		});
@@ -53,6 +59,7 @@ public class PtndemerdeModEntities {
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CHAT_TETE_NOUILLE.get(), ChatTeteNouilleEntity.createAttributes().build());
+		event.put(MU.get(), MuEntity.createAttributes().build());
 		event.put(CHICHEUR.get(), ChicheurEntity.createAttributes().build());
 		event.put(PORC.get(), PorcEntity.createAttributes().build());
 	}
