@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "ptndemerde:fleur_de_tabac"
+    },
+    "title": {
+      "translate": "advancements.advancement_tabac.title"
+    },
+    "description": {
+      "translate": "advancements.advancement_tabac.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "advancement_tabac": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:husbandry/root"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "swamp",
+    "mangrove_swamp",
+    "deep_dark",
+    "dripstone_caves",
+    "lush_caves"
+  ],
+  "spawners": {
+    "type": "ptndemerde:chicheur",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

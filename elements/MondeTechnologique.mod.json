@@ -7,7 +7,7 @@
     "texture": "music_disc_mt",
     "description": "Ils sont pas réels...",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:PtndemerdeTab"
     },
     "specialInformation": {
       "fixedValue": []

@@ -20,7 +20,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "TRANSPORTATION"
+      "value": "CUSTOM:PtndemerdeTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {

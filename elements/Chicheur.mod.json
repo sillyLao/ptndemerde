@@ -1,0 +1,159 @@
+{
+  "_fv": 57,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Chicheur",
+    "mobLabel": "",
+    "mobModelName": "Modelchicheur",
+    "mobModelTexture": "chicheur.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 0.9
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
+    "modelLayers": [],
+    "modelWidth": 0.5,
+    "modelHeight": 1.7000000000000002,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -10066330,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -10079488,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:PtndemerdeTab"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Creature",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.1,
+    "stepHeight": 0.6,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "followRange": 16,
+    "health": 40,
+    "xpAmount": 0,
+    "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
+    "flyingMob": false,
+    "guiBoundTo": "GUIChicheur",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": true,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": "CUSTOM:Chicha"
+    },
+    "livingSound": {
+      "value": "entity.drowned.ambient_water"
+    },
+    "hurtSound": {
+      "value": "entity.vindication_illager.hurt"
+    },
+    "deathSound": {
+      "value": "entity.vindication_illager.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "entityDataEntries": [],
+    "onRightClickedOn": {
+      "name": "ChicheurQuandLeJoueurFaitUnClicDroitSurLentite"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"138\" y=\"-3\"><next><block type=\"avoid_entity\"><field name=\"entity\">EntityMonster</field><field name=\"radius\">6</field><field name=\"farspeed\">2</field><field name=\"nearspeed\">2</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">CUSTOM:Porc</field><field name=\"radius\">20</field><field name=\"farspeed\">4</field><field name=\"nearspeed\">4</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "rangedAttackInterval": 20,
+    "rangedAttackRadius": 10.0,
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 1,
+    "mobSpawningType": "ambient",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "mangrove_swamp"
+      },
+      {
+        "value": "deep_dark"
+      },
+      {
+        "value": "dripstone_caves"
+      },
+      {
+        "value": "lush_caves"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

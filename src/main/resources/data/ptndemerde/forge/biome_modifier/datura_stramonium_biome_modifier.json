@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ptndemerde:datura_fields",
+  "features": "ptndemerde:datura_stramonium",
+  "step": "vegetal_decoration"
+}

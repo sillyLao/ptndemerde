@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Narguilé",
-    "icon": "effectnarguile.png",
+    "icon": "effect_chicha.png",
     "color": {
       "value": -6710887,
       "falpha": 0.0

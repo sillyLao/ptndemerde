@@ -10,7 +10,7 @@
     "name": "Fleur De Tabac",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:PtndemerdeTab"
     },
     "stackSize": 64,
     "enchantability": 0,

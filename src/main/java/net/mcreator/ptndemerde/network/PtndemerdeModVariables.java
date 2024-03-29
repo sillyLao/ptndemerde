@@ -66,6 +66,7 @@ public class PtndemerdeModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			clone.chichage = original.chichage;
 			if (!event.isWasDeath()) {
 				clone.drogue = original.drogue;
 				clone.lastdrogue = original.lastdrogue;
@@ -106,6 +107,7 @@ public class PtndemerdeModVariables {
 	public static class PlayerVariables {
 		public double drogue = 0.0;
 		public double lastdrogue = 0;
+		public double chichage = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -116,6 +118,7 @@ public class PtndemerdeModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("drogue", drogue);
 			nbt.putDouble("lastdrogue", lastdrogue);
+			nbt.putDouble("chichage", chichage);
 			return nbt;
 		}
 
@@ -123,6 +126,7 @@ public class PtndemerdeModVariables {
 			CompoundTag nbt = (CompoundTag) Tag;
 			drogue = nbt.getDouble("drogue");
 			lastdrogue = nbt.getDouble("lastdrogue");
+			chichage = nbt.getDouble("chichage");
 		}
 	}
 
@@ -149,6 +153,7 @@ public class PtndemerdeModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.drogue = message.data.drogue;
 					variables.lastdrogue = message.data.lastdrogue;
+					variables.chichage = message.data.chichage;
 				}
 			});
 			context.setPacketHandled(true);

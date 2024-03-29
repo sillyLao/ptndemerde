@@ -136,22 +136,6 @@
       }
     },
     {
-      "name": "ChichaRouge",
-      "type": "block",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chicha_rouge",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ptndemerde/blockstates/chicha_rouge.json",
-          "src/main/java/net/mcreator/ptndemerde/block/ChichaRougeBlock.java",
-          "src/main/resources/assets/ptndemerde/models/item/chicha_rouge.json",
-          "src/main/resources/assets/ptndemerde/models/block/chicha_rouge.json"
-        ]
-      }
-    },
-    {
       "name": "BlocChichaRougeClicDroit",
       "type": "procedure",
       "sortid": 12,
@@ -518,6 +502,242 @@
           "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java"
         ]
       }
+    },
+    {
+      "name": "AdvancementChicha",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancement_chicha",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/advancements/advancement_chicha.json"
+        ]
+      }
+    },
+    {
+      "name": "ChairPutrefieeDoree",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chair_putrefiee_doree",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/chair_putrefiee_doree.json",
+          "src/main/java/net/mcreator/ptndemerde/item/ChairPutrefieeDoreeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TradeTabac",
+      "type": "villagertrade",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_tabac",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ChairPutrefieeDoreeLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chair_putrefiee_doree_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/ChairPutrefieeDoreeLeJoueurTermineDutiliserLitemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GUIChicheur",
+      "type": "gui",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_chicheur",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/network/GUIChicheurButtonMessage.java",
+          "src/main/java/net/mcreator/ptndemerde/client/gui/GUIChicheurScreen.java",
+          "src/main/java/net/mcreator/ptndemerde/world/inventory/GUIChicheurMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "GUIChicheurDealer",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_chicheur_dealer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/GUIChicheurDealerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PtndemerdeTab",
+      "type": "tab",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ptndemerde_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "AdvancementTabac",
+      "type": "achievement",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancement_tabac",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/advancements/advancement_tabac.json"
+        ]
+      }
+    },
+    {
+      "name": "ChicheurQuandLeJoueurFaitUnClicDroitSurLentite",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicheur_quand_le_joueur_fait_un_clic_droit_sur_lentite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/ChicheurQuandLeJoueurFaitUnClicDroitSurLentiteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DaturaFields",
+      "type": "biome",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "datura_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_fields_tree.json",
+          "src/main/resources/data/ptndemerde/worldgen/biome/datura_fields.json",
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_fields_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "Porc",
+      "type": "livingentity",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porc",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/porc_biome_modifier.json",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/PorcRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/PorcEntity.java",
+          "src/main/resources/assets/ptndemerde/models/item/porc_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "DaturaStramonium",
+      "type": "plant",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "datura_stramonium",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_stramonium.json",
+          "src/main/resources/assets/ptndemerde/models/item/datura_stramonium.json",
+          "src/main/resources/assets/ptndemerde/blockstates/datura_stramonium.json",
+          "src/main/java/net/mcreator/ptndemerde/block/DaturaStramoniumBlock.java",
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/datura_stramonium_biome_modifier.json",
+          "src/main/resources/assets/ptndemerde/models/block/datura_stramonium.json"
+        ]
+      }
+    },
+    {
+      "name": "ProcedurePorcDrogue",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "procedure_porc_drogue",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/ProcedurePorcDrogueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chicheur",
+      "type": "livingentity",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicheur",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/chicheur_biome_modifier.json",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChicheurRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/ChicheurEntity.java",
+          "src/main/resources/assets/ptndemerde/models/item/chicheur_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -531,6 +751,12 @@
       "name": "lastdrogue",
       "type": "number",
       "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "chichage",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],
@@ -547,9 +773,7 @@
   "language_map": {
     "en_us": {
       "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
-      "item.ptndemerde.mu_spawn_egg": "Mu Spawn Egg",
       "painting.ptndemerde.painting_child.author": "Maknav",
-      "entity.ptndemerde.mu": "Mu",
       "block.ptndemerde.tabac_grown": "Tabac 1",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "block.ptndemerde.tabac_3": "Tabac 1",
@@ -557,7 +781,6 @@
       "block.ptndemerde.tabac_2": "Tabac 1",
       "item.ptndemerde.monde_technologique": "Monde Technologique",
       "block.ptndemerde.chicha": "Chicha",
-      "block.ptndemerde.chicha_rouge": "Chicha rouge",
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
@@ -584,11 +807,8 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "geckolib"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.ptndemerde",
     "lockBaseModFiles": false
   },
