@@ -785,6 +785,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "Mu",
+      "type": "animatedentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/MuRenderer.java",
+          "src/main/resources/assets/ptndemerde/models/item/mu_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
