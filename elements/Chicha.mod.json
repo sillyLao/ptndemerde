@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "TRANSPORTATION"
+      "value": "CUSTOM:PtndemerdeTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {

@@ -10,7 +10,7 @@
     "name": "Chair putréfiée dorée",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:PtndemerdeTab"
     },
     "stackSize": 1,
     "enchantability": 0,

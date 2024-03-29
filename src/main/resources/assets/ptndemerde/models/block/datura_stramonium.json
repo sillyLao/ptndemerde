@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "ptndemerde:block/datura_stramonium",
+    "particle": "ptndemerde:block/datura_stramonium"
+  },
+  "render_type": "cutout"
+}

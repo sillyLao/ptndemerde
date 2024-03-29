@@ -37,6 +37,7 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> CHICHEUR_SPAWN_EGG = REGISTRY.register("chicheur_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.CHICHEUR, -10066330, -10079488, new Item.Properties()));
 	public static final RegistryObject<Item> CHAIR_PUTREFIEE_DOREE = REGISTRY.register("chair_putrefiee_doree", () -> new ChairPutrefieeDoreeItem());
 	public static final RegistryObject<Item> PORC_SPAWN_EGG = REGISTRY.register("porc_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.PORC, -16776961, -1, new Item.Properties()));
+	public static final RegistryObject<Item> DATURA_STRAMONIUM = block(PtndemerdeModBlocks.DATURA_STRAMONIUM);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

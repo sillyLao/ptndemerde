@@ -10,7 +10,7 @@
     "name": "Tabac Fume",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:PtndemerdeTab"
     },
     "stackSize": 64,
     "enchantability": 0,

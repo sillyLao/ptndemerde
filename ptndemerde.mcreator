@@ -692,6 +692,36 @@
           }
         ]
       }
+    },
+    {
+      "name": "DaturaStramonium",
+      "type": "plant",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "datura_stramonium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/block/DaturaStramoniumBlock.java",
+          "src/main/resources/assets/ptndemerde/blockstates/datura_stramonium.json",
+          "src/main/resources/assets/ptndemerde/models/item/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/datura_stramonium_biome_modifier.json",
+          "src/main/resources/assets/ptndemerde/models/block/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_stramonium.json"
+        ]
+      }
+    },
+    {
+      "name": "PtndemerdeTab",
+      "type": "tab",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ptndemerde_tab",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -745,8 +775,10 @@
       "gui.ptndemerde.gui_chicheur.label_echanger_de_quoi_soulager_votre": "échanger de quoi soulager votre",
       "advancements.advancement_tabac.title": "Sur la route du chichage",
       "block.ptndemerde.tabac_grown": "Tabac 1",
+      "item_group.ptndemerde.ptndemerde_tab": "Ptndemerde",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "block.ptndemerde.tabac_3": "Tabac 1",
+      "block.ptndemerde.datura_stramonium": "Datura Stramonium",
       "block.ptndemerde.tabac_1": "Tabac 1",
       "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
       "block.ptndemerde.tabac_2": "Tabac 1",

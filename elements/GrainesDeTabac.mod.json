@@ -10,7 +10,7 @@
     "name": "Graines De Tabac",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:PtndemerdeTab"
     },
     "stackSize": 64,
     "enchantability": 0,
