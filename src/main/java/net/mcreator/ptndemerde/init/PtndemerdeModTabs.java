@@ -33,6 +33,7 @@ public class PtndemerdeModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(PtndemerdeModItems.CHAT_TETE_NOUILLE_SPAWN_EGG.get());
 			tabData.accept(PtndemerdeModItems.CHICHEUR_SPAWN_EGG.get());
+			tabData.accept(PtndemerdeModItems.PORC_SPAWN_EGG.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {

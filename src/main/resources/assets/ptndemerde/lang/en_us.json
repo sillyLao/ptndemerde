@@ -1,9 +1,12 @@
 {
   "painting.ptndemerde.painting_child.author": "Maknav",
+  "entity.ptndemerde.porc": "Porc",
+  "biome.ptndemerde.datura_fields": "Datura Fields",
   "gui.ptndemerde.gui_chicheur.label_x50": "x50",
   "gui.ptndemerde.gui_chicheur.label_evidemment": "évidemment.",
   "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
   "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
+  "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
   "block.ptndemerde.chicha": "Chicha",
   "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
   "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",

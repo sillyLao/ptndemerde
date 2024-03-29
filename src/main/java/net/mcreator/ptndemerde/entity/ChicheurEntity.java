@@ -11,7 +11,6 @@ import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
@@ -81,13 +80,14 @@ public class ChicheurEntity extends PathfinderMob {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.getNavigation().getNodeEvaluator().setCanOpenDoors(true);
-		this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, Monster.class, (float) 6, 1, 1.2));
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(3, new OpenDoorGoal(this, true));
-		this.goalSelector.addGoal(4, new OpenDoorGoal(this, false));
-		this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(7, new FloatGoal(this));
+		this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, Monster.class, (float) 6, 2, 2));
+		this.goalSelector.addGoal(2, new AvoidEntityGoal<>(this, PorcEntity.class, (float) 20, 4, 4));
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(4, new OpenDoorGoal(this, true));
+		this.goalSelector.addGoal(5, new OpenDoorGoal(this, false));
+		this.goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(8, new FloatGoal(this));
 	}
 
 	@Override
@@ -201,7 +201,6 @@ public class ChicheurEntity extends PathfinderMob {
 
 	public static void init() {
 		SpawnPlacements.register(PtndemerdeModEntities.CHICHEUR.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
-		DungeonHooks.addDungeonMob(PtndemerdeModEntities.CHICHEUR.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.ptndemerde.entity.PorcEntity;
 import net.mcreator.ptndemerde.entity.ChicheurEntity;
 import net.mcreator.ptndemerde.entity.ChatTeteNouilleEntity;
 import net.mcreator.ptndemerde.PtndemerdeMod;
@@ -31,6 +32,10 @@ public class PtndemerdeModEntities {
 			EntityType.Builder.<ChicheurEntity>of(ChicheurEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChicheurEntity::new)
 
 					.sized(0.5f, 1.7f));
+	public static final RegistryObject<EntityType<PorcEntity>> PORC = register("porc",
+			EntityType.Builder.<PorcEntity>of(PorcEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PorcEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -41,6 +46,7 @@ public class PtndemerdeModEntities {
 		event.enqueueWork(() -> {
 			ChatTeteNouilleEntity.init();
 			ChicheurEntity.init();
+			PorcEntity.init();
 		});
 	}
 
@@ -48,5 +54,6 @@ public class PtndemerdeModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CHAT_TETE_NOUILLE.get(), ChatTeteNouilleEntity.createAttributes().build());
 		event.put(CHICHEUR.get(), ChicheurEntity.createAttributes().build());
+		event.put(PORC.get(), PorcEntity.createAttributes().build());
 	}
 }

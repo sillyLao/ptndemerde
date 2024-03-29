@@ -630,6 +630,68 @@
           }
         ]
       }
+    },
+    {
+      "name": "TradeTabac",
+      "type": "villagertrade",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_tabac",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "DaturaFields",
+      "type": "biome",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "datura_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_fields_tree.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_fields_tree.json",
+          "src/main/resources/data/ptndemerde/worldgen/biome/datura_fields.json"
+        ]
+      }
+    },
+    {
+      "name": "Porc",
+      "type": "livingentity",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/porc_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/PorcEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/PorcRenderer.java",
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/porc_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "ProcedurePorcDrogue",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "procedure_porc_drogue",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/ProcedurePorcDrogueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -665,10 +727,13 @@
   "language_map": {
     "en_us": {
       "painting.ptndemerde.painting_child.author": "Maknav",
+      "entity.ptndemerde.porc": "Porc",
+      "biome.ptndemerde.datura_fields": "Datura Fields",
       "gui.ptndemerde.gui_chicheur.label_x50": "x50",
       "gui.ptndemerde.gui_chicheur.label_evidemment": "évidemment.",
       "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
       "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
+      "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
       "block.ptndemerde.chicha": "Chicha",
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",

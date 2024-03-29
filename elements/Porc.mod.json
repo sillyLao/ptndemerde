@@ -2,10 +2,10 @@
   "_fv": 57,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Chicheur",
+    "mobName": "Porc",
     "mobLabel": "",
-    "mobModelName": "Modelchicheur",
-    "mobModelTexture": "chicheur.png",
+    "mobModelName": "Modelporc",
+    "mobModelTexture": "porc.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -16,23 +16,23 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 0.9
+      "fixedValue": 1.0
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
     "modelLayers": [],
-    "modelWidth": 0.5,
-    "modelHeight": 1.7000000000000002,
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -10066330,
+      "value": -16776961,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -10079488,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -61,14 +61,14 @@
     },
     "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
+    "attackStrength": 14,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.1,
+    "movementSpeed": 0.30000000000000004,
     "stepHeight": 0.6,
-    "armorBaseValue": 0.0,
+    "armorBaseValue": 4.0,
     "trackingRange": 64,
-    "followRange": 16,
+    "followRange": 32,
     "health": 40,
     "xpAmount": 0,
     "waterMob": false,
@@ -79,7 +79,7 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "GUIChicheur",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -97,30 +97,27 @@
     "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,
-    "immuneToWither": true,
+    "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:Chicha"
+      "value": ""
     },
     "livingSound": {
-      "value": "entity.drowned.ambient_water"
+      "value": "entity.evocation_illager.hurt"
     },
     "hurtSound": {
-      "value": "entity.vindication_illager.hurt"
+      "value": "entity.illusion_illager.hurt"
     },
     "deathSound": {
-      "value": "entity.vindication_illager.death"
+      "value": "entity.evocation_illager.death"
     },
     "stepSound": {
       "value": ""
     },
     "entityDataEntries": [],
-    "onRightClickedOn": {
-      "name": "ChicheurQuandLeJoueurFaitUnClicDroitSurLentite"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"138\" y=\"-3\"><next><block type=\"avoid_entity\"><field name=\"entity\">EntityMonster</field><field name=\"radius\">6</field><field name=\"farspeed\">2</field><field name=\"nearspeed\">2</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">CUSTOM:Porc</field><field name=\"radius\">20</field><field name=\"farspeed\">4</field><field name=\"nearspeed\">4</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"75\" y=\"14\"><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:Chicheur</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">ProcedurePorcDrogue,ProcedurePorcDrogue</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -133,27 +130,11 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 1,
-    "mobSpawningType": "ambient",
+    "spawningProbability": 5,
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 1,
-    "restrictionBiomes": [
-      {
-        "value": "swamp"
-      },
-      {
-        "value": "mangrove_swamp"
-      },
-      {
-        "value": "deep_dark"
-      },
-      {
-        "value": "dripstone_caves"
-      },
-      {
-        "value": "lush_caves"
-      }
-    ],
+    "maxNumberOfMobsPerGroup": 3,
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

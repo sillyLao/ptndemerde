@@ -1,0 +1,119 @@
+{
+  "_fv": 57,
+  "_type": "biome",
+  "definition": {
+    "name": "Datura Fields",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.SAND#0"
+    },
+    "airColor": {
+      "value": -10027060,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16737997,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": "CUSTOM:monde_technologique"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "SMOKE_LARGE"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 0.7999999999999999,
+    "temperature": 0.30000000000000004,
+    "spawnBiome": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.15,
+      "max": 0.25
+    },
+    "genHumidity": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genContinentalness": {
+      "min": 0.03,
+      "max": 0.3
+    },
+    "genErosion": {
+      "min": 0.0,
+      "max": 0.5
+    },
+    "genWeirdness": {
+      "min": -2.0,
+      "max": 2.0
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 12,
+    "treeStem": {
+      "value": "Blocks.MUSHROOM_STEM"
+    },
+    "treeBranch": {
+      "value": "Blocks.RED_MUSHROOM_BLOCK"
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnStronghold": false,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": true,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "spawnShipwreckBeached": true,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:ChatTeteNouille"
+        },
+        "minGroup": 1,
+        "maxGroup": 5,
+        "weight": 20,
+        "spawnType": "creature"
+      }
+    ]
+  }
+}

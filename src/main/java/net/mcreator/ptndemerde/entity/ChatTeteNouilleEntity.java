@@ -23,6 +23,7 @@ import net.minecraft.world.entity.ai.goal.FollowOwnerGoal;
 import net.minecraft.world.entity.ai.goal.FollowMobGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.BreedGoal;
+import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.TamableAnimal;
@@ -65,15 +66,16 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new BreedGoal(this, 1));
-		this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.of(Items.COD), true));
-		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
-		this.goalSelector.addGoal(4, new FollowParentGoal(this, 0.8));
-		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(6, new FollowMobGoal(this, 1, (float) 10, (float) 5));
-		this.goalSelector.addGoal(7, new LookAtPlayerGoal(this, Player.class, (float) 6));
-		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(9, new FloatGoal(this));
+		this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, Player.class, (float) 6, 1, 2));
+		this.goalSelector.addGoal(2, new BreedGoal(this, 1));
+		this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.of(Items.COD), true));
+		this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+		this.goalSelector.addGoal(5, new FollowParentGoal(this, 0.8));
+		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(7, new FollowMobGoal(this, 1, (float) 10, (float) 5));
+		this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, (float) 6));
+		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(10, new FloatGoal(this));
 	}
 
 	@Override
