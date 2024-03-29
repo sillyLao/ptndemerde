@@ -32,7 +32,7 @@ public class PtndemerdeModEntities {
 	public static final RegistryObject<EntityType<MuEntity>> MU = register("mu",
 			EntityType.Builder.<MuEntity>of(MuEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MuEntity::new)
 
-					.sized(25f, 176f));
+					.sized(25f, 50f));
 	public static final RegistryObject<EntityType<ChicheurEntity>> CHICHEUR = register("chicheur",
 			EntityType.Builder.<ChicheurEntity>of(ChicheurEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChicheurEntity::new)
 
