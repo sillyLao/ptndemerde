@@ -502,6 +502,22 @@
           "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json"
         ]
       }
+    },
+    {
+      "name": "Mu",
+      "type": "animatedentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/MuRenderer.java",
+          "src/main/resources/assets/ptndemerde/models/item/mu_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -531,7 +547,9 @@
   "language_map": {
     "en_us": {
       "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
+      "item.ptndemerde.mu_spawn_egg": "Mu Spawn Egg",
       "painting.ptndemerde.painting_child.author": "Maknav",
+      "entity.ptndemerde.mu": "Mu",
       "block.ptndemerde.tabac_grown": "Tabac 1",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "block.ptndemerde.tabac_3": "Tabac 1",
@@ -566,8 +584,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.ptndemerde",
     "lockBaseModFiles": false
   },
