@@ -79,7 +79,16 @@
     "jumpFactor": 0.7000000000000001,
     "speedFactor": 0.7000000000000001,
     "canBePlacedOn": [],
-    "isBonemealable": false,
+    "isBonemealable": true,
+    "isBonemealTargetCondition": {
+      "name": "DaturaStramoniumCanBoneMealBeUsedOnThisBlock"
+    },
+    "bonemealSuccessCondition": {
+      "name": "DaturaStramoniumCanBoneMealBeUsedOnThisBlock"
+    },
+    "onBonemealSuccess": {
+      "name": "DaturaStramoniumOnBoneMealSuccess"
+    },
     "frequencyOnChunks": 3,
     "generateFeature": true,
     "restrictionBiomes": [

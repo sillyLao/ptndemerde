@@ -11,7 +11,7 @@
     },
     "particle": {
       "options": {
-        "type": "large_smoke"
+        "type": "white_ash"
       },
       "probability": 0.005
     },
