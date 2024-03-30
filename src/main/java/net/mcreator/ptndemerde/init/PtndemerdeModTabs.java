@@ -37,6 +37,10 @@ public class PtndemerdeModTabs {
 				tabData.accept(PtndemerdeModBlocks.CAMPFIRE_BUCKET.get().asItem());
 				tabData.accept(PtndemerdeModItems.NOUILLES_SECHES.get());
 				tabData.accept(PtndemerdeModItems.NOUILLES.get());
+				tabData.accept(PtndemerdeModItems.BOL_NOUILLES.get());
+				tabData.accept(PtndemerdeModItems.BOL_NOUILLES_LEGUMES.get());
+				tabData.accept(PtndemerdeModItems.BOL_NOUILLES_PIQUANTE.get());
+				tabData.accept(PtndemerdeModItems.BOL_NOUILLES_JAJANGMYEON.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

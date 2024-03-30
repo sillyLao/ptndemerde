@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nouilles",
+    "texture": "bol_nouilles_piquantes",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Nouilles",
+    "name": "Bol de nouilles piquantes",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PtndemerdeTab"
@@ -35,16 +35,19 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "BolNouillesPiquantePlayerFinishesUsingItem"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
       "value": "Arrow"
     },
     "isFood": true,
-    "nutritionalValue": 4,
-    "saturation": 0.1,
+    "nutritionalValue": 6,
+    "saturation": 0.30000000000000004,
     "eatResultItem": {
-      "value": ""
+      "value": "Items.BOWL"
     },
     "isMeat": false,
     "isAlwaysEdible": false,

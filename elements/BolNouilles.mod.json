@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nouilles",
+    "texture": "bol_nouilles",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Nouilles",
+    "name": "Bol de nouilles",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PtndemerdeTab"
@@ -44,7 +44,7 @@
     "nutritionalValue": 4,
     "saturation": 0.1,
     "eatResultItem": {
-      "value": ""
+      "value": "Items.BOWL"
     },
     "isMeat": false,
     "isAlwaysEdible": false,
