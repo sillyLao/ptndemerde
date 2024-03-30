@@ -813,6 +813,7 @@
         "files": [
           "src/main/resources/assets/ptndemerde/models/item/campfire_bucket.json",
           "src/main/resources/assets/ptndemerde/blockstates/campfire_bucket.json",
+          "src/main/java/net/mcreator/ptndemerde/block/entity/CampfireBucketBlockEntity.java",
           "src/main/java/net/mcreator/ptndemerde/block/CampfireBucketBlock.java",
           "src/main/resources/assets/ptndemerde/models/block/campfire_bucket.json"
         ]
@@ -900,6 +901,53 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CampfireBucketBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "campfire_bucket_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/CampfireBucketBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }

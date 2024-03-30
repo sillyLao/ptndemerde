@@ -44,7 +44,7 @@ public class SeauSurFeudecampProcedure {
 		if (entity == null)
 			return;
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CAMPFIRE && (blockstate.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp3 && blockstate.getValue(_getbp3)) == true
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BUCKET) {
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WATER_BUCKET) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PtndemerdeModBlocks.CAMPFIRE_BUCKET.get().defaultBlockState();
@@ -67,8 +67,14 @@ public class SeauSurFeudecampProcedure {
 				}
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(Items.BUCKET);
+				ItemStack _stktoremove = new ItemStack(Items.WATER_BUCKET);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			}
+			{
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("waterlogged") instanceof BooleanProperty _booleanProp)
+					world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 			}
 		}
 	}

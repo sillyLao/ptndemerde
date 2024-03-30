@@ -120,11 +120,11 @@
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventorySize": 1,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -139,6 +139,12 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "CampfireBucketOnBlockRightClicked"
+    },
+    "onDestroyedByPlayer": {
+      "name": "CampfireBucketBlockDestroyedByPlayer"
+    },
+    "onDestroyedByExplosion": {
+      "name": "CampfireBucketBlockDestroyedByPlayer"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
