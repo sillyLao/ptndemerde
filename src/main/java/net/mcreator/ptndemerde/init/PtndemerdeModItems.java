@@ -49,6 +49,7 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> NOUILLES_SECHES = REGISTRY.register("nouilles_seches", () -> new NouillesSechesItem());
 	public static final RegistryObject<Item> NOUILLES = REGISTRY.register("nouilles", () -> new NouillesItem());
 	public static final RegistryObject<Item> BOL_NOUILLES = REGISTRY.register("bol_nouilles", () -> new BolNouillesItem());
+	public static final RegistryObject<Item> LAMBDA_BAT_SPAWN_EGG = REGISTRY.register("lambda_bat_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.LAMBDA_BAT, -13421773, -10092544, new Item.Properties()));
 	public static final RegistryObject<Item> BOL_NOUILLES_LEGUMES = REGISTRY.register("bol_nouilles_legumes", () -> new BolNouillesLegumesItem());
 	public static final RegistryObject<Item> BOL_NOUILLES_PIQUANTE = REGISTRY.register("bol_nouilles_piquante", () -> new BolNouillesPiquanteItem());
 	public static final RegistryObject<Item> BOL_NOUILLES_JAJANGMYEON = REGISTRY.register("bol_nouilles_jajangmyeon", () -> new BolNouillesJajangmyeonItem());

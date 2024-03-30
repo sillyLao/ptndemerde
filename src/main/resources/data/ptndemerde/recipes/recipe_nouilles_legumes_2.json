@@ -10,11 +10,11 @@
       "item": "minecraft:beetroot"
     },
     {
-      "item": "ptndemerde:bol_nouilles"
+      "item": "ptndemerde:deleted_mod_element"
     }
   ],
   "result": {
-    "item": "ptndemerde:bol_nouilles_legumes",
+    "item": "ptndemerde:deleted_mod_element",
     "count": 1
   }
 }

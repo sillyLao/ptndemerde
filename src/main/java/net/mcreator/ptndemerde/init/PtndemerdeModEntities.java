@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.ptndemerde.entity.PorcEntity;
 import net.mcreator.ptndemerde.entity.MuEntity;
+import net.mcreator.ptndemerde.entity.LambdaBatEntity;
 import net.mcreator.ptndemerde.entity.ChicheurEntity;
 import net.mcreator.ptndemerde.entity.ChatTeteNouilleEntity;
 import net.mcreator.ptndemerde.PtndemerdeMod;
@@ -39,6 +40,8 @@ public class PtndemerdeModEntities {
 			EntityType.Builder.<PorcEntity>of(PorcEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PorcEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<LambdaBatEntity>> LAMBDA_BAT = register("lambda_bat", EntityType.Builder.<LambdaBatEntity>of(LambdaBatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(LambdaBatEntity::new).fireImmune().sized(0.8f, 0.9f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -51,6 +54,7 @@ public class PtndemerdeModEntities {
 			MuEntity.init();
 			ChicheurEntity.init();
 			PorcEntity.init();
+			LambdaBatEntity.init();
 		});
 	}
 
@@ -60,5 +64,6 @@ public class PtndemerdeModEntities {
 		event.put(MU.get(), MuEntity.createAttributes().build());
 		event.put(CHICHEUR.get(), ChicheurEntity.createAttributes().build());
 		event.put(PORC.get(), PorcEntity.createAttributes().build());
+		event.put(LAMBDA_BAT.get(), LambdaBatEntity.createAttributes().build());
 	}
 }

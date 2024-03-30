@@ -1204,6 +1204,22 @@
           "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_jajangmyeon_2.json"
         ]
       }
+    },
+    {
+      "name": "LambdaBat",
+      "type": "animatedentity",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lambda_bat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/LambdaBatRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/LambdaBatEntity.java",
+          "src/main/resources/assets/ptndemerde/models/item/lambda_bat_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/LambdaBatModel.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1250,11 +1266,9 @@
       "block.ptndemerde.chicha": "Chicha",
       "item.ptndemerde.nouilles": "Nouilles",
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
-      "item.ptndemerde.bol_nouilles_legumes": "Bol de nouilles aux légumes",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
-      "item.ptndemerde.bol_nouilles": "Bol de nouilles",
       "item.ptndemerde.chair_putrefiee_doree": "Chair putréfiée dorée",
       "gui.ptndemerde.gui_chicheur.label_quoi_soulager_la_sienne_aussi_e": "quoi soulager la sienne aussi,",
       "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
@@ -1271,7 +1285,6 @@
       "block.ptndemerde.tabac_1": "Tabac 1",
       "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
       "block.ptndemerde.tabac_2": "Tabac 1",
-      "item.ptndemerde.bol_nouilles_jajangmyeon": "Bol de nouilles Jajangmyeon",
       "item.ptndemerde.monde_technologique": "Monde Technologique",
       "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
       "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
@@ -1281,8 +1294,7 @@
       "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous",
       "item.ptndemerde.tabac_fume": "Tabac Fume",
       "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",
-      "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg",
-      "item.ptndemerde.bol_nouilles_piquante": "Bol de nouilles piquantes"
+      "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg"
     }
   },
   "foldersRoot": {
