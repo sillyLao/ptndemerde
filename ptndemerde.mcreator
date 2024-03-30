@@ -1220,6 +1220,68 @@
           "src/main/java/net/mcreator/ptndemerde/entity/model/LambdaBatModel.java"
         ]
       }
+    },
+    {
+      "name": "PetardDatura",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petard_datura",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/PetardDaturaItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/petard_datura.json"
+        ]
+      }
+    },
+    {
+      "name": "PetardDaturaPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petard_datura_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/PetardDaturaPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EffectRelaxed",
+      "type": "potioneffect",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_relaxed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/potion/EffectRelaxedMobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1230,16 +1292,16 @@
       "value": "0.0"
     },
     {
-      "name": "lastdrogue",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
       "name": "chichage",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "taf",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -1250,51 +1312,68 @@
       ],
       "category": "record",
       "subtitle": "Ils sont pas réels..."
+    },
+    {
+      "name": "tirer_une_taf",
+      "files": [
+        "cow_idle2"
+      ],
+      "category": "neutral",
+      "subtitle": "Tire une taf"
     }
   ],
   "language_map": {
     "en_us": {
-      "painting.ptndemerde.painting_child.author": "Maknav",
       "entity.ptndemerde.porc": "Porc",
       "biome.ptndemerde.datura_fields": "Datura Fields",
       "entity.ptndemerde.mu": "Mu",
       "gui.ptndemerde.gui_chicheur.label_x50": "x50",
       "gui.ptndemerde.gui_chicheur.label_evidemment": "évidemment.",
       "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
+      "item.ptndemerde.lambda_bat_spawn_egg": "Lambda Bat Spawn Egg",
       "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
-      "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
       "block.ptndemerde.chicha": "Chicha",
       "item.ptndemerde.nouilles": "Nouilles",
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
+      "subtitles.tirer_une_taf": "Tire une taf",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
+      "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
+      "block.ptndemerde.tabac_grown": "Tabac 1",
+      "effect.ptndemerde.effect_chicha": "Narguilé",
+      "block.ptndemerde.tabac_3": "Tabac 1",
+      "entity.ptndemerde.lambda_bat": "Lambda Bat",
+      "block.ptndemerde.datura_stramonium": "Datura Stramonium",
+      "block.ptndemerde.tabac_1": "Tabac 1",
+      "block.ptndemerde.tabac_2": "Tabac 1",
+      "item.ptndemerde.bol_nouilles_jajangmyeon": "Bol de nouilles Jajangmyeon",
+      "item.ptndemerde.monde_technologique": "Monde Technologique",
+      "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
+      "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
+      "subtitles.monde_technologique": "Ils sont pas réels...",
+      "item.ptndemerde.tabac_fume": "Tabac Fume",
+      "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",
+      "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg",
+      "item.ptndemerde.bol_nouilles_piquante": "Bol de nouilles piquantes",
+      "painting.ptndemerde.painting_child.author": "Maknav",
+      "effect.ptndemerde.effect_relaxed": "Relaxé",
+      "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
+      "item.ptndemerde.bol_nouilles_legumes": "Bol de nouilles aux légumes",
+      "item.ptndemerde.bol_nouilles": "Bol de nouilles",
       "item.ptndemerde.chair_putrefiee_doree": "Chair putréfiée dorée",
       "gui.ptndemerde.gui_chicheur.label_quoi_soulager_la_sienne_aussi_e": "quoi soulager la sienne aussi,",
-      "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
       "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
       "item.ptndemerde.mu_spawn_egg": "Mu Spawn Egg",
       "item.ptndemerde.nouilles_seches": "Nouilles sèches",
       "gui.ptndemerde.gui_chicheur.label_echanger_de_quoi_soulager_votre": "échanger de quoi soulager votre",
       "advancements.advancement_tabac.title": "Sur la route du chichage",
-      "block.ptndemerde.tabac_grown": "Tabac 1",
       "item_group.ptndemerde.ptndemerde_tab": "Ptndemerde",
-      "effect.ptndemerde.effect_chicha": "Narguilé",
-      "block.ptndemerde.tabac_3": "Tabac 1",
-      "block.ptndemerde.datura_stramonium": "Datura Stramonium",
-      "block.ptndemerde.tabac_1": "Tabac 1",
+      "item.ptndemerde.petard_datura": "Pétard de Datura",
       "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
-      "block.ptndemerde.tabac_2": "Tabac 1",
-      "item.ptndemerde.monde_technologique": "Monde Technologique",
-      "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
-      "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
       "item.ptndemerde.falin_sword": "Épée en Falin",
       "advancements.advancement_chicha.title": "Narguilator",
-      "subtitles.monde_technologique": "Ils sont pas réels...",
-      "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous",
-      "item.ptndemerde.tabac_fume": "Tabac Fume",
-      "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",
-      "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg"
+      "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous"
     }
   },
   "foldersRoot": {

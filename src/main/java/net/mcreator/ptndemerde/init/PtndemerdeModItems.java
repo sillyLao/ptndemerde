@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ptndemerde.item.TabacFumeItem;
+import net.mcreator.ptndemerde.item.PetardDaturaItem;
 import net.mcreator.ptndemerde.item.NouillesSechesItem;
 import net.mcreator.ptndemerde.item.NouillesItem;
 import net.mcreator.ptndemerde.item.MondeTechnologiqueItem;
@@ -53,6 +54,7 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> BOL_NOUILLES_LEGUMES = REGISTRY.register("bol_nouilles_legumes", () -> new BolNouillesLegumesItem());
 	public static final RegistryObject<Item> BOL_NOUILLES_PIQUANTE = REGISTRY.register("bol_nouilles_piquante", () -> new BolNouillesPiquanteItem());
 	public static final RegistryObject<Item> BOL_NOUILLES_JAJANGMYEON = REGISTRY.register("bol_nouilles_jajangmyeon", () -> new BolNouillesJajangmyeonItem());
+	public static final RegistryObject<Item> PETARD_DATURA = REGISTRY.register("petard_datura", () -> new PetardDaturaItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

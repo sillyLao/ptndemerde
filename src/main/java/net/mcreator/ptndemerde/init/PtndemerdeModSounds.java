@@ -16,4 +16,5 @@ import net.mcreator.ptndemerde.PtndemerdeMod;
 public class PtndemerdeModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, PtndemerdeMod.MODID);
 	public static final RegistryObject<SoundEvent> MONDE_TECHNOLOGIQUE = REGISTRY.register("monde_technologique", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ptndemerde", "monde_technologique")));
+	public static final RegistryObject<SoundEvent> TIRER_UNE_TAF = REGISTRY.register("tirer_une_taf", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ptndemerde", "tirer_une_taf")));
 }
