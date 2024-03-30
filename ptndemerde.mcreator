@@ -1156,6 +1156,54 @@
           "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_jajangmyeon.json"
         ]
       }
+    },
+    {
+      "name": "ChatTeteNouilleRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chat_tete_nouille_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/ChatTeteNouilleRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeBolNouillesJajangmyeon2",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_bol_nouilles_jajangmyeon_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_jajangmyeon_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [

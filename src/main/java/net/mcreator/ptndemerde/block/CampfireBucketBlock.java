@@ -85,10 +85,14 @@ public class CampfireBucketBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(0, 0, 0, 16, 7, 16), box(3, 8, 3, 13, 15, 13), box(2, 15, 2, 14, 16, 14));
-			case NORTH -> Shapes.or(box(0, 0, 0, 16, 7, 16), box(3, 8, 3, 13, 15, 13), box(2, 15, 2, 14, 16, 14));
-			case EAST -> Shapes.or(box(0, 0, 0, 16, 7, 16), box(3, 8, 3, 13, 15, 13), box(2, 15, 2, 14, 16, 14));
-			case WEST -> Shapes.or(box(0, 0, 0, 16, 7, 16), box(3, 8, 3, 13, 15, 13), box(2, 15, 2, 14, 16, 14));
+			default -> Shapes.or(box(0, 0, 0, 16, 7, 16), box(3, 8, 3, 13, 9, 13), box(12, 8, 3, 13, 16, 13), box(3, 8, 3, 4, 16, 13), box(3, 8, 12, 13, 16, 13), box(3, 8, 3, 13, 16, 4), box(13, 15, 2, 14, 16, 14), box(2, 15, 2, 4, 16, 14),
+					box(2, 15, 13, 14, 16, 14), box(2, 15, 2, 14, 16, 4));
+			case NORTH -> Shapes.or(box(0, 0, 0, 16, 7, 16), box(3, 8, 3, 13, 9, 13), box(3, 8, 3, 4, 16, 13), box(12, 8, 3, 13, 16, 13), box(3, 8, 3, 13, 16, 4), box(3, 8, 12, 13, 16, 13), box(2, 15, 2, 3, 16, 14), box(12, 15, 2, 14, 16, 14),
+					box(2, 15, 2, 14, 16, 3), box(2, 15, 12, 14, 16, 14));
+			case EAST -> Shapes.or(box(0, 0, 0, 16, 7, 16), box(3, 8, 3, 13, 9, 13), box(3, 8, 3, 13, 16, 4), box(3, 8, 12, 13, 16, 13), box(12, 8, 3, 13, 16, 13), box(3, 8, 3, 4, 16, 13), box(2, 15, 2, 14, 16, 3), box(2, 15, 12, 14, 16, 14),
+					box(13, 15, 2, 14, 16, 14), box(2, 15, 2, 4, 16, 14));
+			case WEST -> Shapes.or(box(0, 0, 0, 16, 7, 16), box(3, 8, 3, 13, 9, 13), box(3, 8, 12, 13, 16, 13), box(3, 8, 3, 13, 16, 4), box(3, 8, 3, 4, 16, 13), box(12, 8, 3, 13, 16, 13), box(2, 15, 13, 14, 16, 14), box(2, 15, 2, 14, 16, 4),
+					box(2, 15, 2, 3, 16, 14), box(12, 15, 2, 14, 16, 14));
 		};
 	}
 
