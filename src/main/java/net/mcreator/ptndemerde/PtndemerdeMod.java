@@ -37,6 +37,7 @@ import net.mcreator.ptndemerde.init.PtndemerdeModMenus;
 import net.mcreator.ptndemerde.init.PtndemerdeModItems;
 import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 import net.mcreator.ptndemerde.init.PtndemerdeModBlocks;
+import net.mcreator.ptndemerde.init.PtndemerdeModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -57,7 +58,7 @@ public class PtndemerdeMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		PtndemerdeModSounds.REGISTRY.register(bus);
 		PtndemerdeModBlocks.REGISTRY.register(bus);
-
+		PtndemerdeModBlockEntities.REGISTRY.register(bus);
 		PtndemerdeModItems.REGISTRY.register(bus);
 		PtndemerdeModEntities.REGISTRY.register(bus);
 

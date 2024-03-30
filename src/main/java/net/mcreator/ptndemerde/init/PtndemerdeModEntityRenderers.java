@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.ptndemerde.client.renderer.PorcRenderer;
 import net.mcreator.ptndemerde.client.renderer.MuRenderer;
+import net.mcreator.ptndemerde.client.renderer.LambdaBatRenderer;
 import net.mcreator.ptndemerde.client.renderer.ChicheurRenderer;
 import net.mcreator.ptndemerde.client.renderer.ChatTeteNouilleRenderer;
 
@@ -22,5 +23,6 @@ public class PtndemerdeModEntityRenderers {
 		event.registerEntityRenderer(PtndemerdeModEntities.MU.get(), MuRenderer::new);
 		event.registerEntityRenderer(PtndemerdeModEntities.CHICHEUR.get(), ChicheurRenderer::new);
 		event.registerEntityRenderer(PtndemerdeModEntities.PORC.get(), PorcRenderer::new);
+		event.registerEntityRenderer(PtndemerdeModEntities.LAMBDA_BAT.get(), LambdaBatRenderer::new);
 	}
 }

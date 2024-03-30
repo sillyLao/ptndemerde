@@ -44,6 +44,7 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> CAMPFIRE_BUCKET = block(PtndemerdeModBlocks.CAMPFIRE_BUCKET);
 	public static final RegistryObject<Item> NOUILLES_SECHES = REGISTRY.register("nouilles_seches", () -> new NouillesSechesItem());
 	public static final RegistryObject<Item> NOUILLES = REGISTRY.register("nouilles", () -> new NouillesItem());
+	public static final RegistryObject<Item> LAMBDA_BAT_SPAWN_EGG = REGISTRY.register("lambda_bat_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.LAMBDA_BAT, -13421773, -10092544, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

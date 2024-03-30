@@ -44,6 +44,7 @@ public class PtndemerdeModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(PtndemerdeModItems.MU_SPAWN_EGG.get());
+			tabData.accept(PtndemerdeModItems.LAMBDA_BAT_SPAWN_EGG.get());
 		}
 	}
 }
