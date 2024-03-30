@@ -17,6 +17,7 @@ import net.mcreator.ptndemerde.item.TabacFumeItem;
 import net.mcreator.ptndemerde.item.NouillesSechesItem;
 import net.mcreator.ptndemerde.item.NouillesItem;
 import net.mcreator.ptndemerde.item.MondeTechnologiqueItem;
+import net.mcreator.ptndemerde.item.LaserBallItem;
 import net.mcreator.ptndemerde.item.GrainesDeTabacItem;
 import net.mcreator.ptndemerde.item.FleurDeTabacItem;
 import net.mcreator.ptndemerde.item.FalinSwordItem;
@@ -53,6 +54,8 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> BOL_NOUILLES_LEGUMES = REGISTRY.register("bol_nouilles_legumes", () -> new BolNouillesLegumesItem());
 	public static final RegistryObject<Item> BOL_NOUILLES_PIQUANTE = REGISTRY.register("bol_nouilles_piquante", () -> new BolNouillesPiquanteItem());
 	public static final RegistryObject<Item> BOL_NOUILLES_JAJANGMYEON = REGISTRY.register("bol_nouilles_jajangmyeon", () -> new BolNouillesJajangmyeonItem());
+	public static final RegistryObject<Item> LASER_BALL = REGISTRY.register("laser_ball", () -> new LaserBallItem());
+	public static final RegistryObject<Item> MOLOSSE_SPAWN_EGG = REGISTRY.register("molosse_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.MOLOSSE, -16777216, -52480, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

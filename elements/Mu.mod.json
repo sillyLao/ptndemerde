@@ -29,8 +29,8 @@
     "creativeTab": {
       "value": "MISC"
     },
-    "isBoss": false,
-    "bossBarColor": "PINK",
+    "isBoss": true,
+    "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -58,7 +58,7 @@
     "movementSpeed": 0.5,
     "armorBaseValue": 3.0,
     "trackingRange": 64,
-    "followRange": 64,
+    "followRange": 120,
     "health": 300,
     "xpAmount": 0,
     "waterMob": false,
@@ -66,7 +66,7 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 100,
+    "deathTime": 30,
     "lerp": 4,
     "disableCollisions": true,
     "ridable": false,
@@ -100,9 +100,12 @@
     "stepSound": {
       "value": ""
     },
+    "onMobTickUpdate": {
+      "name": "MuAttack"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"307\" y=\"25\"><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">200</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"469\" y=\"22\"><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">200</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
     "model": "mu_creature.geo.json",
     "groupName": "tete",
     "animation1": "animation.mucreature.idle",

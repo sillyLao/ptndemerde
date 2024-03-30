@@ -20,10 +20,10 @@
 				},
 				"wings": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"vector": [0, 0, -22.5]
 					},
 					"position": {
-						"vector": [0, 0, 0]
+						"vector": [2, 0, 0]
 					},
 					"scale": {
 						"vector": [1, 1, 1]

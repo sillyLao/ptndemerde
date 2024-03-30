@@ -9,25 +9,27 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
-import net.mcreator.ptndemerde.entity.model.LambdaBatModel;
-import net.mcreator.ptndemerde.entity.LambdaBatEntity;
+import net.mcreator.ptndemerde.entity.model.MolosseModel;
+import net.mcreator.ptndemerde.entity.layer.MolosseLayer;
+import net.mcreator.ptndemerde.entity.MolosseEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class LambdaBatRenderer extends GeoEntityRenderer<LambdaBatEntity> {
-	public LambdaBatRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new LambdaBatModel());
-		this.shadowRadius = 0.5f;
+public class MolosseRenderer extends GeoEntityRenderer<MolosseEntity> {
+	public MolosseRenderer(EntityRendererProvider.Context renderManager) {
+		super(renderManager, new MolosseModel());
+		this.shadowRadius = 0.8f;
+		this.addRenderLayer(new MolosseLayer(this));
 	}
 
 	@Override
-	public RenderType getRenderType(LambdaBatEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
+	public RenderType getRenderType(MolosseEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
 		return RenderType.entityTranslucent(getTextureLocation(animatable));
 	}
 
 	@Override
-	public void preRender(PoseStack poseStack, LambdaBatEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green,
+	public void preRender(PoseStack poseStack, MolosseEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green,
 			float blue, float alpha) {
 		float scale = 1f;
 		this.scaleHeight = scale;
