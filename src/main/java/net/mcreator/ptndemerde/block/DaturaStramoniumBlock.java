@@ -82,10 +82,7 @@ public class DaturaStramoniumBlock extends FlowerBlock implements BonemealableBl
 
 	@Override
 	public boolean isBonemealSuccess(Level world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		return DaturaStramoniumCanBoneMealBeUsedOnThisBlockProcedure.execute(world, x, y, z);
+		return true;
 	}
 
 	@Override

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ptndemerde:block/campfire_bucket"
+    },
+    "facing=east": {
+      "model": "ptndemerde:block/campfire_bucket",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ptndemerde:block/campfire_bucket",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ptndemerde:block/campfire_bucket",
+      "y": 270
+    }
+  }
+}

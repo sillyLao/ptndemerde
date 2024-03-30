@@ -63,8 +63,8 @@
       "registry_name": "monde_technologique",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json",
-          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json"
         ]
       }
     },
@@ -115,10 +115,10 @@
       "registry_name": "chicha",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java",
-          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
           "src/main/resources/assets/ptndemerde/blockstates/chicha.json",
-          "src/main/resources/assets/ptndemerde/models/item/chicha.json"
+          "src/main/resources/assets/ptndemerde/models/item/chicha.json",
+          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
+          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java"
         ]
       }
     },
@@ -180,8 +180,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ptndemerde/blockstates/tabac_3.json",
-          "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
           "src/main/resources/assets/ptndemerde/models/block/tabac_3.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
           "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java"
         ]
       }
@@ -224,9 +224,9 @@
       "registry_name": "tabac_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json",
           "src/main/java/net/mcreator/ptndemerde/block/Tabac1Block.java",
           "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json",
           "src/main/resources/assets/ptndemerde/models/item/tabac_1.json"
         ]
       }
@@ -242,8 +242,8 @@
         "files": [
           "src/main/resources/assets/ptndemerde/models/item/tabac_2.json",
           "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_2.json",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json"
+          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json",
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_2.json"
         ]
       }
     },
@@ -417,8 +417,8 @@
       "registry_name": "fleur_de_tabac",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json",
-          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json"
         ]
       }
     },
@@ -480,10 +480,10 @@
       "registry_name": "chat_tete_nouille",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/entity/ChatTeteNouilleEntity.java",
-          "src/main/resources/assets/ptndemerde/models/item/chat_tete_nouille_spawn_egg.json",
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
-          "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json"
+          "src/main/java/net/mcreator/ptndemerde/entity/ChatTeteNouilleEntity.java",
+          "src/main/resources/assets/ptndemerde/models/item/chat_tete_nouille_spawn_egg.json"
         ]
       }
     },
@@ -497,9 +497,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ptndemerde/client/renderer/MuRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java",
           "src/main/resources/assets/ptndemerde/models/item/mu_spawn_egg.json",
-          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java",
-          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java"
+          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java"
         ]
       }
     },
@@ -525,8 +525,8 @@
       "registry_name": "chair_putrefiee_doree",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/chair_putrefiee_doree.json",
-          "src/main/java/net/mcreator/ptndemerde/item/ChairPutrefieeDoreeItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/ChairPutrefieeDoreeItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/chair_putrefiee_doree.json"
         ]
       }
     },
@@ -569,9 +569,9 @@
       "registry_name": "gui_chicheur",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/network/GUIChicheurButtonMessage.java",
           "src/main/java/net/mcreator/ptndemerde/client/gui/GUIChicheurScreen.java",
-          "src/main/java/net/mcreator/ptndemerde/world/inventory/GUIChicheurMenu.java"
+          "src/main/java/net/mcreator/ptndemerde/world/inventory/GUIChicheurMenu.java",
+          "src/main/java/net/mcreator/ptndemerde/network/GUIChicheurButtonMessage.java"
         ]
       }
     },
@@ -662,9 +662,9 @@
       "registry_name": "datura_fields",
       "metadata": {
         "files": [
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_fields_tree.json",
           "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_fields_tree.json",
-          "src/main/resources/data/ptndemerde/worldgen/biome/datura_fields.json",
-          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_fields_tree.json"
+          "src/main/resources/data/ptndemerde/worldgen/biome/datura_fields.json"
         ]
       }
     },
@@ -677,10 +677,10 @@
       "registry_name": "porc",
       "metadata": {
         "files": [
-          "src/main/resources/data/ptndemerde/forge/biome_modifier/porc_biome_modifier.json",
-          "src/main/java/net/mcreator/ptndemerde/client/renderer/PorcRenderer.java",
+          "src/main/resources/assets/ptndemerde/models/item/porc_spawn_egg.json",
           "src/main/java/net/mcreator/ptndemerde/entity/PorcEntity.java",
-          "src/main/resources/assets/ptndemerde/models/item/porc_spawn_egg.json"
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/PorcRenderer.java",
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/porc_biome_modifier.json"
         ]
       }
     },
@@ -693,13 +693,13 @@
       "registry_name": "datura_stramonium",
       "metadata": {
         "files": [
-          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_stramonium.json",
-          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_stramonium.json",
-          "src/main/resources/assets/ptndemerde/models/item/datura_stramonium.json",
-          "src/main/resources/assets/ptndemerde/blockstates/datura_stramonium.json",
           "src/main/java/net/mcreator/ptndemerde/block/DaturaStramoniumBlock.java",
+          "src/main/resources/assets/ptndemerde/blockstates/datura_stramonium.json",
+          "src/main/resources/assets/ptndemerde/models/item/datura_stramonium.json",
           "src/main/resources/data/ptndemerde/forge/biome_modifier/datura_stramonium_biome_modifier.json",
-          "src/main/resources/assets/ptndemerde/models/block/datura_stramonium.json"
+          "src/main/resources/assets/ptndemerde/models/block/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_stramonium.json"
         ]
       }
     },
@@ -733,9 +733,174 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ptndemerde/forge/biome_modifier/chicheur_biome_modifier.json",
-          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChicheurRenderer.java",
           "src/main/java/net/mcreator/ptndemerde/entity/ChicheurEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChicheurRenderer.java",
           "src/main/resources/assets/ptndemerde/models/item/chicheur_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "DaturaStramoniumCanBoneMealBeUsedOnThisBlock",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "datura_stramonium_can_bone_meal_be_used_on_this_block",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/DaturaStramoniumCanBoneMealBeUsedOnThisBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DaturaStramoniumOnBoneMealSuccess",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "datura_stramonium_on_bone_meal_success",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/DaturaStramoniumOnBoneMealSuccessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CampfireBucket",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "campfire_bucket",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/campfire_bucket.json",
+          "src/main/resources/assets/ptndemerde/blockstates/campfire_bucket.json",
+          "src/main/java/net/mcreator/ptndemerde/block/CampfireBucketBlock.java",
+          "src/main/resources/assets/ptndemerde/models/block/campfire_bucket.json"
+        ]
+      }
+    },
+    {
+      "name": "SeauSurFeudecamp",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seau_sur_feudecamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/SeauSurFeudecampProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NouillesSeches",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nouilles_seches",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/nouilles_seches.json",
+          "src/main/java/net/mcreator/ptndemerde/item/NouillesSechesItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Nouilles",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nouilles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/NouillesItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/nouilles.json"
+        ]
+      }
+    },
+    {
+      "name": "CampfireBucketOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "campfire_bucket_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/CampfireBucketOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       }
     }
@@ -782,14 +947,17 @@
       "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
       "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
       "block.ptndemerde.chicha": "Chicha",
+      "item.ptndemerde.nouilles": "Nouilles",
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
       "item.ptndemerde.chair_putrefiee_doree": "Chair putréfiée dorée",
       "gui.ptndemerde.gui_chicheur.label_quoi_soulager_la_sienne_aussi_e": "quoi soulager la sienne aussi,",
+      "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
       "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
       "item.ptndemerde.mu_spawn_egg": "Mu Spawn Egg",
+      "item.ptndemerde.nouilles_seches": "Nouilles sèches",
       "gui.ptndemerde.gui_chicheur.label_echanger_de_quoi_soulager_votre": "échanger de quoi soulager votre",
       "advancements.advancement_tabac.title": "Sur la route du chichage",
       "block.ptndemerde.tabac_grown": "Tabac 1",
@@ -820,11 +988,12 @@
     "modid": "ptndemerde",
     "modName": "ptndemerde",
     "version": "1.0.0",
-    "author": "Laony, MCreator",
+    "author": "sillyLao, shepoj",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "child",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

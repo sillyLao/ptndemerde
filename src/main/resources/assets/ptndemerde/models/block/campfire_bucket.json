@@ -1,0 +1,9 @@
+{
+  "parent": "ptndemerde:custom/campfire_bucket",
+  "textures": {
+    "all": "ptndemerde:block/campfire_bucket",
+    "particle": "ptndemerde:block/campfire_bucket_log",
+    "0": "ptndemerde:block/campfire_bucket"
+  },
+  "render_type": "cutout_mipped"
+}

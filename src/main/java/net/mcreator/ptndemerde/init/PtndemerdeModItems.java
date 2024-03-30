@@ -14,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ptndemerde.item.TabacFumeItem;
+import net.mcreator.ptndemerde.item.NouillesSechesItem;
+import net.mcreator.ptndemerde.item.NouillesItem;
 import net.mcreator.ptndemerde.item.MondeTechnologiqueItem;
 import net.mcreator.ptndemerde.item.GrainesDeTabacItem;
 import net.mcreator.ptndemerde.item.FleurDeTabacItem;
@@ -39,6 +41,9 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> CHAIR_PUTREFIEE_DOREE = REGISTRY.register("chair_putrefiee_doree", () -> new ChairPutrefieeDoreeItem());
 	public static final RegistryObject<Item> PORC_SPAWN_EGG = REGISTRY.register("porc_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.PORC, -16776961, -1, new Item.Properties()));
 	public static final RegistryObject<Item> DATURA_STRAMONIUM = block(PtndemerdeModBlocks.DATURA_STRAMONIUM);
+	public static final RegistryObject<Item> CAMPFIRE_BUCKET = block(PtndemerdeModBlocks.CAMPFIRE_BUCKET);
+	public static final RegistryObject<Item> NOUILLES_SECHES = REGISTRY.register("nouilles_seches", () -> new NouillesSechesItem());
+	public static final RegistryObject<Item> NOUILLES = REGISTRY.register("nouilles", () -> new NouillesItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

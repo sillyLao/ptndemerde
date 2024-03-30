@@ -34,6 +34,9 @@ public class PtndemerdeModTabs {
 				tabData.accept(PtndemerdeModItems.CHAIR_PUTREFIEE_DOREE.get());
 				tabData.accept(PtndemerdeModItems.PORC_SPAWN_EGG.get());
 				tabData.accept(PtndemerdeModBlocks.DATURA_STRAMONIUM.get().asItem());
+				tabData.accept(PtndemerdeModBlocks.CAMPFIRE_BUCKET.get().asItem());
+				tabData.accept(PtndemerdeModItems.NOUILLES_SECHES.get());
+				tabData.accept(PtndemerdeModItems.NOUILLES.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ptndemerde:item/campfire_bucket_item"
+  },
+  "render_type": "translucent"
+}
