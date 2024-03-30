@@ -17,8 +17,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
@@ -33,6 +32,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -41,6 +42,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.ptndemerde.procedures.MuAttackProcedure;
 import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 
 public class MuEntity extends Monster implements GeoEntity {
@@ -52,6 +54,7 @@ public class MuEntity extends Monster implements GeoEntity {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
+	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED, ServerBossEvent.BossBarOverlay.PROGRESS);
 
 	public MuEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(PtndemerdeModEntities.MU.get(), world);
@@ -89,10 +92,9 @@ public class MuEntity extends Monster implements GeoEntity {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, Player.class, (float) 200));
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new FloatGoal(this));
+		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(4, new FloatGoal(this));
 	}
 
 	@Override
@@ -138,6 +140,7 @@ public class MuEntity extends Monster implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		MuAttackProcedure.execute(this.level(), this);
 		this.refreshDimensions();
 	}
 
@@ -159,6 +162,29 @@ public class MuEntity extends Monster implements GeoEntity {
 	protected void pushEntities() {
 	}
 
+	@Override
+	public boolean canChangeDimensions() {
+		return false;
+	}
+
+	@Override
+	public void startSeenByPlayer(ServerPlayer player) {
+		super.startSeenByPlayer(player);
+		this.bossInfo.addPlayer(player);
+	}
+
+	@Override
+	public void stopSeenByPlayer(ServerPlayer player) {
+		super.stopSeenByPlayer(player);
+		this.bossInfo.removePlayer(player);
+	}
+
+	@Override
+	public void customServerAiStep() {
+		super.customServerAiStep();
+		this.bossInfo.setProgress(this.getHealth() / this.getMaxHealth());
+	}
+
 	public static void init() {
 	}
 
@@ -168,7 +194,7 @@ public class MuEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.MAX_HEALTH, 300);
 		builder = builder.add(Attributes.ARMOR, 3);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 120);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
 		return builder;
 	}
@@ -222,7 +248,7 @@ public class MuEntity extends Monster implements GeoEntity {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 100) {
+		if (this.deathTime == 30) {
 			this.remove(MuEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}

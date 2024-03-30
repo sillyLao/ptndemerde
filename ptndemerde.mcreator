@@ -1222,20 +1222,6 @@
       }
     },
     {
-      "name": "PetardDatura",
-      "type": "item",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "petard_datura",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/PetardDaturaItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/petard_datura.json"
-        ]
-      }
-    },
-    {
       "name": "PetardDaturaPlayerFinishesUsingItem",
       "type": "procedure",
       "sortid": 68,
@@ -1280,6 +1266,119 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ptndemerde/potion/EffectRelaxedMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "PetardDatura",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petard_datura",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/PetardDaturaItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/petard_datura.json"
+        ]
+      }
+    },
+    {
+      "name": "LaserWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/LaserWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaserBall",
+      "type": "item",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/laser_ball.json",
+          "src/main/java/net/mcreator/ptndemerde/item/LaserBallItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Laser",
+      "type": "projectile",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/LaserRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/LaserEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "MuAttack",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mu_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/MuAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Molosse",
+      "type": "animatedentity",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molosse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MolosseModel.java",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/MolosseRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/MolosseEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/layer/MolosseLayer.java",
+          "src/main/resources/assets/ptndemerde/models/item/molosse_spawn_egg.json"
         ]
       }
     }

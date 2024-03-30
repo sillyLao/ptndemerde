@@ -18,6 +18,8 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.ptndemerde.entity.PorcEntity;
 import net.mcreator.ptndemerde.entity.MuEntity;
+import net.mcreator.ptndemerde.entity.MolosseEntity;
+import net.mcreator.ptndemerde.entity.LaserEntity;
 import net.mcreator.ptndemerde.entity.LambdaBatEntity;
 import net.mcreator.ptndemerde.entity.ChicheurEntity;
 import net.mcreator.ptndemerde.entity.ChatTeteNouilleEntity;
@@ -42,6 +44,10 @@ public class PtndemerdeModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<LambdaBatEntity>> LAMBDA_BAT = register("lambda_bat", EntityType.Builder.<LambdaBatEntity>of(LambdaBatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(LambdaBatEntity::new).fireImmune().sized(0.8f, 0.9f));
+	public static final RegistryObject<EntityType<LaserEntity>> LASER = register("projectile_laser",
+			EntityType.Builder.<LaserEntity>of(LaserEntity::new, MobCategory.MISC).setCustomClientFactory(LaserEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MolosseEntity>> MOLOSSE = register("molosse",
+			EntityType.Builder.<MolosseEntity>of(MolosseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MolosseEntity::new).fireImmune().sized(1.4f, 1.3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -55,6 +61,7 @@ public class PtndemerdeModEntities {
 			ChicheurEntity.init();
 			PorcEntity.init();
 			LambdaBatEntity.init();
+			MolosseEntity.init();
 		});
 	}
 
@@ -65,5 +72,6 @@ public class PtndemerdeModEntities {
 		event.put(CHICHEUR.get(), ChicheurEntity.createAttributes().build());
 		event.put(PORC.get(), PorcEntity.createAttributes().build());
 		event.put(LAMBDA_BAT.get(), LambdaBatEntity.createAttributes().build());
+		event.put(MOLOSSE.get(), MolosseEntity.createAttributes().build());
 	}
 }
