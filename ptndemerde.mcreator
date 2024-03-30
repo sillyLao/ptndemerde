@@ -63,8 +63,8 @@
       "registry_name": "monde_technologique",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json",
-          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json"
         ]
       }
     },
@@ -101,8 +101,8 @@
       "registry_name": "falin_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/falin_sword.json",
-          "src/main/java/net/mcreator/ptndemerde/item/FalinSwordItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/FalinSwordItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/falin_sword.json"
         ]
       }
     },
@@ -115,10 +115,10 @@
       "registry_name": "chicha",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
-          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java",
+          "src/main/resources/assets/ptndemerde/blockstates/chicha.json",
           "src/main/resources/assets/ptndemerde/models/item/chicha.json",
-          "src/main/resources/assets/ptndemerde/blockstates/chicha.json"
+          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
+          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java"
         ]
       }
     },
@@ -179,10 +179,10 @@
       "registry_name": "tabac_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_3.json",
           "src/main/resources/assets/ptndemerde/models/block/tabac_3.json",
-          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_3.json"
+          "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java"
         ]
       }
     },
@@ -195,10 +195,10 @@
       "registry_name": "tabac_grown",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json",
           "src/main/java/net/mcreator/ptndemerde/block/TabacGrownBlock.java",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_grown.json"
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_grown.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json"
         ]
       }
     },
@@ -224,10 +224,10 @@
       "registry_name": "tabac_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json",
           "src/main/java/net/mcreator/ptndemerde/block/Tabac1Block.java",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json"
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json"
         ]
       }
     },
@@ -240,9 +240,9 @@
       "registry_name": "tabac_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json",
-          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java",
           "src/main/resources/assets/ptndemerde/models/item/tabac_2.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json",
           "src/main/resources/assets/ptndemerde/blockstates/tabac_2.json"
         ]
       }
@@ -306,8 +306,8 @@
       "registry_name": "graines_de_tabac",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json"
+          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json",
+          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java"
         ]
       }
     },
@@ -417,8 +417,8 @@
       "registry_name": "fleur_de_tabac",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json",
-          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json"
         ]
       }
     },
@@ -431,8 +431,8 @@
       "registry_name": "tabac_fume",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/TabacFumeItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/tabac_fume.json"
+          "src/main/resources/assets/ptndemerde/models/item/tabac_fume.json",
+          "src/main/java/net/mcreator/ptndemerde/item/TabacFumeItem.java"
         ]
       }
     },
@@ -480,8 +480,8 @@
       "registry_name": "chat_tete_nouille",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
           "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
           "src/main/java/net/mcreator/ptndemerde/entity/ChatTeteNouilleEntity.java",
           "src/main/resources/assets/ptndemerde/models/item/chat_tete_nouille_spawn_egg.json"
         ]
@@ -496,10 +496,10 @@
       "registry_name": "mu",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/MuRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java",
           "src/main/resources/assets/ptndemerde/models/item/mu_spawn_egg.json",
-          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java"
+          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java"
         ]
       }
     },
@@ -525,8 +525,8 @@
       "registry_name": "chair_putrefiee_doree",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/chair_putrefiee_doree.json",
-          "src/main/java/net/mcreator/ptndemerde/item/ChairPutrefieeDoreeItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/ChairPutrefieeDoreeItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/chair_putrefiee_doree.json"
         ]
       }
     },
@@ -569,9 +569,9 @@
       "registry_name": "gui_chicheur",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/network/GUIChicheurButtonMessage.java",
           "src/main/java/net/mcreator/ptndemerde/client/gui/GUIChicheurScreen.java",
-          "src/main/java/net/mcreator/ptndemerde/world/inventory/GUIChicheurMenu.java"
+          "src/main/java/net/mcreator/ptndemerde/world/inventory/GUIChicheurMenu.java",
+          "src/main/java/net/mcreator/ptndemerde/network/GUIChicheurButtonMessage.java"
         ]
       }
     },
@@ -662,8 +662,8 @@
       "registry_name": "datura_fields",
       "metadata": {
         "files": [
-          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_fields_tree.json",
           "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_fields_tree.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_fields_tree.json",
           "src/main/resources/data/ptndemerde/worldgen/biome/datura_fields.json"
         ]
       }
@@ -677,8 +677,8 @@
       "registry_name": "porc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/entity/PorcEntity.java",
           "src/main/resources/assets/ptndemerde/models/item/porc_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/PorcEntity.java",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/PorcRenderer.java",
           "src/main/resources/data/ptndemerde/forge/biome_modifier/porc_biome_modifier.json"
         ]
@@ -693,13 +693,13 @@
       "registry_name": "datura_stramonium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/blockstates/datura_stramonium.json",
-          "src/main/resources/assets/ptndemerde/models/block/datura_stramonium.json",
-          "src/main/resources/assets/ptndemerde/models/item/datura_stramonium.json",
           "src/main/java/net/mcreator/ptndemerde/block/DaturaStramoniumBlock.java",
+          "src/main/resources/assets/ptndemerde/blockstates/datura_stramonium.json",
+          "src/main/resources/assets/ptndemerde/models/item/datura_stramonium.json",
           "src/main/resources/data/ptndemerde/forge/biome_modifier/datura_stramonium_biome_modifier.json",
-          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_stramonium.json",
-          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_stramonium.json"
+          "src/main/resources/assets/ptndemerde/models/block/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_stramonium.json"
         ]
       }
     },
@@ -732,9 +732,9 @@
       "registry_name": "chicheur",
       "metadata": {
         "files": [
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/chicheur_biome_modifier.json",
           "src/main/java/net/mcreator/ptndemerde/entity/ChicheurEntity.java",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/ChicheurRenderer.java",
-          "src/main/resources/data/ptndemerde/forge/biome_modifier/chicheur_biome_modifier.json",
           "src/main/resources/assets/ptndemerde/models/item/chicheur_spawn_egg.json"
         ]
       }
@@ -811,11 +811,11 @@
       "registry_name": "campfire_bucket",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/campfire_bucket.json",
-          "src/main/java/net/mcreator/ptndemerde/block/entity/CampfireBucketBlockEntity.java",
           "src/main/resources/assets/ptndemerde/models/item/campfire_bucket.json",
           "src/main/resources/assets/ptndemerde/blockstates/campfire_bucket.json",
-          "src/main/java/net/mcreator/ptndemerde/block/CampfireBucketBlock.java"
+          "src/main/java/net/mcreator/ptndemerde/block/entity/CampfireBucketBlockEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/block/CampfireBucketBlock.java",
+          "src/main/resources/assets/ptndemerde/models/block/campfire_bucket.json"
         ]
       }
     },
@@ -867,8 +867,8 @@
       "registry_name": "nouilles_seches",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/NouillesSechesItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/nouilles_seches.json"
+          "src/main/resources/assets/ptndemerde/models/item/nouilles_seches.json",
+          "src/main/java/net/mcreator/ptndemerde/item/NouillesSechesItem.java"
         ]
       }
     },
@@ -881,8 +881,8 @@
       "registry_name": "nouilles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/nouilles.json",
-          "src/main/java/net/mcreator/ptndemerde/item/NouillesItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/NouillesItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/nouilles.json"
         ]
       }
     },
@@ -1233,23 +1233,6 @@
       }
     },
     {
-      "name": "Molosse",
-      "type": "animatedentity",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "molosse",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ptndemerde/entity/model/MolosseModel.java",
-          "src/main/java/net/mcreator/ptndemerde/entity/MolosseEntity.java",
-          "src/main/java/net/mcreator/ptndemerde/client/renderer/MolosseRenderer.java",
-          "src/main/java/net/mcreator/ptndemerde/entity/layer/MolosseLayer.java",
-          "src/main/resources/assets/ptndemerde/models/item/molosse_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "MuAttack",
       "type": "procedure",
       "sortid": 69,
@@ -1269,6 +1252,71 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "Molosse",
+      "type": "animatedentity",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molosse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MolosseModel.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/MolosseEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/MolosseRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/layer/MolosseLayer.java",
+          "src/main/resources/assets/ptndemerde/models/item/molosse_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ChatTeteNouilleRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chat_tete_nouille_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/ChatTeteNouilleRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeBolNouillesJajangmyeon2",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_bol_nouilles_jajangmyeon_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_jajangmyeon_2.json"
         ]
       }
     }
@@ -1305,6 +1353,7 @@
   ],
   "language_map": {
     "en_us": {
+      "painting.ptndemerde.painting_child.author": "Maknav",
       "entity.ptndemerde.porc": "Porc",
       "biome.ptndemerde.datura_fields": "Datura Fields",
       "entity.ptndemerde.mu": "Mu",
@@ -1313,48 +1362,44 @@
       "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
       "item.ptndemerde.lambda_bat_spawn_egg": "Lambda Bat Spawn Egg",
       "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
+      "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
       "block.ptndemerde.chicha": "Chicha",
       "item.ptndemerde.nouilles": "Nouilles",
-      "entity.ptndemerde.molosse": "Sigma Hound",
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
+      "item.ptndemerde.bol_nouilles_legumes": "Bol de nouilles aux légumes",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
-      "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
-      "item.ptndemerde.molosse_spawn_egg": "Sigma Hound Spawn Egg",
-      "block.ptndemerde.tabac_grown": "Tabac 1",
-      "effect.ptndemerde.effect_chicha": "Narguilé",
-      "block.ptndemerde.tabac_3": "Tabac 1",
-      "block.ptndemerde.datura_stramonium": "Datura Stramonium",
-      "entity.ptndemerde.lambda_bat": "Lambda Bat",
-      "block.ptndemerde.tabac_1": "Tabac 1",
-      "block.ptndemerde.tabac_2": "Tabac 1",
-      "item.ptndemerde.bol_nouilles_jajangmyeon": "Bol de nouilles Jajangmyeon",
-      "item.ptndemerde.monde_technologique": "Monde Technologique",
-      "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
-      "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
-      "subtitles.monde_technologique": "Ils sont pas réels...",
-      "item.ptndemerde.tabac_fume": "Tabac Fume",
-      "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",
-      "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg",
-      "item.ptndemerde.bol_nouilles_piquante": "Bol de nouilles piquantes",
-      "painting.ptndemerde.painting_child.author": "Maknav",
-      "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
-      "item.ptndemerde.laser_ball": "Laser Ball",
-      "item.ptndemerde.bol_nouilles_legumes": "Bol de nouilles aux légumes",
       "item.ptndemerde.bol_nouilles": "Bol de nouilles",
       "item.ptndemerde.chair_putrefiee_doree": "Chair putréfiée dorée",
       "gui.ptndemerde.gui_chicheur.label_quoi_soulager_la_sienne_aussi_e": "quoi soulager la sienne aussi,",
+      "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
       "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
       "item.ptndemerde.mu_spawn_egg": "Mu Spawn Egg",
       "item.ptndemerde.nouilles_seches": "Nouilles sèches",
       "gui.ptndemerde.gui_chicheur.label_echanger_de_quoi_soulager_votre": "échanger de quoi soulager votre",
       "advancements.advancement_tabac.title": "Sur la route du chichage",
+      "block.ptndemerde.tabac_grown": "Tabac 1",
       "item_group.ptndemerde.ptndemerde_tab": "Ptndemerde",
+      "effect.ptndemerde.effect_chicha": "Narguilé",
+      "block.ptndemerde.tabac_3": "Tabac 1",
+      "block.ptndemerde.datura_stramonium": "Datura Stramonium",
+      "entity.ptndemerde.lambda_bat": "Lambda Bat",
+      "block.ptndemerde.tabac_1": "Tabac 1",
       "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
+      "block.ptndemerde.tabac_2": "Tabac 1",
+      "item.ptndemerde.bol_nouilles_jajangmyeon": "Bol de nouilles Jajangmyeon",
+      "item.ptndemerde.monde_technologique": "Monde Technologique",
+      "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
+      "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
       "item.ptndemerde.falin_sword": "Épée en Falin",
       "advancements.advancement_chicha.title": "Narguilator",
-      "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous"
+      "subtitles.monde_technologique": "Ils sont pas réels...",
+      "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous",
+      "item.ptndemerde.tabac_fume": "Tabac Fume",
+      "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",
+      "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg",
+      "item.ptndemerde.bol_nouilles_piquante": "Bol de nouilles piquantes"
     }
   },
   "foldersRoot": {

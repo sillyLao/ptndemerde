@@ -1,69 +1,24 @@
 
 package net.mcreator.ptndemerde.entity;
 
-import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animatable.GeoEntity;
-
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.RangedAttackMob;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.Goal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.Pose;
-import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EntityDimensions;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
+import net.minecraft.nbt.Tag;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 
 import javax.annotation.Nullable;
 
-import java.util.EnumSet;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animation.AnimationState;
 
 public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(MolosseEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(MolosseEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(MolosseEntity.class, EntityDataSerializers.STRING);
+
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
@@ -78,6 +33,7 @@ public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -110,8 +66,10 @@ public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
+
 		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.5, 20) {
+
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = MolosseEntity.this.getRandom();
@@ -120,17 +78,21 @@ public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity
 				double dir_z = MolosseEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
+
 		});
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
+
 		});
 		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, MuEntity.class, (float) 60));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));
+
 		this.goalSelector.addGoal(1, new MolosseEntity.RangedAttackGoal(this, 1.25, 20, 10f) {
 			@Override
 			public boolean canContinueToUse() {
@@ -244,6 +206,7 @@ public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
+
 		return false;
 	}
 
@@ -298,6 +261,7 @@ public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity
 	}
 
 	public static void init() {
+
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -307,7 +271,9 @@ public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity
 		builder = builder.add(Attributes.ARMOR, 4);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 20);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
+
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
+
 		return builder;
 	}
 
@@ -358,6 +324,7 @@ public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity
 		if (this.deathTime == 20) {
 			this.remove(MolosseEntity.RemovalReason.KILLED);
 			this.dropExperience();
+
 		}
 	}
 
@@ -380,4 +347,5 @@ public class MolosseEntity extends Monster implements RangedAttackMob, GeoEntity
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
 	}
+
 }

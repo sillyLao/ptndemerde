@@ -32,6 +32,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
@@ -44,6 +45,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.ptndemerde.procedures.ChatTeteNouilleRightClickedOnEntityProcedure;
 import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 
 public class ChatTeteNouilleEntity extends TamableAnimal {
@@ -145,6 +147,13 @@ public class ChatTeteNouilleEntity extends TamableAnimal {
 					this.setPersistenceRequired();
 			}
 		}
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+
+		ChatTeteNouilleRightClickedOnEntityProcedure.execute(world, x, y, z, sourceentity);
 		return retval;
 	}
 
