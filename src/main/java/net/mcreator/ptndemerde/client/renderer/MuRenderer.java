@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class MuRenderer extends GeoEntityRenderer<MuEntity> {
 	public MuRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new MuModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 10f;
 	}
 
 	@Override
