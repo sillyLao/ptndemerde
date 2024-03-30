@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nouilles_legumes",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "ptndemerde:deleted_mod_element"
+    }
+  ],
+  "result": {
+    "item": "ptndemerde:deleted_mod_element",
+    "count": 1
+  }
+}

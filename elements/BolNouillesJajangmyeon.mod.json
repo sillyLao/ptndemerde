@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nouilles",
+    "texture": "bol_nouilles_jajangmyeon",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Nouilles",
+    "name": "Bol de nouilles Jajangmyeon",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PtndemerdeTab"
@@ -41,10 +41,10 @@
       "value": "Arrow"
     },
     "isFood": true,
-    "nutritionalValue": 4,
-    "saturation": 0.1,
+    "nutritionalValue": 10,
+    "saturation": 0.7,
     "eatResultItem": {
-      "value": ""
+      "value": "Items.BOWL"
     },
     "isMeat": false,
     "isAlwaysEdible": false,

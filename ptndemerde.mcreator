@@ -63,8 +63,8 @@
       "registry_name": "monde_technologique",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json",
-          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/MondeTechnologiqueItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/monde_technologique.json"
         ]
       }
     },
@@ -101,8 +101,8 @@
       "registry_name": "falin_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/falin_sword.json",
-          "src/main/java/net/mcreator/ptndemerde/item/FalinSwordItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/FalinSwordItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/falin_sword.json"
         ]
       }
     },
@@ -115,10 +115,10 @@
       "registry_name": "chicha",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
-          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java",
+          "src/main/resources/assets/ptndemerde/blockstates/chicha.json",
           "src/main/resources/assets/ptndemerde/models/item/chicha.json",
-          "src/main/resources/assets/ptndemerde/blockstates/chicha.json"
+          "src/main/resources/assets/ptndemerde/models/block/chicha.json",
+          "src/main/java/net/mcreator/ptndemerde/block/ChichaBlock.java"
         ]
       }
     },
@@ -179,10 +179,10 @@
       "registry_name": "tabac_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_3.json",
           "src/main/resources/assets/ptndemerde/models/block/tabac_3.json",
-          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_3.json"
+          "src/main/resources/assets/ptndemerde/models/item/tabac_3.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac3Block.java"
         ]
       }
     },
@@ -195,10 +195,10 @@
       "registry_name": "tabac_grown",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json",
           "src/main/java/net/mcreator/ptndemerde/block/TabacGrownBlock.java",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_grown.json"
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_grown.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_grown.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_grown.json"
         ]
       }
     },
@@ -224,10 +224,10 @@
       "registry_name": "tabac_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json",
-          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json",
           "src/main/java/net/mcreator/ptndemerde/block/Tabac1Block.java",
-          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json"
+          "src/main/resources/assets/ptndemerde/blockstates/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_1.json",
+          "src/main/resources/assets/ptndemerde/models/item/tabac_1.json"
         ]
       }
     },
@@ -240,9 +240,9 @@
       "registry_name": "tabac_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json",
-          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java",
           "src/main/resources/assets/ptndemerde/models/item/tabac_2.json",
+          "src/main/java/net/mcreator/ptndemerde/block/Tabac2Block.java",
+          "src/main/resources/assets/ptndemerde/models/block/tabac_2.json",
           "src/main/resources/assets/ptndemerde/blockstates/tabac_2.json"
         ]
       }
@@ -306,8 +306,8 @@
       "registry_name": "graines_de_tabac",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json"
+          "src/main/resources/assets/ptndemerde/models/item/graines_de_tabac.json",
+          "src/main/java/net/mcreator/ptndemerde/item/GrainesDeTabacItem.java"
         ]
       }
     },
@@ -417,8 +417,8 @@
       "registry_name": "fleur_de_tabac",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json",
-          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/FleurDeTabacItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/fleur_de_tabac.json"
         ]
       }
     },
@@ -431,8 +431,8 @@
       "registry_name": "tabac_fume",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/TabacFumeItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/tabac_fume.json"
+          "src/main/resources/assets/ptndemerde/models/item/tabac_fume.json",
+          "src/main/java/net/mcreator/ptndemerde/item/TabacFumeItem.java"
         ]
       }
     },
@@ -480,8 +480,8 @@
       "registry_name": "chat_tete_nouille",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
           "src/main/resources/data/ptndemerde/forge/biome_modifier/chat_tete_nouille_biome_modifier.json",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/ChatTeteNouilleRenderer.java",
           "src/main/java/net/mcreator/ptndemerde/entity/ChatTeteNouilleEntity.java",
           "src/main/resources/assets/ptndemerde/models/item/chat_tete_nouille_spawn_egg.json"
         ]
@@ -496,10 +496,10 @@
       "registry_name": "mu",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/MuRenderer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java",
           "src/main/resources/assets/ptndemerde/models/item/mu_spawn_egg.json",
-          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java"
+          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java"
         ]
       }
     },
@@ -525,8 +525,8 @@
       "registry_name": "chair_putrefiee_doree",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/chair_putrefiee_doree.json",
-          "src/main/java/net/mcreator/ptndemerde/item/ChairPutrefieeDoreeItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/ChairPutrefieeDoreeItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/chair_putrefiee_doree.json"
         ]
       }
     },
@@ -569,9 +569,9 @@
       "registry_name": "gui_chicheur",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/network/GUIChicheurButtonMessage.java",
           "src/main/java/net/mcreator/ptndemerde/client/gui/GUIChicheurScreen.java",
-          "src/main/java/net/mcreator/ptndemerde/world/inventory/GUIChicheurMenu.java"
+          "src/main/java/net/mcreator/ptndemerde/world/inventory/GUIChicheurMenu.java",
+          "src/main/java/net/mcreator/ptndemerde/network/GUIChicheurButtonMessage.java"
         ]
       }
     },
@@ -662,8 +662,8 @@
       "registry_name": "datura_fields",
       "metadata": {
         "files": [
-          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_fields_tree.json",
           "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_fields_tree.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_fields_tree.json",
           "src/main/resources/data/ptndemerde/worldgen/biome/datura_fields.json"
         ]
       }
@@ -677,8 +677,8 @@
       "registry_name": "porc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/entity/PorcEntity.java",
           "src/main/resources/assets/ptndemerde/models/item/porc_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/PorcEntity.java",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/PorcRenderer.java",
           "src/main/resources/data/ptndemerde/forge/biome_modifier/porc_biome_modifier.json"
         ]
@@ -693,13 +693,13 @@
       "registry_name": "datura_stramonium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/blockstates/datura_stramonium.json",
-          "src/main/resources/assets/ptndemerde/models/block/datura_stramonium.json",
-          "src/main/resources/assets/ptndemerde/models/item/datura_stramonium.json",
           "src/main/java/net/mcreator/ptndemerde/block/DaturaStramoniumBlock.java",
+          "src/main/resources/assets/ptndemerde/blockstates/datura_stramonium.json",
+          "src/main/resources/assets/ptndemerde/models/item/datura_stramonium.json",
           "src/main/resources/data/ptndemerde/forge/biome_modifier/datura_stramonium_biome_modifier.json",
-          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_stramonium.json",
-          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_stramonium.json"
+          "src/main/resources/assets/ptndemerde/models/block/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/datura_stramonium.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/datura_stramonium.json"
         ]
       }
     },
@@ -732,9 +732,9 @@
       "registry_name": "chicheur",
       "metadata": {
         "files": [
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/chicheur_biome_modifier.json",
           "src/main/java/net/mcreator/ptndemerde/entity/ChicheurEntity.java",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/ChicheurRenderer.java",
-          "src/main/resources/data/ptndemerde/forge/biome_modifier/chicheur_biome_modifier.json",
           "src/main/resources/assets/ptndemerde/models/item/chicheur_spawn_egg.json"
         ]
       }
@@ -806,16 +806,16 @@
       "name": "CampfireBucket",
       "type": "block",
       "sortid": 44,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "campfire_bucket",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/campfire_bucket.json",
-          "src/main/java/net/mcreator/ptndemerde/block/entity/CampfireBucketBlockEntity.java",
           "src/main/resources/assets/ptndemerde/models/item/campfire_bucket.json",
           "src/main/resources/assets/ptndemerde/blockstates/campfire_bucket.json",
-          "src/main/java/net/mcreator/ptndemerde/block/CampfireBucketBlock.java"
+          "src/main/java/net/mcreator/ptndemerde/block/entity/CampfireBucketBlockEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/block/CampfireBucketBlock.java",
+          "src/main/resources/assets/ptndemerde/models/block/campfire_bucket.json"
         ]
       }
     },
@@ -867,8 +867,8 @@
       "registry_name": "nouilles_seches",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ptndemerde/item/NouillesSechesItem.java",
-          "src/main/resources/assets/ptndemerde/models/item/nouilles_seches.json"
+          "src/main/resources/assets/ptndemerde/models/item/nouilles_seches.json",
+          "src/main/java/net/mcreator/ptndemerde/item/NouillesSechesItem.java"
         ]
       }
     },
@@ -881,8 +881,8 @@
       "registry_name": "nouilles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/item/nouilles.json",
-          "src/main/java/net/mcreator/ptndemerde/item/NouillesItem.java"
+          "src/main/java/net/mcreator/ptndemerde/item/NouillesItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/nouilles.json"
         ]
       }
     },
@@ -967,6 +967,211 @@
           "src/main/java/net/mcreator/ptndemerde/entity/LambdaBatEntity.java"
         ]
       }
+    },
+    {
+      "name": "RecipeNouillesLegume6",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles_legume_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles_legume_6.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeNouillesLegumes2",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles_legumes_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles_legumes_2.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeNouillesLegumes1",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles_legumes_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles_legumes_1.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeNouillesPiquantes1",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles_piquantes_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles_piquantes_1.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeNouillesPiquantes2",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles_piquantes_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles_piquantes_2.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeNouillesLegumes5",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles_legumes_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles_legumes_5.json"
+        ]
+      }
+    },
+    {
+      "name": "BolNouillesLegumes",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bol_nouilles_legumes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/BolNouillesLegumesItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/bol_nouilles_legumes.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeNouillesLegumes4",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles_legumes_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles_legumes_4.json"
+        ]
+      }
+    },
+    {
+      "name": "BolNouillesPiquante",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bol_nouilles_piquante",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/BolNouillesPiquanteItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/bol_nouilles_piquante.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeNouillesLegumes3",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles_legumes_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles_legumes_3.json"
+        ]
+      }
+    },
+    {
+      "name": "BolNouillesJajangmyeon",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bol_nouilles_jajangmyeon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/BolNouillesJajangmyeonItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/bol_nouilles_jajangmyeon.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeBolNouillesJajangmyeon",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_bol_nouilles_jajangmyeon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_jajangmyeon.json"
+        ]
+      }
+    },
+    {
+      "name": "BolNouilles",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bol_nouilles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/bol_nouilles.json",
+          "src/main/java/net/mcreator/ptndemerde/item/BolNouillesItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipeNouilles",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_nouilles",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_nouilles.json"
+        ]
+      }
+    },
+    {
+      "name": "BolNouillesPiquantePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bol_nouilles_piquante_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/BolNouillesPiquantePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1008,7 +1213,6 @@
       "gui.ptndemerde.gui_chicheur.label_x50": "x50",
       "gui.ptndemerde.gui_chicheur.label_evidemment": "évidemment.",
       "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
-      "item.ptndemerde.lambda_bat_spawn_egg": "Lambda Bat Spawn Egg",
       "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
       "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
       "block.ptndemerde.chicha": "Chicha",
@@ -1030,7 +1234,6 @@
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "block.ptndemerde.tabac_3": "Tabac 1",
       "block.ptndemerde.datura_stramonium": "Datura Stramonium",
-      "entity.ptndemerde.lambda_bat": "Lambda Bat",
       "block.ptndemerde.tabac_1": "Tabac 1",
       "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
       "block.ptndemerde.tabac_2": "Tabac 1",

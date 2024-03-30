@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NouillesItem extends Item {
 	public NouillesItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f).build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.1f).build()));
 	}
 
 	@Override

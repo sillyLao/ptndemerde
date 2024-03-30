@@ -155,7 +155,7 @@ public class CampfireBucketBlock extends Block implements SimpleWaterloggedBlock
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		CampfireBucketOnBlockRightClickedProcedure.execute(entity);
+		CampfireBucketOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 
