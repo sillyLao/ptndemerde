@@ -1274,7 +1274,7 @@
       "type": "item",
       "sortid": 67,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "petard_datura",
       "metadata": {
         "files": [
@@ -1381,6 +1381,86 @@
           "src/main/resources/assets/ptndemerde/models/item/molosse_spawn_egg.json"
         ]
       }
+    },
+    {
+      "name": "PapierInes",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "papier_ines",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/PapierInesItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/papier_ines.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipePapierInes",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_papier_ines",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_papier_ines.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipePetardDatura",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_petard_datura",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_petard_datura.json"
+        ]
+      }
+    },
+    {
+      "name": "BolNouillesSlime",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bol_nouilles_slime",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/bol_nouilles_slime.json",
+          "src/main/java/net/mcreator/ptndemerde/item/BolNouillesSlimeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipeBolNouillesSlime1",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_bol_nouilles_slime_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_slime_1.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeBolNouillesSlime2",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_bol_nouilles_slime_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_slime_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1433,12 +1513,14 @@
       "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
       "block.ptndemerde.chicha": "Chicha",
       "item.ptndemerde.nouilles": "Nouilles",
+      "entity.ptndemerde.molosse": "Sigma Hound",
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "subtitles.tirer_une_taf": "Tire une taf",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
       "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
+      "item.ptndemerde.molosse_spawn_egg": "Sigma Hound Spawn Egg",
       "block.ptndemerde.tabac_grown": "Tabac 1",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "block.ptndemerde.tabac_3": "Tabac 1",
@@ -1448,7 +1530,9 @@
       "block.ptndemerde.tabac_2": "Tabac 1",
       "item.ptndemerde.bol_nouilles_jajangmyeon": "Bol de nouilles Jajangmyeon",
       "item.ptndemerde.monde_technologique": "Monde Technologique",
+      "item.ptndemerde.bol_nouilles_slime": "Bol de nouilles au Slime",
       "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
+      "item.ptndemerde.papier_ines": "Papier Ines",
       "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
       "subtitles.monde_technologique": "Ils sont pas réels...",
       "item.ptndemerde.tabac_fume": "Tabac Fume",
@@ -1458,6 +1542,7 @@
       "painting.ptndemerde.painting_child.author": "Maknav",
       "effect.ptndemerde.effect_relaxed": "Relaxé",
       "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
+      "item.ptndemerde.laser_ball": "Laser Ball",
       "item.ptndemerde.bol_nouilles_legumes": "Bol de nouilles aux légumes",
       "item.ptndemerde.bol_nouilles": "Bol de nouilles",
       "item.ptndemerde.chair_putrefiee_doree": "Chair putréfiée dorée",

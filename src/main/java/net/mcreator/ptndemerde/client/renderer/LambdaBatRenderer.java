@@ -1,6 +1,20 @@
 
 package net.mcreator.ptndemerde.client.renderer;
 
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+
+import net.mcreator.ptndemerde.entity.model.LambdaBatModel;
+import net.mcreator.ptndemerde.entity.LambdaBatEntity;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class LambdaBatRenderer extends GeoEntityRenderer<LambdaBatEntity> {
 	public LambdaBatRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new LambdaBatModel());
@@ -20,5 +34,4 @@ public class LambdaBatRenderer extends GeoEntityRenderer<LambdaBatEntity> {
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
-
 }
