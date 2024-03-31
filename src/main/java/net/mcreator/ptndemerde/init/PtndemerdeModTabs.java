@@ -44,13 +44,16 @@ public class PtndemerdeModTabs {
 				tabData.accept(PtndemerdeModItems.BOL_NOUILLES_PIQUANTE.get());
 				tabData.accept(PtndemerdeModItems.BOL_NOUILLES_JAJANGMYEON.get());
 				tabData.accept(PtndemerdeModItems.PETARD_DATURA.get());
+				tabData.accept(PtndemerdeModItems.MOLOSSE_SPAWN_EGG.get());
+				tabData.accept(PtndemerdeModItems.PAPIER_INES.get());
+				tabData.accept(PtndemerdeModItems.BOL_NOUILLES_SLIME.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(PtndemerdeModItems.MOLOSSE_SPAWN_EGG.get());
+			tabData.accept(PtndemerdeModItems.OMEGA_TITAN_SPAWN_EGG.get());
 		}
 	}
 }

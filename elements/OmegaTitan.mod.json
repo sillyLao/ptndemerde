@@ -2,10 +2,10 @@
   "_fv": 57,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Mu",
+    "mobName": "Omega Titan",
     "mobLabel": "",
-    "mobModelTexture": "mu.png",
-    "mobModelGlowTexture": "",
+    "mobModelTexture": "titan.png",
+    "mobModelGlowTexture": "titan_glow.png",
     "visualScale": {
       "fixedValue": 1.0
     },
@@ -13,9 +13,9 @@
       "fixedValue": 1.0
     },
     "entityDataEntries": [],
-    "modelWidth": 20.0,
-    "modelHeight": 50.0,
-    "modelShadowSize": 10.0,
+    "modelWidth": 1.5,
+    "modelHeight": 4.2,
+    "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
@@ -23,14 +23,14 @@
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -6750208,
+      "value": -16724992,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:PtndemerdeTab"
+      "value": "MISC"
     },
-    "isBoss": true,
-    "bossBarColor": "RED",
+    "isBoss": false,
+    "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -52,23 +52,23 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
-    "attackKnockback": 0.0,
+    "attackStrength": 20,
+    "attackKnockback": 5.0,
     "knockbackResistance": 1.0,
-    "movementSpeed": 0.5,
-    "armorBaseValue": 3.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 6.0,
     "trackingRange": 64,
-    "followRange": 120,
-    "health": 500,
+    "followRange": 64,
+    "health": 50,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 30,
+    "deathTime": 20,
     "lerp": 4,
-    "disableCollisions": true,
+    "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
@@ -89,7 +89,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": "CUSTOM:unheard"
+      "value": ""
     },
     "hurtSound": {
       "value": "entity.generic.hurt"
@@ -100,21 +100,15 @@
     "stepSound": {
       "value": ""
     },
-    "whenMobIsHurt": {
-      "name": "LaserProjectileHitsLivingEntity"
-    },
-    "onMobTickUpdate": {
-      "name": "MuAttack"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"469\" y=\"22\"><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">200</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "mu_creature.geo.json",
-    "groupName": "tete",
-    "animation1": "animation.mucreature.idle",
-    "animation2": "walk",
-    "animation3": "animation.mucreature.death",
-    "animation4": "attack",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"173\" y=\"15\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "omega_titan.geo.json",
+    "groupName": "head",
+    "animation1": "animation.omegacreature.idle",
+    "animation2": "animation.omegacreature.walk",
+    "animation3": "",
+    "animation4": "animation.omegacreature.attack",
     "animation5": "",
     "animation6": "",
     "animation7": "",
@@ -122,7 +116,7 @@
     "animation9": "",
     "animation10": "",
     "enable2": true,
-    "enable3": true,
+    "enable3": false,
     "enable4": true,
     "enable5": false,
     "enable6": false,
@@ -132,7 +126,7 @@
     "enable10": false,
     "breedable": false,
     "tameable": false,
-    "disableDeathRotation": true,
+    "disableDeathRotation": false,
     "headMovement": true,
     "eyeHeight": false,
     "breedTriggerItems": [],
@@ -145,7 +139,7 @@
     "rangedAttackRadius": 10.0,
     "height": 1.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": false,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,

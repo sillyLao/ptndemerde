@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.ptndemerde.entity.PorcEntity;
+import net.mcreator.ptndemerde.entity.OmegaTitanEntity;
 import net.mcreator.ptndemerde.entity.MuEntity;
 import net.mcreator.ptndemerde.entity.MolosseEntity;
 import net.mcreator.ptndemerde.entity.LaserEntity;
@@ -48,6 +49,8 @@ public class PtndemerdeModEntities {
 			EntityType.Builder.<LaserEntity>of(LaserEntity::new, MobCategory.MISC).setCustomClientFactory(LaserEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MolosseEntity>> MOLOSSE = register("molosse",
 			EntityType.Builder.<MolosseEntity>of(MolosseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MolosseEntity::new).fireImmune().sized(1.4f, 1.3f));
+	public static final RegistryObject<EntityType<OmegaTitanEntity>> OMEGA_TITAN = register("omega_titan", EntityType.Builder.<OmegaTitanEntity>of(OmegaTitanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(OmegaTitanEntity::new).fireImmune().sized(1.5f, 4.2f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -62,6 +65,7 @@ public class PtndemerdeModEntities {
 			PorcEntity.init();
 			LambdaBatEntity.init();
 			MolosseEntity.init();
+			OmegaTitanEntity.init();
 		});
 	}
 
@@ -73,5 +77,6 @@ public class PtndemerdeModEntities {
 		event.put(PORC.get(), PorcEntity.createAttributes().build());
 		event.put(LAMBDA_BAT.get(), LambdaBatEntity.createAttributes().build());
 		event.put(MOLOSSE.get(), MolosseEntity.createAttributes().build());
+		event.put(OMEGA_TITAN.get(), OmegaTitanEntity.createAttributes().build());
 	}
 }

@@ -16,5 +16,14 @@
         "stream": false
       }
     ]
+  },
+  "unheard": {
+    "subtitle": "subtitles.unheard",
+    "sounds": [
+      {
+        "name": "ptndemerde:unheard",
+        "stream": false
+      }
+    ]
   }
 }

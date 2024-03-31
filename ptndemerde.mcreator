@@ -496,10 +496,10 @@
       "registry_name": "mu",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java",
           "src/main/java/net/mcreator/ptndemerde/client/renderer/MuRenderer.java",
-          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java",
           "src/main/resources/assets/ptndemerde/models/item/mu_spawn_egg.json",
-          "src/main/java/net/mcreator/ptndemerde/entity/MuEntity.java"
+          "src/main/java/net/mcreator/ptndemerde/entity/model/MuModel.java"
         ]
       }
     },
@@ -1375,8 +1375,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ptndemerde/entity/model/MolosseModel.java",
-          "src/main/java/net/mcreator/ptndemerde/client/renderer/MolosseRenderer.java",
           "src/main/java/net/mcreator/ptndemerde/entity/MolosseEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/MolosseRenderer.java",
           "src/main/java/net/mcreator/ptndemerde/entity/layer/MolosseLayer.java",
           "src/main/resources/assets/ptndemerde/models/item/molosse_spawn_egg.json"
         ]
@@ -1461,6 +1461,76 @@
           "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_slime_2.json"
         ]
       }
+    },
+    {
+      "name": "Greek",
+      "type": "tag",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greek",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/entity_types/greek.json"
+        ]
+      }
+    },
+    {
+      "name": "LaserProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_projectile_hits_living_entity",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/LaserProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OmegaTitan",
+      "type": "animatedentity",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_titan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/entity/OmegaTitanEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/layer/OmegaTitanLayer.java",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/OmegaTitanRenderer.java",
+          "src/main/resources/assets/ptndemerde/models/item/omega_titan_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/OmegaTitanModel.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1499,11 +1569,20 @@
       ],
       "category": "neutral",
       "subtitle": "Tire une taf"
+    },
+    {
+      "name": "unheard",
+      "files": [
+        "unheard"
+      ],
+      "category": "hostile",
+      "subtitle": "cry of the unheard"
     }
   ],
   "language_map": {
     "en_us": {
       "entity.ptndemerde.porc": "Porc",
+      "entity.ptndemerde.omega_titan": "Omega Titan",
       "biome.ptndemerde.datura_fields": "Datura Fields",
       "entity.ptndemerde.mu": "Mu",
       "gui.ptndemerde.gui_chicheur.label_x50": "x50",
@@ -1517,6 +1596,7 @@
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "subtitles.tirer_une_taf": "Tire une taf",
+      "subtitles.unheard": "cry of the unheard",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
       "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
@@ -1555,6 +1635,7 @@
       "item_group.ptndemerde.ptndemerde_tab": "Ptndemerde",
       "item.ptndemerde.petard_datura": "Pétard de Datura",
       "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
+      "item.ptndemerde.omega_titan_spawn_egg": "Omega Titan Spawn Egg",
       "item.ptndemerde.falin_sword": "Épée en Falin",
       "advancements.advancement_chicha.title": "Narguilator",
       "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous"
