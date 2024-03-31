@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ptndemerde.item.TabacFumeItem;
 import net.mcreator.ptndemerde.item.PetardDaturaItem;
+import net.mcreator.ptndemerde.item.PapierInesItem;
 import net.mcreator.ptndemerde.item.NouillesSechesItem;
 import net.mcreator.ptndemerde.item.NouillesItem;
 import net.mcreator.ptndemerde.item.MondeTechnologiqueItem;
@@ -23,6 +24,7 @@ import net.mcreator.ptndemerde.item.GrainesDeTabacItem;
 import net.mcreator.ptndemerde.item.FleurDeTabacItem;
 import net.mcreator.ptndemerde.item.FalinSwordItem;
 import net.mcreator.ptndemerde.item.ChairPutrefieeDoreeItem;
+import net.mcreator.ptndemerde.item.BolNouillesSlimeItem;
 import net.mcreator.ptndemerde.item.BolNouillesPiquanteItem;
 import net.mcreator.ptndemerde.item.BolNouillesLegumesItem;
 import net.mcreator.ptndemerde.item.BolNouillesJajangmyeonItem;
@@ -58,6 +60,8 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> LASER_BALL = REGISTRY.register("laser_ball", () -> new LaserBallItem());
 	public static final RegistryObject<Item> PETARD_DATURA = REGISTRY.register("petard_datura", () -> new PetardDaturaItem());
 	public static final RegistryObject<Item> MOLOSSE_SPAWN_EGG = REGISTRY.register("molosse_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.MOLOSSE, -16777216, -52480, new Item.Properties()));
+	public static final RegistryObject<Item> PAPIER_INES = REGISTRY.register("papier_ines", () -> new PapierInesItem());
+	public static final RegistryObject<Item> BOL_NOUILLES_SLIME = REGISTRY.register("bol_nouilles_slime", () -> new BolNouillesSlimeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

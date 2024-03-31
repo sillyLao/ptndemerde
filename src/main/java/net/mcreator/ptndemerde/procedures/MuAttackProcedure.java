@@ -1,8 +1,13 @@
 package net.mcreator.ptndemerde.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
 
-import javax.annotation.Nullable;
+import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
+import net.mcreator.ptndemerde.entity.MuEntity;
 
 public class MuAttackProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -19,7 +24,7 @@ public class MuAttackProcedure {
 			yhound = entity.getY() + Math.ceil(Math.random() * 10);
 			zhound = entity.getZ() + Math.ceil(Math.random() * 30);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = PtndemerdeModEntities.DELETED_MOD_ELEMENT.get().spawn(_level, BlockPos.containing(xhound, yhound, zhound), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = PtndemerdeModEntities.MOLOSSE.get().spawn(_level, BlockPos.containing(xhound, yhound, zhound), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setDeltaMovement(0, 0, 0);
 				}

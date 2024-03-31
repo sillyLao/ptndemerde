@@ -1,22 +1,34 @@
 package net.mcreator.ptndemerde.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.registries.ForgeRegistries;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.ptndemerde.network.PtndemerdeModVariables;
+import net.mcreator.ptndemerde.init.PtndemerdeModMobEffects;
+import net.mcreator.ptndemerde.PtndemerdeMod;
 
 public class PetardDaturaPlayerFinishesUsingItemProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(PtndemerdeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PtndemerdeModVariables.PlayerVariables())).drogue + 1;
+			double _setval = (entity.getCapability(PtndemerdeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PtndemerdeModVariables.PlayerVariables())).drogue + 5;
 			entity.getCapability(PtndemerdeModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.drogue = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PtndemerdeModMobEffects.DELETED_MOD_ELEMENT.get(), 3600, 0, false, false));
+			_entity.addEffect(new MobEffectInstance(PtndemerdeModMobEffects.EFFECT_RELAXED.get(), 3600, 0, false, false));
 		if ((entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(MobEffects.REGENERATION)) == true) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1000, 1, false, false));
