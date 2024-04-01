@@ -65,6 +65,7 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> PAPIER_INES = REGISTRY.register("papier_ines", () -> new PapierInesItem());
 	public static final RegistryObject<Item> BOL_NOUILLES_SLIME = REGISTRY.register("bol_nouilles_slime", () -> new BolNouillesSlimeItem());
 	public static final RegistryObject<Item> SALVIA_DIVINORUM = doubleBlock(PtndemerdeModBlocks.SALVIA_DIVINORUM);
+	public static final RegistryObject<Item> OMEGA_TITAN_SPAWN_EGG = REGISTRY.register("omega_titan_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.OMEGA_TITAN, -16777216, -16724992, new Item.Properties()));
 	public static final RegistryObject<Item> SORBET_ETRANGE = REGISTRY.register("sorbet_etrange", () -> new SorbetEtrangeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {

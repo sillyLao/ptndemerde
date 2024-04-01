@@ -1,20 +1,8 @@
 
 package net.mcreator.ptndemerde.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.ptndemerde.procedures.SorbetEtrangePlayerFinishesUsingItemProcedure;
-
-import java.util.List;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import javax.annotation.Nullable;
 
 public class SorbetEtrangeItem extends Item {
 	public SorbetEtrangeItem() {
@@ -33,7 +21,7 @@ public class SorbetEtrangeItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		SorbetEtrangePlayerFinishesUsingItemProcedure.execute(entity);
+		SorbetEtrangePlayerFinishesUsingItemProcedure.execute();
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

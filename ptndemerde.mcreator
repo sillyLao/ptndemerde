@@ -784,10 +784,6 @@
         ],
         "dependencies": [
           {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -1467,22 +1463,16 @@
       }
     },
     {
-      "name": "SalviaDivinorum",
-      "type": "plant",
-      "sortid": 76,
+      "name": "SorbetEtrange",
+      "type": "item",
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "salvia_divinorum",
+      "registry_name": "sorbet_etrange",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ptndemerde/models/block/salvia_divinorum_bottom.json",
-          "src/main/resources/data/ptndemerde/worldgen/configured_feature/salvia_divinorum.json",
-          "src/main/resources/assets/ptndemerde/models/block/salvia_divinorum.json",
-          "src/main/java/net/mcreator/ptndemerde/block/SalviaDivinorumBlock.java",
-          "src/main/resources/data/ptndemerde/forge/biome_modifier/salvia_divinorum_biome_modifier.json",
-          "src/main/resources/data/ptndemerde/worldgen/placed_feature/salvia_divinorum.json",
-          "src/main/resources/assets/ptndemerde/models/item/salvia_divinorum.json",
-          "src/main/resources/assets/ptndemerde/blockstates/salvia_divinorum.json"
+          "src/main/resources/assets/ptndemerde/models/item/sorbet_etrange.json",
+          "src/main/java/net/mcreator/ptndemerde/item/SorbetEtrangeItem.java"
         ]
       }
     },
@@ -1502,46 +1492,6 @@
             "name": "entity",
             "type": "entity"
           }
-        ]
-      }
-    },
-    {
-      "name": "SorbetEtrange",
-      "type": "item",
-      "sortid": 79,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sorbet_etrange",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ptndemerde/models/item/sorbet_etrange.json",
-          "src/main/java/net/mcreator/ptndemerde/item/SorbetEtrangeItem.java"
-        ]
-      }
-    },
-    {
-      "name": "RecipeSorbetEtrange1",
-      "type": "recipe",
-      "sortid": 80,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "recipe_sorbet_etrange_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_1.json"
-        ]
-      }
-    },
-    {
-      "name": "RecipeSorbetEtrange2",
-      "type": "recipe",
-      "sortid": 81,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "recipe_sorbet_etrange_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_2.json"
         ]
       }
     },
@@ -1572,6 +1522,32 @@
       }
     },
     {
+      "name": "RecipeSorbetEtrange1",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sorbet_etrange_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_1.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeSorbetEtrange2",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sorbet_etrange_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_2.json"
+        ]
+      }
+    },
+    {
       "name": "RecipeSorbetEtrange5",
       "type": "recipe",
       "sortid": 84,
@@ -1594,6 +1570,96 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_6.json"
+        ]
+      }
+    },
+    {
+      "name": "SalviaDivinorum",
+      "type": "plant",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salvia_divinorum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/block/salvia_divinorum_bottom.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/salvia_divinorum.json",
+          "src/main/resources/assets/ptndemerde/models/block/salvia_divinorum.json",
+          "src/main/java/net/mcreator/ptndemerde/block/SalviaDivinorumBlock.java",
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/salvia_divinorum_biome_modifier.json",
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/salvia_divinorum.json",
+          "src/main/resources/assets/ptndemerde/models/item/salvia_divinorum.json",
+          "src/main/resources/assets/ptndemerde/blockstates/salvia_divinorum.json"
+        ]
+      }
+    },
+    {
+      "name": "OmegaTitan",
+      "type": "animatedentity",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omega_titan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/OmegaTitanRenderer.java",
+          "src/main/resources/assets/ptndemerde/models/item/omega_titan_spawn_egg.json",
+          "src/main/java/net/mcreator/ptndemerde/entity/layer/OmegaTitanLayer.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/OmegaTitanEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/entity/model/OmegaTitanModel.java"
+        ]
+      }
+    },
+    {
+      "name": "Greek",
+      "type": "tag",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greek",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/entity_types/greek.json"
+        ]
+      }
+    },
+    {
+      "name": "LaserProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_projectile_hits_living_entity",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/LaserProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -1634,6 +1700,14 @@
       ],
       "category": "neutral",
       "subtitle": "Tire une taf"
+    },
+    {
+      "name": "unheard",
+      "files": [
+        "unheard"
+      ],
+      "category": "hostile",
+      "subtitle": "cry of the unheard"
     }
   ],
   "language_map": {
@@ -1652,9 +1726,9 @@
       "item.ptndemerde.fleur_de_tabac": "Fleur De Tabac",
       "item.ptndemerde.monde_technologique.desc": "Ils sont pas réels...",
       "subtitles.tirer_une_taf": "Tire une taf",
+      "subtitles.unheard": "cry of the unheard",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
-      "block.ptndemerde.salvia_divinorum": "Salvia divinorum",
       "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
       "item.ptndemerde.molosse_spawn_egg": "Sigma Hound Spawn Egg",
       "block.ptndemerde.tabac_grown": "Tabac 1",
@@ -1670,7 +1744,6 @@
       "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
       "item.ptndemerde.papier_ines": "Papier Ines",
       "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
-      "item.ptndemerde.sorbet_etrange": "Sorbet étrange",
       "subtitles.monde_technologique": "Ils sont pas réels...",
       "item.ptndemerde.tabac_fume": "Tabac Fume",
       "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",

@@ -43,6 +43,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.ptndemerde.procedures.MuAttackProcedure;
+import net.mcreator.ptndemerde.procedures.LaserProjectileHitsLivingEntityProcedure;
 import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 
 public class MuEntity extends Monster implements GeoEntity {
@@ -108,6 +109,11 @@ public class MuEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ptndemerde:unheard"));
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
@@ -119,6 +125,7 @@ public class MuEntity extends Monster implements GeoEntity {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
+		LaserProjectileHitsLivingEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this, source.getEntity());
 		if (source.is(DamageTypes.IN_FIRE))
 			return false;
 		return super.hurt(source, amount);
@@ -191,7 +198,7 @@ public class MuEntity extends Monster implements GeoEntity {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.5);
-		builder = builder.add(Attributes.MAX_HEALTH, 300);
+		builder = builder.add(Attributes.MAX_HEALTH, 500);
 		builder = builder.add(Attributes.ARMOR, 3);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 120);

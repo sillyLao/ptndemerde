@@ -1,34 +1,8 @@
 
 package net.mcreator.ptndemerde.block;
 
-import net.minecraftforge.common.PlantType;
-
-import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.DoublePlantBlock;
-import net.minecraft.world.level.block.BonemealableBlock;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.ptndemerde.procedures.DaturaStramoniumOnBoneMealSuccessProcedure;
-import net.mcreator.ptndemerde.procedures.DaturaStramoniumCanBoneMealBeUsedOnThisBlockProcedure;
-
-import java.util.List;
-import java.util.Collections;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class SalviaDivinorumBlock extends DoublePlantBlock implements BonemealableBlock {
 	public SalviaDivinorumBlock() {
@@ -78,6 +52,6 @@ public class SalviaDivinorumBlock extends DoublePlantBlock implements Bonemealab
 
 	@Override
 	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		DaturaStramoniumOnBoneMealSuccessProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		DaturaStramoniumOnBoneMealSuccessProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

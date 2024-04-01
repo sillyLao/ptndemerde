@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.ptndemerde.client.renderer.PorcRenderer;
+import net.mcreator.ptndemerde.client.renderer.OmegaTitanRenderer;
 import net.mcreator.ptndemerde.client.renderer.MuRenderer;
 import net.mcreator.ptndemerde.client.renderer.MolosseRenderer;
 import net.mcreator.ptndemerde.client.renderer.LaserRenderer;
@@ -28,5 +29,6 @@ public class PtndemerdeModEntityRenderers {
 		event.registerEntityRenderer(PtndemerdeModEntities.LAMBDA_BAT.get(), LambdaBatRenderer::new);
 		event.registerEntityRenderer(PtndemerdeModEntities.LASER.get(), LaserRenderer::new);
 		event.registerEntityRenderer(PtndemerdeModEntities.MOLOSSE.get(), MolosseRenderer::new);
+		event.registerEntityRenderer(PtndemerdeModEntities.OMEGA_TITAN.get(), OmegaTitanRenderer::new);
 	}
 }
