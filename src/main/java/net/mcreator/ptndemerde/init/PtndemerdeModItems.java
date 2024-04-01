@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ptndemerde.item.TabacFumeItem;
 import net.mcreator.ptndemerde.item.SorbetEtrangeItem;
+import net.mcreator.ptndemerde.item.PurifiedPotatoItem;
 import net.mcreator.ptndemerde.item.PetardDaturaItem;
 import net.mcreator.ptndemerde.item.PapierInesItem;
 import net.mcreator.ptndemerde.item.NouillesSechesItem;
@@ -23,6 +24,7 @@ import net.mcreator.ptndemerde.item.NouillesItem;
 import net.mcreator.ptndemerde.item.MondeTechnologiqueItem;
 import net.mcreator.ptndemerde.item.LaserBallItem;
 import net.mcreator.ptndemerde.item.GrainesDeTabacItem;
+import net.mcreator.ptndemerde.item.GoldenPurifiedPotatoItem;
 import net.mcreator.ptndemerde.item.FleurDeTabacItem;
 import net.mcreator.ptndemerde.item.FalinSwordItem;
 import net.mcreator.ptndemerde.item.ChairPutrefieeDoreeItem;
@@ -67,6 +69,8 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> SALVIA_DIVINORUM = doubleBlock(PtndemerdeModBlocks.SALVIA_DIVINORUM);
 	public static final RegistryObject<Item> OMEGA_TITAN_SPAWN_EGG = REGISTRY.register("omega_titan_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.OMEGA_TITAN, -16777216, -16724992, new Item.Properties()));
 	public static final RegistryObject<Item> SORBET_ETRANGE = REGISTRY.register("sorbet_etrange", () -> new SorbetEtrangeItem());
+	public static final RegistryObject<Item> PURIFIED_POTATO = REGISTRY.register("purified_potato", () -> new PurifiedPotatoItem());
+	public static final RegistryObject<Item> GOLDEN_PURIFIED_POTATO = REGISTRY.register("golden_purified_potato", () -> new GoldenPurifiedPotatoItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

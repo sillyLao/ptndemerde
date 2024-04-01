@@ -784,6 +784,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1662,6 +1666,98 @@
           }
         ]
       }
+    },
+    {
+      "name": "PurifiedPotatoPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purified_potato_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/PurifiedPotatoPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurifiedPotato",
+      "type": "item",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purified_potato",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/purified_potato.json",
+          "src/main/java/net/mcreator/ptndemerde/item/PurifiedPotatoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipePurifiedPotato",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_purified_potato",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_purified_potato.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldenPurifiedPotatoPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_purified_potato_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/GoldenPurifiedPotatoPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenPurifiedPotato",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_purified_potato",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/golden_purified_potato.json",
+          "src/main/java/net/mcreator/ptndemerde/item/GoldenPurifiedPotatoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipeGoldenPurifiedPotato",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_golden_purified_potato",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_golden_purified_potato.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1712,6 +1808,7 @@
   ],
   "language_map": {
     "en_us": {
+      "entity.ptndemerde.omega_titan": "Omega Titan",
       "entity.ptndemerde.porc": "Porc",
       "biome.ptndemerde.datura_fields": "Datura Fields",
       "entity.ptndemerde.mu": "Mu",
@@ -1729,6 +1826,7 @@
       "subtitles.unheard": "cry of the unheard",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
+      "block.ptndemerde.salvia_divinorum": "Salvia divinorum",
       "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
       "item.ptndemerde.molosse_spawn_egg": "Sigma Hound Spawn Egg",
       "block.ptndemerde.tabac_grown": "Tabac 1",
@@ -1744,12 +1842,14 @@
       "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
       "item.ptndemerde.papier_ines": "Papier Ines",
       "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
+      "item.ptndemerde.sorbet_etrange": "Sorbet étrange",
       "subtitles.monde_technologique": "Ils sont pas réels...",
       "item.ptndemerde.tabac_fume": "Tabac Fume",
       "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",
       "item.ptndemerde.chicheur_spawn_egg": "Chicheur Spawn Egg",
       "item.ptndemerde.bol_nouilles_piquante": "Bol de nouilles piquantes",
       "painting.ptndemerde.painting_child.author": "Maknav",
+      "item.ptndemerde.purified_potato": "Pomme de terre purifiée",
       "effect.ptndemerde.effect_relaxed": "Relaxé",
       "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
       "item.ptndemerde.laser_ball": "Laser Ball",
@@ -1765,9 +1865,11 @@
       "item_group.ptndemerde.ptndemerde_tab": "Ptndemerde",
       "item.ptndemerde.petard_datura": "Pétard de Datura",
       "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
+      "item.ptndemerde.omega_titan_spawn_egg": "Omega Titan Spawn Egg",
       "item.ptndemerde.falin_sword": "Épée en Falin",
       "advancements.advancement_chicha.title": "Narguilator",
-      "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous"
+      "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous",
+      "item.ptndemerde.golden_purified_potato": "Pomme de terre purifiée dorée"
     }
   },
   "foldersRoot": {
