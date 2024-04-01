@@ -42,5 +42,7 @@ public class PtndemerdeModTabs {
 				tabData.accept(PtndemerdeModItems.MOLOSSE_SPAWN_EGG.get());
 				tabData.accept(PtndemerdeModItems.PAPIER_INES.get());
 				tabData.accept(PtndemerdeModItems.BOL_NOUILLES_SLIME.get());
+				tabData.accept(PtndemerdeModBlocks.SALVIA_DIVINORUM.get().asItem());
+				tabData.accept(PtndemerdeModItems.SORBET_ETRANGE.get());
 			}).withSearchBar().build());
 }

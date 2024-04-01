@@ -63,7 +63,7 @@
       "min": -2.0,
       "max": 2.0
     },
-    "treesPerChunk": 4,
+    "treesPerChunk": 6,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 12,
@@ -112,7 +112,16 @@
         "minGroup": 1,
         "maxGroup": 5,
         "weight": 20,
-        "spawnType": "creature"
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Porc"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 20,
+        "spawnType": "ambient"
       }
     ]
   }

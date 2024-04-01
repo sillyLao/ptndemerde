@@ -29,11 +29,13 @@ public class PetardDaturaPlayerFinishesUsingItemProcedure {
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(PtndemerdeModMobEffects.EFFECT_RELAXED.get(), 3600, 0, false, false));
-		if ((entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(MobEffects.REGENERATION)) == true) {
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100, 0, false, false));
+		if ((entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MobEffects.REGENERATION)) == true) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1000, 1, false, false));
 		}
-		if ((entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(MobEffects.MOVEMENT_SPEED)) == true) {
+		if ((entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(MobEffects.MOVEMENT_SPEED)) == true) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2000, 2, false, false));
 		}

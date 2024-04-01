@@ -11,9 +11,11 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ptndemerde.item.TabacFumeItem;
+import net.mcreator.ptndemerde.item.SorbetEtrangeItem;
 import net.mcreator.ptndemerde.item.PetardDaturaItem;
 import net.mcreator.ptndemerde.item.PapierInesItem;
 import net.mcreator.ptndemerde.item.NouillesSechesItem;
@@ -62,8 +64,14 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> MOLOSSE_SPAWN_EGG = REGISTRY.register("molosse_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.MOLOSSE, -16777216, -52480, new Item.Properties()));
 	public static final RegistryObject<Item> PAPIER_INES = REGISTRY.register("papier_ines", () -> new PapierInesItem());
 	public static final RegistryObject<Item> BOL_NOUILLES_SLIME = REGISTRY.register("bol_nouilles_slime", () -> new BolNouillesSlimeItem());
+	public static final RegistryObject<Item> SALVIA_DIVINORUM = doubleBlock(PtndemerdeModBlocks.SALVIA_DIVINORUM);
+	public static final RegistryObject<Item> SORBET_ETRANGE = REGISTRY.register("sorbet_etrange", () -> new SorbetEtrangeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
+
+	private static RegistryObject<Item> doubleBlock(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties()));
 	}
 }

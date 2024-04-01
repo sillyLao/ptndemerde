@@ -784,6 +784,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1461,6 +1465,137 @@
           "src/main/resources/data/ptndemerde/recipes/recipe_bol_nouilles_slime_2.json"
         ]
       }
+    },
+    {
+      "name": "SalviaDivinorum",
+      "type": "plant",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salvia_divinorum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/block/salvia_divinorum_bottom.json",
+          "src/main/resources/data/ptndemerde/worldgen/configured_feature/salvia_divinorum.json",
+          "src/main/resources/assets/ptndemerde/models/block/salvia_divinorum.json",
+          "src/main/java/net/mcreator/ptndemerde/block/SalviaDivinorumBlock.java",
+          "src/main/resources/data/ptndemerde/forge/biome_modifier/salvia_divinorum_biome_modifier.json",
+          "src/main/resources/data/ptndemerde/worldgen/placed_feature/salvia_divinorum.json",
+          "src/main/resources/assets/ptndemerde/models/item/salvia_divinorum.json",
+          "src/main/resources/assets/ptndemerde/blockstates/salvia_divinorum.json"
+        ]
+      }
+    },
+    {
+      "name": "SorbetEtrangePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sorbet_etrange_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/SorbetEtrangePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SorbetEtrange",
+      "type": "item",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sorbet_etrange",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/sorbet_etrange.json",
+          "src/main/java/net/mcreator/ptndemerde/item/SorbetEtrangeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipeSorbetEtrange1",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sorbet_etrange_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_1.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeSorbetEtrange2",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sorbet_etrange_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_2.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeSorbetEtrange3",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sorbet_etrange_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_3.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeSorbetEtrange4",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sorbet_etrange_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_4.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeSorbetEtrange5",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sorbet_etrange_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_5.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeSorbetEtrange6",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_sorbet_etrange_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_sorbet_etrange_6.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1519,6 +1654,7 @@
       "subtitles.tirer_une_taf": "Tire une taf",
       "painting.ptndemerde.painting_child.title": "Child",
       "entity.ptndemerde.chicheur": "Chicheur",
+      "block.ptndemerde.salvia_divinorum": "Salvia divinorum",
       "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
       "item.ptndemerde.molosse_spawn_egg": "Sigma Hound Spawn Egg",
       "block.ptndemerde.tabac_grown": "Tabac 1",
@@ -1534,6 +1670,7 @@
       "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
       "item.ptndemerde.papier_ines": "Papier Ines",
       "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
+      "item.ptndemerde.sorbet_etrange": "Sorbet étrange",
       "subtitles.monde_technologique": "Ils sont pas réels...",
       "item.ptndemerde.tabac_fume": "Tabac Fume",
       "entity.ptndemerde.chat_tete_nouille": "Chat vêtu de nouilles",

@@ -1,14 +1,16 @@
 
 package net.mcreator.ptndemerde.block;
 
+import net.minecraftforge.common.PlantType;
+
 import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
@@ -16,8 +18,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
@@ -30,15 +30,9 @@ import net.mcreator.ptndemerde.procedures.DaturaStramoniumCanBoneMealBeUsedOnThi
 import java.util.List;
 import java.util.Collections;
 
-public class DaturaStramoniumBlock extends FlowerBlock implements BonemealableBlock {
-	public DaturaStramoniumBlock() {
-		super(() -> MobEffects.NIGHT_VISION, 100,
-				BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().speedFactor(0.7f).jumpFactor(0.7f).noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
-	}
-
-	@Override
-	public int getEffectDuration() {
-		return 100;
+public class SalviaDivinorumBlock extends DoublePlantBlock implements BonemealableBlock {
+	public SalviaDivinorumBlock() {
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -47,26 +41,23 @@ public class DaturaStramoniumBlock extends FlowerBlock implements BonemealableBl
 	}
 
 	@Override
-	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
-		return BlockPathTypes.STICKY_HONEY;
-	}
-
-	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
-	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-		return 60;
-	}
-
-	@Override
 	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+		if (state.getValue(HALF) != DoubleBlockHalf.LOWER)
+			return Collections.emptyList();
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this));
+	}
+
+	@Override
+	public PlantType getPlantType(BlockGetter world, BlockPos pos) {
+		return PlantType.PLAINS;
 	}
 
 	@Override

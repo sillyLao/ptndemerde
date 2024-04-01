@@ -18,6 +18,7 @@ import net.mcreator.ptndemerde.block.TabacGrownBlock;
 import net.mcreator.ptndemerde.block.Tabac3Block;
 import net.mcreator.ptndemerde.block.Tabac2Block;
 import net.mcreator.ptndemerde.block.Tabac1Block;
+import net.mcreator.ptndemerde.block.SalviaDivinorumBlock;
 import net.mcreator.ptndemerde.block.DaturaStramoniumBlock;
 import net.mcreator.ptndemerde.block.ChichaBlock;
 import net.mcreator.ptndemerde.block.CampfireBucketBlock;
@@ -32,6 +33,7 @@ public class PtndemerdeModBlocks {
 	public static final RegistryObject<Block> TABAC_GROWN = REGISTRY.register("tabac_grown", () -> new TabacGrownBlock());
 	public static final RegistryObject<Block> DATURA_STRAMONIUM = REGISTRY.register("datura_stramonium", () -> new DaturaStramoniumBlock());
 	public static final RegistryObject<Block> CAMPFIRE_BUCKET = REGISTRY.register("campfire_bucket", () -> new CampfireBucketBlock());
+	public static final RegistryObject<Block> SALVIA_DIVINORUM = REGISTRY.register("salvia_divinorum", () -> new SalviaDivinorumBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
