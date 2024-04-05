@@ -24,6 +24,7 @@ import net.mcreator.ptndemerde.entity.LaserEntity;
 import net.mcreator.ptndemerde.entity.LambdaBatEntity;
 import net.mcreator.ptndemerde.entity.ChicheurEntity;
 import net.mcreator.ptndemerde.entity.ChatTeteNouilleEntity;
+import net.mcreator.ptndemerde.entity.AcabisqueEntity;
 import net.mcreator.ptndemerde.PtndemerdeMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -51,6 +52,10 @@ public class PtndemerdeModEntities {
 			EntityType.Builder.<MolosseEntity>of(MolosseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MolosseEntity::new).fireImmune().sized(1.4f, 1.3f));
 	public static final RegistryObject<EntityType<OmegaTitanEntity>> OMEGA_TITAN = register("omega_titan", EntityType.Builder.<OmegaTitanEntity>of(OmegaTitanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(OmegaTitanEntity::new).fireImmune().sized(1.5f, 4.2f));
+	public static final RegistryObject<EntityType<AcabisqueEntity>> ACABISQUE = register("acabisque",
+			EntityType.Builder.<AcabisqueEntity>of(AcabisqueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AcabisqueEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -66,6 +71,7 @@ public class PtndemerdeModEntities {
 			LambdaBatEntity.init();
 			MolosseEntity.init();
 			OmegaTitanEntity.init();
+			AcabisqueEntity.init();
 		});
 	}
 
@@ -78,5 +84,6 @@ public class PtndemerdeModEntities {
 		event.put(LAMBDA_BAT.get(), LambdaBatEntity.createAttributes().build());
 		event.put(MOLOSSE.get(), MolosseEntity.createAttributes().build());
 		event.put(OMEGA_TITAN.get(), OmegaTitanEntity.createAttributes().build());
+		event.put(ACABISQUE.get(), AcabisqueEntity.createAttributes().build());
 	}
 }

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "popbone_bucket",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Popbone"
+      },
+      {
+        "value": "CUSTOM:Popbone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Popbone"
+      },
+      {
+        "value": "CUSTOM:Popbone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PopboneBucket"
+    },
+    "name": "recipe_popbone_bucket",
+    "namespace": "mod"
+  }
+}

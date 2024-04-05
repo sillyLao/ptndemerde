@@ -2,10 +2,10 @@
   "_fv": 57,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Porcius",
+    "mobName": "Acabisque",
     "mobLabel": "",
-    "mobModelName": "Modelporc",
-    "mobModelTexture": "porc.png",
+    "mobModelName": "Modelacab",
+    "mobModelTexture": "acab.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -28,11 +28,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16776961,
+      "value": -10966872,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -16764058,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -59,18 +59,18 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
-    "mobCreatureType": "UNDEFINED",
-    "attackStrength": 14,
-    "attackKnockback": 0.5,
-    "knockbackResistance": 0.5,
-    "movementSpeed": 0.30000000000000004,
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEAD",
+    "attackStrength": 7,
+    "attackKnockback": 0.1,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.15,
     "stepHeight": 0.6,
-    "armorBaseValue": 4.0,
+    "armorBaseValue": 1.0,
     "trackingRange": 64,
-    "followRange": 32,
+    "followRange": 16,
     "health": 40,
-    "xpAmount": 5,
+    "xpAmount": 10,
     "waterMob": false,
     "breatheUnderwater": {
       "fixedValue": false
@@ -91,8 +91,8 @@
     "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
-    "immuneToLightning": false,
-    "immuneToPotions": false,
+    "immuneToLightning": true,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
     "immuneToTrident": false,
@@ -100,27 +100,24 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:AcabisqueBone"
     },
     "livingSound": {
-      "value": "entity.evocation_illager.hurt"
+      "value": "entity.parrot.imitate.skeleton"
     },
     "hurtSound": {
-      "value": "entity.illusion_illager.hurt"
+      "value": "entity.skeleton.hurt"
     },
     "deathSound": {
-      "value": "entity.evocation_illager.death"
+      "value": "entity.skeleton.death"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.soul_soil.step"
     },
     "entityDataEntries": [],
-    "whenMobDies": {
-      "name": "PorcEntityDies"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"75\" y=\"14\"><next><block type=\"attack_with_range\"><field name=\"range\">2</field><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:Chicheur</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">ProcedurePorcDrogue,ProcedurePorcDrogue</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"159\" y=\"62\"><next><block type=\"attack_with_range\"><field name=\"range\">2</field><field name=\"speed\">1.5</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">CUSTOM:Chicheur</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -131,12 +128,12 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
-    "spawnThisMob": true,
+    "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 3,
-    "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 3,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tourte_des_mers",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:wheat"
+    },
+    "b": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "c": {
+      "item": "minecraft:prismarine_crystals"
+    }
+  },
+  "result": {
+    "item": "ptndemerde:tourte_des_mers",
+    "count": 1
+  }
+}

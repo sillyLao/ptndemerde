@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spider_maki",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "minecraft:carrot"
+    }
+  ],
+  "result": {
+    "item": "ptndemerde:spider_maki",
+    "count": 1
+  }
+}

@@ -31,6 +31,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.ptndemerde.procedures.ProcedurePorcDrogueProcedure;
+import net.mcreator.ptndemerde.procedures.PorcEntityDiesProcedure;
 import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 
 public class PorcEntity extends PathfinderMob {
@@ -41,7 +42,7 @@ public class PorcEntity extends PathfinderMob {
 	public PorcEntity(EntityType<PorcEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
-		xpReward = 0;
+		xpReward = 5;
 		setNoAi(false);
 	}
 
@@ -111,6 +112,12 @@ public class PorcEntity extends PathfinderMob {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.evoker.death"));
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		PorcEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init() {

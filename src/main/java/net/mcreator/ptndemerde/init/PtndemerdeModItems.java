@@ -14,9 +14,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.ptndemerde.item.TourteDesMersItem;
 import net.mcreator.ptndemerde.item.TabacFumeItem;
+import net.mcreator.ptndemerde.item.SpiderMakiItem;
+import net.mcreator.ptndemerde.item.SoupeEndItem;
 import net.mcreator.ptndemerde.item.SorbetEtrangeItem;
 import net.mcreator.ptndemerde.item.PurifiedPotatoItem;
+import net.mcreator.ptndemerde.item.PopboneItem;
+import net.mcreator.ptndemerde.item.PopboneBucketItem;
 import net.mcreator.ptndemerde.item.PetardDaturaItem;
 import net.mcreator.ptndemerde.item.PapierInesItem;
 import net.mcreator.ptndemerde.item.NouillesSechesItem;
@@ -27,12 +32,14 @@ import net.mcreator.ptndemerde.item.GrainesDeTabacItem;
 import net.mcreator.ptndemerde.item.GoldenPurifiedPotatoItem;
 import net.mcreator.ptndemerde.item.FleurDeTabacItem;
 import net.mcreator.ptndemerde.item.FalinSwordItem;
+import net.mcreator.ptndemerde.item.CornetDeBlazeItem;
 import net.mcreator.ptndemerde.item.ChairPutrefieeDoreeItem;
 import net.mcreator.ptndemerde.item.BolNouillesSlimeItem;
 import net.mcreator.ptndemerde.item.BolNouillesPiquanteItem;
 import net.mcreator.ptndemerde.item.BolNouillesLegumesItem;
 import net.mcreator.ptndemerde.item.BolNouillesJajangmyeonItem;
 import net.mcreator.ptndemerde.item.BolNouillesItem;
+import net.mcreator.ptndemerde.item.AcabisqueBoneItem;
 import net.mcreator.ptndemerde.PtndemerdeMod;
 
 public class PtndemerdeModItems {
@@ -71,6 +78,14 @@ public class PtndemerdeModItems {
 	public static final RegistryObject<Item> SORBET_ETRANGE = REGISTRY.register("sorbet_etrange", () -> new SorbetEtrangeItem());
 	public static final RegistryObject<Item> PURIFIED_POTATO = REGISTRY.register("purified_potato", () -> new PurifiedPotatoItem());
 	public static final RegistryObject<Item> GOLDEN_PURIFIED_POTATO = REGISTRY.register("golden_purified_potato", () -> new GoldenPurifiedPotatoItem());
+	public static final RegistryObject<Item> ACABISQUE_SPAWN_EGG = REGISTRY.register("acabisque_spawn_egg", () -> new ForgeSpawnEggItem(PtndemerdeModEntities.ACABISQUE, -10966872, -16764058, new Item.Properties()));
+	public static final RegistryObject<Item> ACABISQUE_BONE = REGISTRY.register("acabisque_bone", () -> new AcabisqueBoneItem());
+	public static final RegistryObject<Item> POPBONE = REGISTRY.register("popbone", () -> new PopboneItem());
+	public static final RegistryObject<Item> POPBONE_BUCKET = REGISTRY.register("popbone_bucket", () -> new PopboneBucketItem());
+	public static final RegistryObject<Item> SPIDER_MAKI = REGISTRY.register("spider_maki", () -> new SpiderMakiItem());
+	public static final RegistryObject<Item> TOURTE_DES_MERS = REGISTRY.register("tourte_des_mers", () -> new TourteDesMersItem());
+	public static final RegistryObject<Item> SOUPE_END = REGISTRY.register("soupe_end", () -> new SoupeEndItem());
+	public static final RegistryObject<Item> CORNET_DE_BLAZE = REGISTRY.register("cornet_de_blaze", () -> new CornetDeBlazeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

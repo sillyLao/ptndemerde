@@ -17,6 +17,7 @@ import net.mcreator.ptndemerde.client.renderer.LaserRenderer;
 import net.mcreator.ptndemerde.client.renderer.LambdaBatRenderer;
 import net.mcreator.ptndemerde.client.renderer.ChicheurRenderer;
 import net.mcreator.ptndemerde.client.renderer.ChatTeteNouilleRenderer;
+import net.mcreator.ptndemerde.client.renderer.AcabisqueRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PtndemerdeModEntityRenderers {
@@ -30,5 +31,6 @@ public class PtndemerdeModEntityRenderers {
 		event.registerEntityRenderer(PtndemerdeModEntities.LASER.get(), LaserRenderer::new);
 		event.registerEntityRenderer(PtndemerdeModEntities.MOLOSSE.get(), MolosseRenderer::new);
 		event.registerEntityRenderer(PtndemerdeModEntities.OMEGA_TITAN.get(), OmegaTitanRenderer::new);
+		event.registerEntityRenderer(PtndemerdeModEntities.ACABISQUE.get(), AcabisqueRenderer::new);
 	}
 }

@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "popbone",
+    "cookingBookCategory": "FOOD",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:AcabisqueBone"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:Popbone"
+    },
+    "name": "recipe_popbone",
+    "namespace": "mod"
+  }
+}

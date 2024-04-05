@@ -47,5 +47,13 @@ public class PtndemerdeModTabs {
 				tabData.accept(PtndemerdeModItems.SORBET_ETRANGE.get());
 				tabData.accept(PtndemerdeModItems.PURIFIED_POTATO.get());
 				tabData.accept(PtndemerdeModItems.GOLDEN_PURIFIED_POTATO.get());
+				tabData.accept(PtndemerdeModItems.ACABISQUE_SPAWN_EGG.get());
+				tabData.accept(PtndemerdeModItems.ACABISQUE_BONE.get());
+				tabData.accept(PtndemerdeModItems.POPBONE.get());
+				tabData.accept(PtndemerdeModItems.POPBONE_BUCKET.get());
+				tabData.accept(PtndemerdeModItems.SPIDER_MAKI.get());
+				tabData.accept(PtndemerdeModItems.TOURTE_DES_MERS.get());
+				tabData.accept(PtndemerdeModItems.SOUPE_END.get());
+				tabData.accept(PtndemerdeModItems.CORNET_DE_BLAZE.get());
 			}).withSearchBar().build());
 }

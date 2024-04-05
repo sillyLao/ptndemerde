@@ -1758,6 +1758,327 @@
           "src/main/resources/data/ptndemerde/recipes/recipe_golden_purified_potato.json"
         ]
       }
+    },
+    {
+      "name": "Acabisque",
+      "type": "livingentity",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acabisque",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/entity/AcabisqueEntity.java",
+          "src/main/java/net/mcreator/ptndemerde/client/renderer/AcabisqueRenderer.java",
+          "src/main/resources/assets/ptndemerde/models/item/acabisque_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "PorcEntityDies",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porc_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/PorcEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AcabisqueBone",
+      "type": "item",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acabisque_bone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/acabisque_bone.json",
+          "src/main/java/net/mcreator/ptndemerde/item/AcabisqueBoneItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Popbone",
+      "type": "item",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popbone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/popbone.json",
+          "src/main/java/net/mcreator/ptndemerde/item/PopboneItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PopboneBucketPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popbone_bucket_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/PopboneBucketPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PopboneBucket",
+      "type": "item",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popbone_bucket",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/popbone_bucket.json",
+          "src/main/java/net/mcreator/ptndemerde/item/PopboneBucketItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipePopbone",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_popbone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_popbone.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipePopboneBucket",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_popbone_bucket",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_popbone_bucket.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiderMakiPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_maki_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/SpiderMakiPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpiderMaki",
+      "type": "item",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_maki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/SpiderMakiItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/spider_maki.json"
+        ]
+      }
+    },
+    {
+      "name": "TourteDesMersPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tourte_des_mers_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/TourteDesMersPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TourteDesMers",
+      "type": "item",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tourte_des_mers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/TourteDesMersItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/tourte_des_mers.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeSpiderMaki",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_spider_maki",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_spider_maki.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeTourteDesMers",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_tourte_des_mers",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_tourte_des_mers.json"
+        ]
+      }
+    },
+    {
+      "name": "SoupeEndPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soupe_end_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/SoupeEndPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoupeEnd",
+      "type": "item",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soupe_end",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/item/SoupeEndItem.java",
+          "src/main/resources/assets/ptndemerde/models/item/soupe_end.json"
+        ]
+      }
+    },
+    {
+      "name": "CornetDeBlazePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cornet_de_blaze_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ptndemerde/procedures/CornetDeBlazePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CornetDeBlaze",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cornet_de_blaze",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ptndemerde/models/item/cornet_de_blaze.json",
+          "src/main/java/net/mcreator/ptndemerde/item/CornetDeBlazeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipeCornetDeBlaze1",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_cornet_de_blaze_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_cornet_de_blaze_1.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeCornetDeBlaze2",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_cornet_de_blaze_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ptndemerde/recipes/recipe_cornet_de_blaze_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1808,8 +2129,8 @@
   ],
   "language_map": {
     "en_us": {
+      "entity.ptndemerde.porc": "Porcius",
       "entity.ptndemerde.omega_titan": "Omega Titan",
-      "entity.ptndemerde.porc": "Porc",
       "biome.ptndemerde.datura_fields": "Datura Fields",
       "entity.ptndemerde.mu": "Mu",
       "gui.ptndemerde.gui_chicheur.label_x50": "x50",
@@ -1817,6 +2138,8 @@
       "advancements.advancement_tabac.descr": "Vous avez commencé à produire du tabac !",
       "item.ptndemerde.lambda_bat_spawn_egg": "Lambda Bat Spawn Egg",
       "gui.ptndemerde.gui_chicheur.label_dependance_si_vous_avez_de_quoi": "dépendance, si vous avez de",
+      "item.ptndemerde.acabisque_spawn_egg": "Acabisque Spawn Egg",
+      "item.ptndemerde.tourte_des_mers": "Tourte des mers",
       "block.ptndemerde.chicha": "Chicha",
       "item.ptndemerde.nouilles": "Nouilles",
       "entity.ptndemerde.molosse": "Sigma Hound",
@@ -1829,6 +2152,7 @@
       "block.ptndemerde.salvia_divinorum": "Salvia divinorum",
       "block.ptndemerde.campfire_bucket": "Feu de camp avec un seau",
       "item.ptndemerde.molosse_spawn_egg": "Sigma Hound Spawn Egg",
+      "item.ptndemerde.popbone_bucket": "Seau de Pop-os",
       "block.ptndemerde.tabac_grown": "Tabac 1",
       "effect.ptndemerde.effect_chicha": "Narguilé",
       "block.ptndemerde.tabac_3": "Tabac 1",
@@ -1838,7 +2162,9 @@
       "block.ptndemerde.tabac_2": "Tabac 1",
       "item.ptndemerde.bol_nouilles_jajangmyeon": "Bol de nouilles Jajangmyeon",
       "item.ptndemerde.monde_technologique": "Monde Technologique",
+      "entity.ptndemerde.acabisque": "Acabisque",
       "item.ptndemerde.bol_nouilles_slime": "Bol de nouilles au Slime",
+      "item.ptndemerde.cornet_de_blaze": "Cornet de Blaze",
       "advancements.advancement_chicha.descr": "Vous êtes un.e chicheureuse professionel.le...",
       "item.ptndemerde.papier_ines": "Papier Ines",
       "item.ptndemerde.graines_de_tabac": "Graines De Tabac",
@@ -1851,21 +2177,25 @@
       "painting.ptndemerde.painting_child.author": "Maknav",
       "item.ptndemerde.purified_potato": "Pomme de terre purifiée",
       "effect.ptndemerde.effect_relaxed": "Relaxé",
-      "item.ptndemerde.porc_spawn_egg": "Porc Spawn Egg",
+      "item.ptndemerde.porc_spawn_egg": "Porcius Spawn Egg",
       "item.ptndemerde.laser_ball": "Laser Ball",
       "item.ptndemerde.bol_nouilles_legumes": "Bol de nouilles aux légumes",
       "item.ptndemerde.bol_nouilles": "Bol de nouilles",
       "item.ptndemerde.chair_putrefiee_doree": "Chair putréfiée dorée",
       "gui.ptndemerde.gui_chicheur.label_quoi_soulager_la_sienne_aussi_e": "quoi soulager la sienne aussi,",
+      "item.ptndemerde.soupe_end": "Soupe de l\u0027End",
       "item.ptndemerde.chat_tete_nouille_spawn_egg": "Chat vêtu de nouilles Spawn Egg",
       "item.ptndemerde.mu_spawn_egg": "Mu Spawn Egg",
       "item.ptndemerde.nouilles_seches": "Nouilles sèches",
       "gui.ptndemerde.gui_chicheur.label_echanger_de_quoi_soulager_votre": "échanger de quoi soulager votre",
       "advancements.advancement_tabac.title": "Sur la route du chichage",
+      "item.ptndemerde.popbone": "Pop-os",
       "item_group.ptndemerde.ptndemerde_tab": "Ptndemerde",
       "item.ptndemerde.petard_datura": "Pétard de Datura",
       "gui.ptndemerde.gui_chicheur.button_dealer": "Dealer",
       "item.ptndemerde.omega_titan_spawn_egg": "Omega Titan Spawn Egg",
+      "item.ptndemerde.spider_maki": "Maki d\u0027araignée",
+      "item.ptndemerde.acabisque_bone": "Os d\u0027Acabisque",
       "item.ptndemerde.falin_sword": "Épée en Falin",
       "advancements.advancement_chicha.title": "Narguilator",
       "gui.ptndemerde.gui_chicheur.label_le_chicheur_veut_bien_vous_echan": "Le chicheur veut bien vous",
