@@ -147,7 +147,7 @@ public class MuEntity extends Monster implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 15);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 12);
 		builder = builder.add(Attributes.MAX_HEALTH, 300);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
@@ -204,7 +204,7 @@ public class MuEntity extends Monster implements GeoEntity {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 100) {
+		if (this.deathTime == 30) {
 			this.remove(MuEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
