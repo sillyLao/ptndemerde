@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "ptndemerde:block/salvia_divinorum"
+    },
+    "half=lower": {
+      "model": "ptndemerde:block/salvia_divinorum_bottom"
+    }
+  }
+}

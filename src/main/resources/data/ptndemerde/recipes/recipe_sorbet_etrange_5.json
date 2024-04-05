@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sorbet_etrange",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    " d ",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:sugar"
+    },
+    "b": {
+      "item": "minecraft:snowball"
+    },
+    "c": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "d": {
+      "item": "minecraft:bowl"
+    },
+    "e": {
+      "tag": "minecraft:candles"
+    }
+  },
+  "result": {
+    "item": "ptndemerde:sorbet_etrange",
+    "count": 1
+  }
+}

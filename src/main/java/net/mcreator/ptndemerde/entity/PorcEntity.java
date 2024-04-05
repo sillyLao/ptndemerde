@@ -9,6 +9,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -30,6 +31,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.ptndemerde.procedures.ProcedurePorcDrogueProcedure;
+import net.mcreator.ptndemerde.procedures.PorcEntityDiesProcedure;
 import net.mcreator.ptndemerde.init.PtndemerdeModEntities;
 
 public class PorcEntity extends PathfinderMob {
@@ -40,7 +42,7 @@ public class PorcEntity extends PathfinderMob {
 	public PorcEntity(EntityType<PorcEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
-		xpReward = 0;
+		xpReward = 5;
 		setNoAi(false);
 	}
 
@@ -52,8 +54,15 @@ public class PorcEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, ChicheurEntity.class, true, true));
-		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, true, true) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return 4;
+			}
+		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers());
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ChicheurEntity.class, true, true));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, true, true) {
 			@Override
 			public boolean canUse() {
 				double x = PorcEntity.this.getX();
@@ -74,15 +83,15 @@ public class PorcEntity extends PathfinderMob {
 				return super.canContinueToUse() && ProcedurePorcDrogueProcedure.execute(world);
 			}
 		});
-		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, true) {
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.2, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(6, new FloatGoal(this));
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(8, new FloatGoal(this));
 	}
 
 	@Override
@@ -105,6 +114,12 @@ public class PorcEntity extends PathfinderMob {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.evoker.death"));
 	}
 
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		PorcEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+	}
+
 	public static void init() {
 		SpawnPlacements.register(PtndemerdeModEntities.PORC.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
@@ -117,6 +132,8 @@ public class PorcEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 4);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 14);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.5);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0.5);
 		return builder;
 	}
 }

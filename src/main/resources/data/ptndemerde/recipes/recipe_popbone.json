@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "popbone",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "ptndemerde:acabisque_bone"
+  },
+  "result": "ptndemerde:popbone"
+}

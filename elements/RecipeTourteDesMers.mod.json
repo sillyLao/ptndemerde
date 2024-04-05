@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "tourte_des_mers",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "Items.PRISMARINE_CRYSTALS"
+      },
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TourteDesMers"
+    },
+    "name": "recipe_tourte_des_mers",
+    "namespace": "mod"
+  }
+}

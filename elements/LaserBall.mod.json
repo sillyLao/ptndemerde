@@ -1,0 +1,53 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "nouveau_projet2",
+    "customModelName": "Ranged item",
+    "customProperties": {},
+    "states": [],
+    "name": "Laser Ball",
+    "rarity": "RARE",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 72000,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": true,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:Laser"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "bow"
+  }
+}

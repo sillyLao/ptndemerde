@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nouilles_legumes",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "ptndemerde:bol_nouilles"
+    }
+  ],
+  "result": {
+    "item": "ptndemerde:bol_nouilles_legumes",
+    "count": 1
+  }
+}

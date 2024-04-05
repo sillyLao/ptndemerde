@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "papier_ines",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "result": {
+    "item": "ptndemerde:papier_ines",
+    "count": 3
+  }
+}

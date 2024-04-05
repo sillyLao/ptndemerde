@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "purified_potato",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ghast_tear"
+    },
+    "b": {
+      "item": "minecraft:poisonous_potato"
+    }
+  },
+  "result": {
+    "item": "ptndemerde:purified_potato",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ptndemerde:datura_fields",
+  "features": "ptndemerde:salvia_divinorum",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "cornet_de_blaze",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CornetDeBlaze"
+    },
+    "name": "recipe_cornet_de_blaze_1",
+    "namespace": "mod"
+  }
+}

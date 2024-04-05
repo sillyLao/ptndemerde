@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nouilles_slime",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "ptndemerde:nouilles"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "ptndemerde:bol_nouilles_slime",
+    "count": 1
+  }
+}

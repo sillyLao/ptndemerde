@@ -23,8 +23,7 @@
     "water_fog_color": 329011
   },
   "spawners": {
-    "monster": [],
-    "creature": [
+    "monster": [
       {
         "type": "ptndemerde:chat_tete_nouille",
         "weight": 20,
@@ -32,7 +31,15 @@
         "maxCount": 5
       }
     ],
-    "ambient": [],
+    "creature": [],
+    "ambient": [
+      {
+        "type": "ptndemerde:porc",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
     "axolotls": [],
     "underground_water_creature": [],
     "water_creature": [],

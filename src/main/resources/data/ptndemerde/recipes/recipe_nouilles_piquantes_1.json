@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nouilles_piquantes",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "ptndemerde:bol_nouilles"
+    }
+  ],
+  "result": {
+    "item": "ptndemerde:bol_nouilles_piquante",
+    "count": 1
+  }
+}

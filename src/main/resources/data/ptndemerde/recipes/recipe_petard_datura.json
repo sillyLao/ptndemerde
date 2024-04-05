@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "petard_datura",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ptndemerde:datura_stramonium"
+    },
+    {
+      "item": "ptndemerde:papier_ines"
+    }
+  ],
+  "result": {
+    "item": "ptndemerde:petard_datura",
+    "count": 2
+  }
+}

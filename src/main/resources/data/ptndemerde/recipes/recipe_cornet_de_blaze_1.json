@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cornet_de_blaze",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_rod"
+    },
+    "b": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "item": "ptndemerde:cornet_de_blaze",
+    "count": 1
+  }
+}

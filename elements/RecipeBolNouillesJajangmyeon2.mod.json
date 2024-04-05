@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "nouilles_jajangmyeon",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Blocks.REEDS"
+      },
+      {
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "Items.EGG"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Nouilles"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BolNouillesJajangmyeon"
+    },
+    "name": "recipe_bol_nouilles_jajangmyeon_2",
+    "namespace": "mod"
+  }
+}

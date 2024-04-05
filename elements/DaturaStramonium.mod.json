@@ -83,9 +83,6 @@
     "isBonemealTargetCondition": {
       "name": "DaturaStramoniumCanBoneMealBeUsedOnThisBlock"
     },
-    "bonemealSuccessCondition": {
-      "name": "DaturaStramoniumCanBoneMealBeUsedOnThisBlock"
-    },
     "onBonemealSuccess": {
       "name": "DaturaStramoniumOnBoneMealSuccess"
     },

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nouilles_jajangmyeon",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar_cane"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "ptndemerde:bol_nouilles"
+    }
+  ],
+  "result": {
+    "item": "ptndemerde:bol_nouilles_jajangmyeon",
+    "count": 1
+  }
+}

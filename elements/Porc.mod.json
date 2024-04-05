@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Porc",
+    "mobName": "Porcius",
     "mobLabel": "",
     "mobModelName": "Modelporc",
     "mobModelTexture": "porc.png",
@@ -62,15 +62,15 @@
     "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 14,
-    "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
+    "attackKnockback": 0.5,
+    "knockbackResistance": 0.5,
     "movementSpeed": 0.30000000000000004,
     "stepHeight": 0.6,
     "armorBaseValue": 4.0,
     "trackingRange": 64,
     "followRange": 32,
     "health": 40,
-    "xpAmount": 0,
+    "xpAmount": 5,
     "waterMob": false,
     "breatheUnderwater": {
       "fixedValue": false
@@ -115,9 +115,12 @@
       "value": ""
     },
     "entityDataEntries": [],
+    "whenMobDies": {
+      "name": "PorcEntityDies"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"75\" y=\"14\"><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:Chicheur</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">ProcedurePorcDrogue,ProcedurePorcDrogue</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"75\" y=\"14\"><next><block type=\"attack_with_range\"><field name=\"range\">2</field><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:Chicheur</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">ProcedurePorcDrogue,ProcedurePorcDrogue</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -130,7 +133,7 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 5,
+    "spawningProbability": 3,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,
